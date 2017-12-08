@@ -1,0 +1,126 @@
+= EE4J FAQ
+
+[[what]]
+== What is Eclipse Enterprise for Java (EE4J)
+
+Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs, implementations of those APIs, and technology compatibility kits for Java runtimes that enable development, deployment, and management of server-side and cloud-native applications. EE4J is based on the Java™ Platform, Enterprise Edition (Java EE) standards, and uses Java EE 8 as the baseline for creating new standards.
+
+There is an https://projects.eclipse.org/projects/ee4j/charter[Eclipse Top Level Charter] document describing the project. It is open for public comment. Also see the Aquarium blog posts on opening up Java EE.
+
+[[why]]
+== Why is this decision to move Java EE to EE4J being made?
+
+The industry has changed since the original Java EE process was created. Although Java EE is developed in open source with the participation of the Java EE community, often the process was not seen as being nimble, flexible or open enough, particularly when compared to other open source communities. This perception had grown in recent years, leading to public controversy and conflict. We felt it was time to address this feedback in a positive manner, and with the completion of Java EE 8, the timing is right.
+
+EE4J will use modern open source approaches to enable the use of more nimble processes, more flexible licensing, and a more open governance process for evolution of the platform. An open process, that is not dependent on a single vendor or lead, will encourage participation and innovation, and serve the collective interests of the entire community.
+
+[[who]]
+== Who is driving this?
+
+In August of 2017, Oracle announced its intention to evaluate opening up Java EE by moving Java EE technologies to a foundation. Oracle decided to approach IBM and Red Hat to ensure a critical mass of sponsorship and support for the initiative. IBM and Red Hat were supportive. Together we approached a number of foundations and our consensus was to implement this project at the Eclipse Foundation.
+
+Together Oracle, IBM, Red Hat and the Eclipse Foundation are creating this project and opening it up to the community. The EE4J project will have an Eclipse Project Management Committee (PMC) similar to other Eclipse projects, but membership of the PMC has not yet been determined. We intend for this to be a meritocratic, community driven project going forward.
+
+[[status]]
+== What is the status of the project and what are the next steps?
+
+In September of 2017, Oracle, IBM, Red Hat, and the Eclipse Foundation collaborated to define a high level approach to the project. Some of the elements we have discussed are that the project would:
+
+* Relicense Oracle-led Java EE technologies, and related GlassFish technologies, to the foundation. This would include RIs, TCKs, and associated project documentation. It would not include relicensing of existing specifications. A process for evolving existing specifications must be defined (see below).
+* Demonstrate the ability to build a compatible implementation, using foundation sources, that passes existing Java EE 8 TCKs.
+* We intend to enable use of existing javax package names and component specification names for existing JSRs to provide continuity.
+* Define a process and branding strategy for a new platform that will evolve existing specifications and include new specifications.
+* Recruit and enable developers and other community members, as well as vendors, to sponsor platform technologies, and bring the platform forward within the foundation. This would include potential incorporation of Eclipse MicroProfile technologies into the platform.
+* Do the above as the first tasks of the EE4J project to facilitate a rapid transition.
+
+A Top Level Charter for the project is now published and is open for community feedback. We are proceeding with planning on the transition of Java EE 8 technologies as described above as the first priority.
+
+[[name]]
+== Why is this named EE4J? Why not continue to use the Java EE brand?
+
+There will be a new process for evolving the technologies that is different from the Java EE process. Oracle has also stated its preference for use of a different name. Therefore a different name is appropriate. So although EE4J is intended to provide compatibility with Java EE, we are using a different name.
+
+The primary community feedback we have heard on naming of the overall project is that "Java" be in the name, so we have met that requirement.
+
+[[packages]]
+== Will EE4J use javax package names?
+
+We recognize this is important to compatibility. We have not yet formalized the plan, but we intend to enable use of existing javax package names to provide compatibility. We also intend to enable extension of existing javax namespaces (e.g. javax.servlet.*) to provide continuity and enable evolution of existing APIs. Our current expectation is that net new packages will use a different namespace naming convention.
+
+[[spec-names]]
+== Will new versions of existing specifications in EE4J be able to use existing specification names, (e.g. Java Servlet)?
+
+We recognize this is important to perceived continuity of the platform. We have not yet formalized the plan, but we intend to enable use of existing JCP specification names, for new versions of these specifications within EE4J. We expect new naming conventions will be adopted for net new specifications.
+
+[[tcks]]
+== Will EE4J open source TCKs?
+
+Yes, we intend to open source existing Java EE 8 TCKs and any TCKs going forward. This is an example of how EE4J provides a more open approach than the existing Java EE process.
+
+[[licenses]]
+== What licenses will be used for sources?
+
+This has not been formalized, but we intend to use the following licenses:
+
+Eclipse Public License v2.0, with the Secondary License GPL 2.0 with Classpath Exception
+
+[[jcp]]
+== Will EE4J use the JCP process
+
+In general, EE4J will define new processes for platform evolution. Most of the questions on continued use of JCP have focused on the specification process specifically. The spec process remains to be defined within EE4J. Our current expectation is that specifications are likely to evolve outside of the JCP, so that a new more nimble, flexible and open EE4J process is not coupled to the existing JCP process. But this process has not yet been designed.
+
+Our first priority for this project is planning the transition of Java EE 8 technologies as described above. This is important for creating the basic structure and organization of the project, and project momentum, upon which community participation and process design can be built.
+
+[[github]]
+== Will the EE4J project remain at GitHub?
+
+We intend to create a new Eclipse-based structure at GitHub that mirrors the existing GlassFish structure. We will probably group related repositories into a logical project structure that maps to a reasonable list of EE4J projects. We're working on the details of this.
+
+[[glassfish-committers]]
+== Will existing GlassFish committers be moved to EE4J?
+
+We will seek to move existing GlassFish committers to the new EE4J project. There will likely be requirements to sign the https://www.eclipse.org/projects/handbook/#paperwork[Eclipse Committer Agreements], and the https://www.eclipse.org/legal/ECA.php[Eclipse Contributor Agreement].
+
+[[included]]
+== Who will decide what gets included in EE4J over time.
+
+The EE4J Project Management Committee and process will decide that.
+
+[[microprofile]]
+== What is the relationship of EE4J to Eclipse MicroProfile?
+
+Both EE4J and the https://eclipse.org/microprofile[Eclipse MicroProfile] project are hosted at Eclipse. MicroProfile defines technologies that are intended to be complementary to Java EE. EE4J will evaluate potential incorporation of Eclipse MicroProfile technologies into the platform.
+
+[[oracle]]
+== Is Oracle dumping Java EE?
+
+No, Oracle is not "dumping" Java EE. Oracle will continue to support Java EE in its WebLogic Server product and will continue to support other vendor Java EE implementations through Java EE 8.        
+
+Looking beyond Java EE 8, the Java EE process was not seen as being nimble, flexible or open enough, particularly when compared to other open source communities. We felt it was time to address this feedback in a positive manner. We are doing so by collaborating with other vendors and an established foundation to define a new path forward. The platform will have a critical mass of sponsorship from multiple vendors, including Oracle. We intend to recruit community sponsors and provide backup sponsorship as required.
+
+Oracle will step out of the role of platform spec lead - that will help create a more open and balanced process, that is not dependent on a single vendor or lead, that encourages participation and innovation, and that serves the collective interests of the entire community.
+
+[[investment]]
+== What does this mean for my investment in Java EE application servers? Should I migrate to another technology because of this initiative?
+
+No, you should not migrate from Java EE application servers because of this announcement. We recommend users continue to use Java EE application servers. We expect the first EE4J reference implementation will pass Java EE 8 compatibility tests, and we expect to provide a migration path forward from Java EE 8 to EE4J. In general we expect Java EE vendors to continue to support Java EE implementations. For example, see https://blogs.oracle.com/weblogicserver/weblogic-server-and-opening-up-java-ee[Oracle’s comments] on this point.
+
+[[glassfish-commitment]]
+== Will Oracle stop delivering GlassFish as the reference implementation for Java EE?
+
+Oracle may deliver maintenance releases of GlassFish 5.0 and related Java EE 8 JSRs. However, we do not expect there will be a “Java EE 9” or a GlassFish reference implementation for it. We expect GlassFish technologies to evolve within EE4J.
+
+[[channels]]
+== Where should I go to find out what happens next with EE4J?
+
+See the https://www.google.com/url?q=http://blogs.oracle.com/theaquarium/&sa=D&ust=1507840490728000&usg=AFQjCNEZXDgDWhlmz9XwDYwyxPud1u5gSQ[Aquarium blogs], the Top Level Charter document and join the discussion at https://dev.eclipse.org/mailman/listinfo/ee4j-community[ee4j-community@eclipse.org].
+
+[[users-expectation]]
+== What can users expect of EE4J?
+
+Ultimately that depends on the community. But we're expecting a more developer-centric process, more flexible licensing, and more empowerment of the community in bringing the technology forward.         
+
+[[vendors]]
+== How will this affect current Java EE licensees and vendors of Java EE implementations?
+
+Oracle intends to meet ongoing commitments to end users, customers, technology consumers, technology contributors, partners and licensees. The intend to support their existing Java EE implementations, and future implementations of Java EE 8. The primary impact on licensees will be considering how they evolve their offerings beyond Java EE 8, depending on how the EE4J process evolves. Since we do not yet have any vendor implementations of Java EE 8, the immediate impact on Java EE licensees and vendors is limited.
