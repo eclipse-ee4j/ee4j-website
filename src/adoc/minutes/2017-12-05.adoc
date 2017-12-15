@@ -1,0 +1,51 @@
+= EE4J Meeting Minutes
+
+== General
+Date: 2017-12-05
+
+Present
+
+- Wayne Beaton
+- David Blevins
+- Steve Millidge
+- Dmitry Kornilov
+- Mark Little
+- Ian Skerrett
+- Ivar Grimstad
+
+== Agenda Items
+
+=== Logistics
+- Discussed how this is normally done in other Eclipse projects.
+- Discussed the need for a private channel for the PMC to discuss sensitive issues
+- Decided to schedule monthly meetings for the EE4J PMC Tuesdays at 17:00 CET 
+- Minutes from PMC meetings to be published on the ee4j-pmc mailing list  
+
+=== Brand Name 
+- Every PMC member picks 5 favourites each from the list. By Thursday end-of-day.
+- Consolidate the top five to a short list in a document for how the names can be used 
+- Keep private until names is ready to be voted for by the community 
+- Check for trademark issues
+- Progess in the process must be communicated to the community as soon as possible
+- Goal to open the vote by Dec 15, run for a month until Jan 15
+- Promote both initially as well as after New Year
+- *Item to be revisited next PMC meeting*
+
+=== Project Names
+- Discussed the proposed naming of the project proposals
+- The current suggestion is that API/spec projects should be called something like
+Eclipse project for "Old name", e.g. Eclipse project for JMS, Eclipse project for JPA etc.
+These projects contain the API, Interfaces and TCK
+- The Reference implementations exist as a separate projects, such as Eclipse Moharra, Eclipse Jersey
+- There may be JSRs that initially contain the RI as well, with the intention to split out as
+separate projects later. E.g. JSON-B
+- *Item to be revisited next PMC meeting*
+
+=== Initial Committers
+- Lists of suggestions are created
+- Will continue to add to this list until the projects are ready to go.
+- This also applies to selecting project Leads
+- *Item to be revisited next PMC meeting*
+
+=== Next Meeting
+- The EE4J will meet next week 

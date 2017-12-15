@@ -1,0 +1,57 @@
+= EE4J PMC Meeting Minutes
+
+
+== General
+
+Date: 2017-12-12
+
+Present:
+
+* Dmitry
+* David
+* Ian
+* Kevin
+* Mark
+* Ivar
+* Wayne
+
+== Project Proposals
+
+=== Naming
+
+The naming discussion was brought up again and the PMC agreed that the current naming is ok. Names can be changed later if needed.
+
+The PMC concluded that the need for API in the name of the API projects is not needed
+The following naming conventions were established:
+
+* API projects are: Eclipse project for XXX
+ Example: Eclipse project for JAX-RS
+* Implementation projects: Eclipse [current name]
+ Example: Eclipse Jersey
+* Discussions around how specifications should be treated. This will be defined by the process at a later stage.
+* The concept of Reference Implementation is not defined (yet) in the context of EE4J, so the language used should be “an implementation”, not the RI or the implementation.
+
+=== Project Leads
+Discussions regarding if the project lead of the API project should be the same as the project lead for the corresponding implementation project.
+
+Discussions regarding if the project lead of the API project should be the same as the project lead for the corresponding implementation project. PMC concluded that leaders can be different because there could be potentially multiple implementations and not necessarily within Eclipse Foundation.
+
+The PMC discussed number of project leads for the EE4J projects. Experiences from microprofile have shown that two project leads works out quite well. More than two is not recommended.
+For the existing project proposals, https://www.eclipse.org/projects/project_activity.php, the PMC will follow the following rules:
+
+* If there are two candidates, these will be listed as project leads for the project proposals
+* If there are more than two candidates, one will be selected initially and the committers will be able to vote for the second (or both) according to the Eclipse process when the project has been initiated. If possible, the current spec lead of the JCP JSR will be selected as the initial candidate.
+* If there are less than two candidates, the PMC will select the one available and let the initial committers elect the second lead if needed
+* It was pointed out that one important task for the project leads is to ensure that the team understands the Eclipse Development Process (https://www.eclipse.org/projects/handbook/) and acting as the link between Eclipse and the project.
+
+=== Initial Committers
+
+For the API projects: All existing EG members of the corresponding JSR will be invited to be on the initial committer list
+
+For the implementation projects, using criterias such as minimum number of commits in GitHub is ok to use.
+
+=== Brand Name
+
+The PMC decided to postpone the voting of a brand name until after the upcoming Holidays. 
+
+The reasoning for this decision is that to get the most input from the community as possible and not be limited by vacations.
