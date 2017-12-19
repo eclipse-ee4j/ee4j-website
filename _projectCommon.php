@@ -8,5 +8,5 @@
  *******************************************************************************/
 $theme = "solstice";
 $Nav->addNavSeparator("EE4J", "/ee4j");
-$Nav->addCustomNav("PMC Minutes", "/ee4j/minutes.php", "_self", NULL);
+$Nav->addCustomNav("PMC Minutes", "/ee4j/minutes", "_self", NULL);
 $Nav->addCustomNav("EE4J Charter", "https://projects.eclipse.org/projects/ee4j/charter", "_self", NULL);

@@ -58,7 +58,7 @@ if ($raw = @$_GET['date']) {
 }
 
 if (!isset($date)) {
-    $date = $dates[0];
+    $date = key($dates);
 }
 
 $pageTitle = "EE4J PMC Meeting Minutes " . $dates[$date];
