@@ -14,7 +14,7 @@ $App = new App();
 $Nav = new Nav();
 $Menu = new Menu();
 
-require_once ('_projectCommon.php');
+require_once ('../_projectCommon.php');
 
 $pageKeywords = "EE4J";
 $pageAuthor = "Wayne Beaton";
@@ -31,15 +31,21 @@ function getBodyContent($path) {
     return $content;
 }
 
+function getMinutesRoot() {
+    return dirname(__FILE__) . '/../generated/minutes';
+}
+
 function getMinutesDates() {
     global $App;
     $dates = array();
-    foreach (scandir(dirname(__FILE__) . '/generated/minutes') as $file) {
+    foreach (scandir(getMinutesRoot()) as $file) {
         if ($file == '.') continue;
         if ($file == '..') continue;
         $date = pathinfo($file, PATHINFO_FILENAME);
         $dates[$date] = $App->getFormattedDate(strtotime($date));
     }
+    
+    krsort($dates);
     return $dates;
 }
 
@@ -52,8 +58,7 @@ if ($raw = @$_GET['date']) {
 }
 
 if (!isset($date)) {
-    end($dates);
-    $date = key($dates);
+    $date = $dates[0];
 }
 
 $pageTitle = "EE4J PMC Meeting Minutes " . $dates[$date];
@@ -62,7 +67,7 @@ ob_start();
 ?>
 
 <div id="midcolumn">
-<?php print getBodyContent(dirname(__FILE__) . "/generated/minutes/{$date}.html"); ?>
+<?php print getBodyContent(getMinutesRoot() . "/{$date}.html"); ?>
 </div>
 <div id="rightcolumn">
 	<div class="sideitem">
