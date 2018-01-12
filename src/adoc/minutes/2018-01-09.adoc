@@ -1,0 +1,42 @@
+= EE4J PMC Meeting Minutes
+
+== General
+
+Date: 2018-01-09
+
+Present:
+
+* Steve
+* Wayne
+* David
+* Dmitry
+* Mark
+* Kevin
+* Ivar
+
+== Project Proposals
+
+Wayne and Dmitry updated on the progress of project proposals.
+
+* Issue with GitHub repositories creation. Webmaster waiting for request. Solved
+* Wayne will streamline this process for future projects
+* Committers from existing GitHub repositories must be ensured to follow to the new repo created (has been an issue for MicroProfile projects)
+* PMC responsible for approving CQs (technical sense). Decided that we do not need any special process for this. Any member of the PMC can approve. Only invoke special handling if needed.
+* Invalid intermediate states are ok. Does not need 3rd party cq for deps to other Java EE projects to be transferred to EE4J. May be an issue for _older_ versions of EE APIs. To be discussed later when issue arises.
+
+== Licensing Concerns for Eclipse Ozark
+
+* Discussion regarding the licensing of _implementation projects_ with Ozark as a specific example, https://bugs.eclipse.org/bugs/show_bug.cgi?id=528916 
+* Ozark is currently licensed under Apache-2.0 and this conflicts with the current licensing scheme of EE4J projects which mandated EPL-2 + GPL-2 with Classpath Exception
+* The MicroProfile project would experience the same problem if they move under the EE4J umbrella as they are using the Apache-2.0 license
+* The PMC discussed whether it makes sense to require the same license for implementation projects as for the API and spec projects.
+* According to Wayne, this is up to the PMC to decide. Due to time constraints, this discussion was tabled to next meeting.
+
+== Brand Name
+
+* The PMC went through the list generated from community input and voted for by PMC members. 
+* There are trademark concerns with most of them resulting in a limited list of options.
+* The Eclipse Foundation will start the process of checking for trademark issues with the options available.
+
+
+
