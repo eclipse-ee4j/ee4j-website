@@ -1,0 +1,39 @@
+= EE4J PMC Meeting #5
+
+== General
+
+Date: 2018-01-23
+
+Present:
+
+* Kevin
+* Steve
+* David
+* Dmitry
+* Ivar
+
+== Brand Name
+
+Input from Wayne is that it looks like three of the names on our list are viable
+as brand names. We have a little more work to do, however, so we're not quite
+there yet. He is hopeful that we can have it all wrapped up this week and we can
+start the next steps.
+
+== General Discussion Regarding PMC role
+
+Discussion regarding the role of the pmc and what agenda items we are actually
+supposed to deal with. This will hopefully be made clearer when the working group
+and processes around that has been defined. We should set up a fixed set of agenda i
+tems and figure out what meeting frequency that makes the most sense.
+Weekly meetings seems to be a little overkill.
+
+== Statement to Community regarding changes in projects
+
+Dmitry went through the proposed document with the statement from the PMC to the
+community regarding how to handle contributions and new development until the legal
+agreements between Oracle and Eclipse have been signed. The document will be
+polished and reviewed by the other PMC members before made public to the community.
+
+== Next Meeting
+
+Next PMC meeting will be February 6th? (two weeks from today)
