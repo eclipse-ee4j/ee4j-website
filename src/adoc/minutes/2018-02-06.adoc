@@ -1,0 +1,67 @@
+== EE4J PMC Meeting #6
+== General
+Date: 2018-02-06
+
+Present:
+
+* Kevin
+* Wayne
+* Steve
+* David
+* Dmitry
+* Ivar
+
+== Project Proposals Status
+How to handle the initial committers of old specs. Companies that does not exist anymore etc.
+We should only add people that have been active lately.
+
+List all eg members? Or only eg members that wants to.
+Eclipse would prefer to not include people that are not aware of that they are being added.
+Old java.net mailing lists for inactive old specs not anymore available due to java.net shutdown.
+Want to avoid any perception of vendor bias.
+
+*Newer specs:*
+
+Mail on the EG lists if there are any lists active. Ask for confirmation to be added to the initial committer list.
+
+*Old specs:*
+
+Send out to ee4j-community list? If you are an eg member and want to contribute, let us know.
+
+For non-active projects, such as JSTL, a short list of initial committers is needed. If someone from the EG or elsewhere shows up later, they can be added then.
+
+*Decision:*
+
+. Post proposals
+. Mail on community list
+. Rule-of-thumb is that everybody that have been on the EG will be added if they want by adding comments on the proposals.
+. When we are in a state that we can accept contributions, committers may be added the usual Eclipse way.
+
+== EE4J Blog
+Is there any place where people can blog EE4J articles?
+Wayne suggests to set up an aggregator to pull stuff from people’s own blogs
+
+== Brand Name
+The review process has distilled the list of names down to 2 items:
+
+* Jakarta
+* Enterprise Profile
+
+Wayne will set up a Google Form for the vote and send out for review on the private list.
+The PMC should be active on private blogs and state opinions on twitter, blogs etc.
+
+== Quality Control Statement to the Community
+Give it another week so we are ready
+
+== PMC Agenda Items
+Ivar will prepare a list for next meeting.
+
+Tabled for next meeting.
+
+== PMC Meeting Frequency
+Suggestion is to meet monthly, e.g. every third Tuesday of the month 17-18 CET?
+
+Tabled for next meeting.
+
+== Next Meeting
+Next PMC meeting will be next week half an hour earlier than usual.
