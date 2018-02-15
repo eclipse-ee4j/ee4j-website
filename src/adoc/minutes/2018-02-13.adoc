@@ -1,0 +1,107 @@
+== EE4J PMC Meeting #7
+
+== General
+
+Date: 2018-02-13
+
+Present:
+
+* Dmitry
+* Wayne
+* Kevin
+* Ivar
+* David
+
+== PMC Quality Control Statement to the Community
+
+How do we handle projects that do not want to follow these guidelines? Is there support in EDP to enforce?
+The PMC can step in and review when a project wants to do a release.
+
+Project describe the release etc.
+
+The PMC _can_ require e.g. TCK must pass.
+
+Can require rules to be followed in order to be able to participate in the project.
+
+Release review is where these checks are normally done.
+
+. Publish the rules
+. Set up restrictions on branches in github
+
+== PMC Practical
+
+Approve minutes from two last meetings - *ok*
+
+=== PMC Agenda Items
+
+Agenda items will most likely materialize themselves. Something along the lines of:
+
+* Projects
++
+Project Proposals, Projects Status
+* Releases
+* Actions
++
+Status, New
+
+=== PMC Meeting Frequency
+
+Decided to keep the current meeting time, but go over to a bi-weekly meeting frequency:
+Bi-weekly Meetings
+Tuesdays 17-18 (try to keep it to 30 mins)
+
+=== PMC Lead Swap
+
+Decided to keep it as it is for now and continue with Ivar as PMC Lead. When someone wants to take over, we will take it from there.
+
+== Project Proposals
+
+=== Status
+
+Go through current proposals and mark those that are ok
+
+Eclipse Project for Common Annotations (API) - *ok*
+
+Eclipse Project for Concurrency Utilities (API & RI) - *ok*
+
+Eclipse Project for Enterprise Management - _postpone for inclusion in the platform project_
+
+Eclipse Project for Enterprise Security (API) - _postponed: reach out to EG_
+
+Eclipse Soteria - _postponed: reach out to the EG_
+
+Eclipse Project for Expression Language (API) - *ok*
+
+Eclipse Project for JAF (API) - *ok*
+
+Eclipse Project for JavaMail (API) - *ok*
+
+Eclipse Project for JAX-WS (API & RI) - *ok*
+
+Eclipse Project for JSON-B (API) - *ok*
+
+Eclipse Project for JAX-B (API & RI) - *ok*
+
+Eclipse Project for JSTL (API) - *ok*
+
+JTA (API) - *ok*
+
+Naming discussion tabled to next meeting.
+
+Discuss how to handle platform projects in the next PMC meeting.
+
+=== New
+
+JSR 330 DI Tabled for next meeting
+
+=== Ozark Licensing
+
+Ozark is currently Apache 2.0 licensed. In order to keep that license, the PMC must suggest this to the Eclipse Board for approval.
+
+Decision?
+
+Tabled for next meeting
+
+== Next Meeting
+
+Tuesday February 27 at 17:00 CET
