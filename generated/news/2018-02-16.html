@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<title>PMC statement about initial EE4J project contributions</title>
+<style>
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>PMC statement about initial EE4J project contributions</h1>
+</div>
+<div id="content">
+<div class="paragraph">
+<p>Date: 2018-02-16</p>
+</div>
+<div class="paragraph">
+<p>The first significant milestone for the EE4J project is releasing Eclipse GlassFish as JavaEE 8 compatible as soon as
+possible. In light of this we need to ensure that changes in project repositories don’t break Java EE 8 compatibility
+and cause a release delay. Currently the TCKs for projects haven’t been moved over to EE4J so we are not in a position
+where we can test pull requests (PRs) to ensure they pass the TCK and retain compatibility.</p>
+</div>
+<div class="paragraph">
+<p>With this in mind we are proposing a number of restrictions on projects during this transition.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>GitHub branch protection must be switched on for all projects and all branches except <strong>sandbox</strong> branches and repos.
+<strong>Sandbox</strong> branches and repositories are defined and setup by a project lead. The Master branch must be protected.</p>
+</li>
+<li>
+<p>For all protected branches/repos the following applies:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>For each proposed change an issue must be raised and discussed and a subsequent PR must be raised. No direct commits
+are allowed.</p>
+</li>
+<li>
+<p>A PR must be reviewed by other project committers and receive <strong>at least one approval</strong> to be merged.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>The Initial contribution must be tagged with an <strong>Initial Contribution</strong> tag.</p>
+</li>
+<li>
+<p>The Project lead for each project creates a protected <code>EE4J_8</code> branch based on the initial contribution tag.
+This branch will be the version for the first platform release.</p>
+</li>
+<li>
+<p>In order to merge a PR into the EE4J_8 branch <strong>project lead</strong> or PMC approval is required and the change must be
+tested against the TCK which is currently not available.</p>
+</li>
+<li>
+<p>The PMC strongly recommends accepting only critical bug fixes to the <code>EE4J_8</code> branch.</p>
+</li>
+<li>
+<p>The Master branch will be used for changes that will go into the next platform release.</p>
+</li>
+<li>
+<p>All changes related to the next EE4J platform release must be proposed by creating an issue, a corresponding branch
+will subsequently be created followed by a PR to Master.</p>
+</li>
+</ol>
+</div>
+</div>
+</body>
+</html>
