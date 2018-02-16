@@ -2,4 +2,36 @@
 
 Date: 2018-02-16
 
-TODO: insert message here
+The first significant milestone for the EE4J project is releasing Eclipse GlassFish as JavaEE 8 compatible as soon as
+possible. In light of this we need to ensure that changes in project repositories don’t break Java EE 8 compatibility
+and cause a release delay. Currently the TCKs for projects haven’t been moved over to EE4J so we are not in a position
+where we can test pull requests (PRs) to ensure they pass the TCK and retain compatibility.
+
+With this in mind we are proposing a number of restrictions on projects during this transition.
+
+. GitHub branch protection must be switched on for all projects and all branches except *sandbox* branches and repos.
+*Sandbox* branches and repositories are defined and setup by a project lead. The Master branch must be protected.
+
+. For all protected branches/repos the following applies:
+
+.. For each proposed change an issue must be raised and discussed and a subsequent PR must be raised. No direct commits
+are allowed.
+
+.. A PR must be reviewed by other project committers and receive *at least one approval* to be merged.
+
+. The Initial contribution must be tagged with an *Initial Contribution* tag.
+
+
+. The Project lead for each project creates a protected `EE4J_8` branch based on the initial contribution tag.
+This branch will be the version for the first platform release.
+
+. In order to merge a PR into the EE4J_8 branch *project lead* or PMC approval is required and the change must be
+tested against the TCK which is currently not available.
+
+. The PMC strongly recommends accepting only critical bug fixes to the `EE4J_8` branch.
+
+. The Master branch will be used for changes that will go into the next platform release.
+
+
+. All changes related to the next EE4J platform release must be proposed by creating an issue, a corresponding branch
+will subsequently be created followed by a PR to Master.
