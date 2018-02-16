@@ -1,7 +1,5 @@
-= Guidelines
+= PMC statement about initial EE4J project contributions
 
 Date: 2018-02-16
 
-== Sub heading
-
-text
+TODO: insert message here
