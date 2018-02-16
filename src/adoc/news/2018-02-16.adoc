@@ -32,6 +32,5 @@ tested against the TCK which is currently not available.
 
 . The Master branch will be used for changes that will go into the next platform release.
 
-
 . All changes related to the next EE4J platform release must be proposed by creating an issue, a corresponding branch
 will subsequently be created followed by a PR to Master.
