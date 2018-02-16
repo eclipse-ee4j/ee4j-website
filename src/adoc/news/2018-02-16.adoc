@@ -21,7 +21,6 @@ are allowed.
 
 . The Initial contribution must be tagged with an *Initial Contribution* tag.
 
-
 . The Project lead for each project creates a protected `EE4J_8` branch based on the initial contribution tag.
 This branch will be the version for the first platform release.
 
