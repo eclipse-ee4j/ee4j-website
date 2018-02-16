@@ -1,4 +1,4 @@
-== EE4J PMC Meeting #6
+= EE4J PMC Meeting #6
 == General
 Date: 2018-02-06
 
