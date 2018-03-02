@@ -1,0 +1,25 @@
+= EE4J Project Bootstrapping
+
+This page provides an overview of the bootstrapping state of the EE4J projects. This is based on information that is tracked by the Eclipse Foundation. Please report any discrepancies to emo@eclipse.org.
+
++++
+<iframe width="497" height="413" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2YaV3CpOgZZaTIdqIsObT8T3yZJCR9TRB2BFBNJCjzJQbze_EDtdNvnWu2BXpMpvBURR39JvO4nKQ/pubchart?oid=1889636913&amp;format=interactive"></iframe>
++++
+
+The above gauges show the following states:
+
+. Open Source Project Proposal has been provided to the Eclipse Foundation
+. Proposal is posted for review
+. Trademark search initiated
+. Trademark search resolved
+. Open Source Project Created
+. Provisioning requested
+. Committers and resources provisioned
+. https://www.eclipse.org/projects/handbook/#ip-initial-contribution[Initial Contribution] provided to the Eclipse IP Team
+. Initial Contribution approved for _Check-In_
+. Initial Contribution Pushed to Git Repository
+. Initial Contribution approved by the Eclipse IP Team
+. Milestone/snapshot builds are available
+. Project has engaged in its first https://www.eclipse.org/projects/handbook/#release-review[Release Review]
+
+For more information, please see the https://www.eclipse.org/projects/handbook/#starting[Starting an Open Source Project] section in the Eclipse Project Handbook.
