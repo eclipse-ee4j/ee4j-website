@@ -1,5 +1,7 @@
-== EE4J PMC Meeting #8
+= EE4J PMC Meeting #8
+
 == General
+
 Date: 2018-02-27
 
 Present:
