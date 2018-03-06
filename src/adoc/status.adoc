@@ -3,7 +3,7 @@
 This page provides an overview of the bootstrapping state of the EE4J projects. This is based on information that is tracked by the Eclipse Foundation. Please report any discrepancies to emo@eclipse.org.
 
 +++
-<iframe width="660.5" height="413" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2YaV3CpOgZZaTIdqIsObT8T3yZJCR9TRB2BFBNJCjzJQbze_EDtdNvnWu2BXpMpvBURR39JvO4nKQ/pubchart?oid=1889636913&amp;format=interactive"></iframe>
+<iframe width="660.5" height="574" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2YaV3CpOgZZaTIdqIsObT8T3yZJCR9TRB2BFBNJCjzJQbze_EDtdNvnWu2BXpMpvBURR39JvO4nKQ/pubchart?oid=1889636913&amp;format=interactive"></iframe>
 +++
 
 The above graph charts the following states:
