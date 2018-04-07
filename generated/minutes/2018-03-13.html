@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<title>EE4J PMC Meeting #9</title>
+<style>
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#ee4j-pmc-meeting-9">EE4J PMC Meeting #9</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#project-proposals">Project Proposals</a>
+<ul class="sectlevel2">
+<li><a href="#status">Status</a></li>
+<li><a href="#new">New</a></li>
+<li><a href="#platform-projects">Platform projects</a></li>
+</ul>
+</li>
+<li><a href="#ratify-milestones-for-jakarta-ee">Ratify Milestones for Jakarta EE</a>
+<ul class="sectlevel2">
+<li><a href="#milestone-1">Milestone 1</a></li>
+<li><a href="#milestone-2">Milestone 2</a></li>
+</ul>
+</li>
+<li><a href="#preferred-collaboration-methods">Preferred collaboration methods</a></li>
+<li><a href="#create-the-branches-and-tags-that-we-requested">Create the branches and tags that we requested</a></li>
+<li><a href="#q-a-from-the-audience">Q&amp;A from the audience</a></li>
+<li><a href="#next-meeting">Next Meeting</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="ee4j-pmc-meeting-9"><a class="anchor" href="#ee4j-pmc-meeting-9"></a><a class="link" href="#ee4j-pmc-meeting-9">EE4J PMC Meeting #9</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="general"><a class="anchor" href="#general"></a><a class="link" href="#general">General</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Date: 2018-03-13</p>
+</div>
+<div class="paragraph">
+<p>Present:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>David</p>
+</li>
+<li>
+<p>Kevin</p>
+</li>
+<li>
+<p>Mark</p>
+</li>
+<li>
+<p>Wayne</p>
+</li>
+<li>
+<p>Dmitry</p>
+</li>
+<li>
+<p>Steve</p>
+</li>
+<li>
+<p>Ivar</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This was a public meeting at JavaLand!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="project-proposals"><a class="anchor" href="#project-proposals"></a><a class="link" href="#project-proposals">Project Proposals</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="status"><a class="anchor" href="#status"></a><a class="link" href="#status">Status</a></h3>
+<div class="paragraph">
+<p><a href="https://www.eclipse.org/ee4j/status.php" class="bare">https://www.eclipse.org/ee4j/status.php</a></p>
+</div>
+<div class="paragraph">
+<p>Actions:
+&#8594; Wayne will follow up on Yasson
+&#8594; Wayne will add the Platform project to the list</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="new"><a class="anchor" href="#new"></a><a class="link" href="#new">New</a></h3>
+<div class="paragraph">
+<p>JSR 330 DI</p>
+</div>
+<div class="paragraph">
+<p>Actions:
+&#8594; Mark talk to Weld team</p>
+</div>
+<div class="paragraph">
+<p>JSR 330 is not a part of CDI. However, CDI makes use of the annotations defined in javax.inject (@Inject and @Qualifier are the key ones). Also Weld does pass the javax.inject TCK - this is one of the CDI TCK requirements [1].</p>
+</div>
+<div class="paragraph">
+<p>CDI API does declare a dependency on javax.inject:
+<a href="https://github.com/cdi-spec/cdi/blob/master/api/pom.xml#L173-L176" class="bare">https://github.com/cdi-spec/cdi/blob/master/api/pom.xml#L173-L176</a></p>
+</div>
+<div class="paragraph">
+<p>And thus (logically) Weld also inherits this dependency.</p>
+</div>
+<div class="paragraph">
+<p>&#8594; Ivar contact former spec leads
+Have reached out to Bob Lee and Rod Johnson, but no answer yet.
+Any feedback from them would be good, specifically  a blessing to transfer the spec to Eclipse (and potentially lead the spec).</p>
+</div>
+<div class="paragraph">
+<p>Actions:
+&#8594; David will reach out and see if he can get a response.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="platform-projects"><a class="anchor" href="#platform-projects"></a><a class="link" href="#platform-projects">Platform projects</a></h3>
+<div class="paragraph">
+<p>What other projects should be included in the GlassFish project?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Eclipse Project for Enterprise Management</p>
+</li>
+<li>
+<p>Eclipse Project for Enterprise Deployment</p>
+</li>
+<li>
+<p>Eclipse Project for JAX-RPC</p>
+</li>
+<li>
+<p>Eclipse Project for WADL</p>
+</li>
+<li>
+<p>Eclipse Project for JAXR</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Add another project to keep these projects?
+A legacy project? Some other wording. Misc, sustaining, stable, maintenance.</p>
+</div>
+<div class="paragraph">
+<p>Platform project will contain projects that are actively developed
+If a legacy project is created, the PMC must make sure we are paying attention to these projects. The projects are still a part of the platform and must be possible to build against new versions of the jdk.</p>
+</div>
+<div class="paragraph">
+<p>Agreed to separate these projects in another project than glassfish. Name to decide on later. Name to be discussed on email on community mailing list.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ratify-milestones-for-jakarta-ee"><a class="anchor" href="#ratify-milestones-for-jakarta-ee"></a><a class="link" href="#ratify-milestones-for-jakarta-ee">Ratify Milestones for Jakarta EE</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="milestone-1"><a class="anchor" href="#milestone-1"></a><a class="link" href="#milestone-1">Milestone 1</a></h3>
+<div class="paragraph">
+<p>Initial Contribution Schedule, which will include compatibility goals and completion targets&#8201;&#8212;&#8201;This is a Java EE compliance target and will follow existing Java EE requirements. Eclipse will submit these results with the intention of receiving a Java EE brand compliance</p>
+</div>
+<div class="paragraph">
+<p>Run on binary tcks provided by Oracle to be Java EE certified (Eclipse GlassFish)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="milestone-2"><a class="anchor" href="#milestone-2"></a><a class="link" href="#milestone-2">Milestone 2</a></h3>
+<div class="paragraph">
+<p>Compliance against Jakarta TCK Equivalents&#8201;&#8212;&#8201;This will require an outline for compatibility requirements and definition of the body of specifications and their associated requirements.</p>
+</div>
+<div class="paragraph">
+<p>Run on open source TCK migrated to Eclipse adjusted after the transfer from Oracle. Basically the same set of tests, but produces a Jakarta EE certification.</p>
+</div>
+<div class="paragraph">
+<p>Milestone 1 and 2 may have different tcks, but should be fundamentally the same.</p>
+</div>
+<div class="paragraph">
+<p>The same piece of software, Eclipse GlassFish will be Java EE 8 and Jakarta EE 8 compliant.  After that the Jakarta EE spec will evolve. Following milestones will be new stuff.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="preferred-collaboration-methods"><a class="anchor" href="#preferred-collaboration-methods"></a><a class="link" href="#preferred-collaboration-methods">Preferred collaboration methods</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Discuss preferred collaboration methods in EE4J projects.
+Groups.io is still there for each spec. Will we use it? Is it up to the projects, Shall we as pmc recommend preferred collaboration methods?
+The Java EE channels can be renamed to Jakarta EE. Leave it to the projects to decide.</p>
+</div>
+<div class="paragraph">
+<p>For specification projects, we may recommend something else. Depends on the process yet to be defined.</p>
+</div>
+<div class="paragraph">
+<p>Open item: patents with regard to posting on mailing lists (Wayne)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-the-branches-and-tags-that-we-requested"><a class="anchor" href="#create-the-branches-and-tags-that-we-requested"></a><a class="link" href="#create-the-branches-and-tags-that-we-requested">Create the branches and tags that we requested</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Encourage project leads to create the branches and tags as described in <a href="https://www.eclipse.org/ee4j/news/?date=2018-02-16" class="bare">https://www.eclipse.org/ee4j/news/?date=2018-02-16</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="q-a-from-the-audience"><a class="anchor" href="#q-a-from-the-audience"></a><a class="link" href="#q-a-from-the-audience">Q&amp;A from the audience</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="next-meeting"><a class="anchor" href="#next-meeting"></a><a class="link" href="#next-meeting">Next Meeting</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tuesday March 27 at 17:00 CET</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
