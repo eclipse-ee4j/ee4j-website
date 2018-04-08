@@ -1,0 +1,99 @@
+== EE4J PMC Meeting #9
+
+== General
+Date: 2018-03-13
+
+Present:
+
+* David
+* Kevin
+* Mark
+* Wayne
+* Dmitry
+* Steve
+* Ivar
+
+This was a public meeting at JavaLand!
+
+== Project Proposals
+
+=== Status
+https://www.eclipse.org/ee4j/status.php
+
+Actions:
+-> Wayne will follow up on Yasson
+-> Wayne will add the Platform project to the list
+
+=== New
+
+JSR 330 DI
+
+Actions:
+-> Mark talk to Weld team
+
+JSR 330 is not a part of CDI. However, CDI makes use of the annotations defined in javax.inject (@Inject and @Qualifier are the key ones). Also Weld does pass the javax.inject TCK - this is one of the CDI TCK requirements [1].
+
+CDI API does declare a dependency on javax.inject:
+https://github.com/cdi-spec/cdi/blob/master/api/pom.xml#L173-L176
+
+And thus (logically) Weld also inherits this dependency.
+
+-> Ivar contact former spec leads
+Have reached out to Bob Lee and Rod Johnson, but no answer yet.
+Any feedback from them would be good, specifically  a blessing to transfer the spec to Eclipse (and potentially lead the spec).
+
+Actions:
+-> David will reach out and see if he can get a response.
+
+=== Platform projects
+
+What other projects should be included in the GlassFish project?
+
+* Eclipse Project for Enterprise Management
+* Eclipse Project for Enterprise Deployment
+* Eclipse Project for JAX-RPC
+* Eclipse Project for WADL
+* Eclipse Project for JAXR
+
+Add another project to keep these projects?
+A legacy project? Some other wording. Misc, sustaining, stable, maintenance.
+
+Platform project will contain projects that are actively developed
+If a legacy project is created, the PMC must make sure we are paying attention to these projects. The projects are still a part of the platform and must be possible to build against new versions of the jdk.
+
+Agreed to separate these projects in another project than glassfish. Name to decide on later. Name to be discussed on email on community mailing list.
+
+== Ratify Milestones for Jakarta EE
+
+=== Milestone 1
+Initial Contribution Schedule, which will include compatibility goals and completion targets -- This is a Java EE compliance target and will follow existing Java EE requirements. Eclipse will submit these results with the intention of receiving a Java EE brand compliance
+
+Run on binary tcks provided by Oracle to be Java EE certified (Eclipse GlassFish)
+
+=== Milestone 2
+Compliance against Jakarta TCK Equivalents -- This will require an outline for compatibility requirements and definition of the body of specifications and their associated requirements.
+
+Run on open source TCK migrated to Eclipse adjusted after the transfer from Oracle. Basically the same set of tests, but produces a Jakarta EE certification.
+
+Milestone 1 and 2 may have different tcks, but should be fundamentally the same.
+
+The same piece of software, Eclipse GlassFish will be Java EE 8 and Jakarta EE 8 compliant.  After that the Jakarta EE spec will evolve. Following milestones will be new stuff.
+
+== Preferred collaboration methods
+
+Discuss preferred collaboration methods in EE4J projects.
+Groups.io is still there for each spec. Will we use it? Is it up to the projects, Shall we as pmc recommend preferred collaboration methods?
+The Java EE channels can be renamed to Jakarta EE. Leave it to the projects to decide.
+
+For specification projects, we may recommend something else. Depends on the process yet to be defined.
+
+Open item: patents with regard to posting on mailing lists (Wayne)
+
+== Create the branches and tags that we requested
+
+Encourage project leads to create the branches and tags as described in https://www.eclipse.org/ee4j/news/?date=2018-02-16.
+
+== Q&A from the audience
+
+== Next Meeting
+Tuesday March 27 at 17:00 CET
