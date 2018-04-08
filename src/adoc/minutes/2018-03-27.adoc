@@ -1,0 +1,68 @@
+== EE4J PMC Meeting #10
+
+== General
+
+Date: 2018-03-27
+
+Present:
+
+* Dmitry
+* Steve
+* Wayne
+* David
+* Ivar
+
+== Project Proposals
+
+=== Actions from last meeting:
+
+-> Wayne will follow up on Yasson +
+Researched and updated the status. Never done a release review.
+
+Wayne will seed the pmc mailing list with bits from the EF dev process.
+
+-> Wayne will add the Platform project to the list +
+Eclipse Enterprise Platform +
+Will host the source code for Jakarta EE TCK.
+
+Discussion whether Jakarta should be kept out of the EE4J namespace +
+Want to avoid confusion. Suggestion: Eclipse Project for Jakarta EE Platform?
+Just call it TCK and leave the platform name out of it?
+Jakarta may use sources from other projects than EE4J
+We may want to pull in external TCKs into the overall TCK bundle for Jakarta EE
+
+Todo: +
+Seek the advice of the working group for the use of the Jakarta EE name in EE4J projects
+
+Who should lead the platform project? Should it be managed directly under the PMC? Or the Steering Committee of the Jakarta EE Working Group?
+
+Put the entire PMC as leads of the “platform” project. Will also apply to stable API project
+
+=== Stable APIs project
+
+* WADL will go to Jersey
+* JAX-RPC also contain the implementation (RI)
+* Suggestion: Move the JAX-RPC RI to GlassFish?
+
+=== Information session for project leads (next week)
+
+Invite Gunnar Morling and Antoine Sabot-Durand to the session (propose to use them as "mentors” as Bean Validation and CDI are excellent examples)
+
+== PMC Seat in Working Group Specification Committee
+
+At least one seat is allocated to a representative of the EE4J PMC.
+The EE4J PMC may decide how to select its representative.
+
+Steve proposed that the PMC appoints a representative from within the PMC that
+is a member of an organisation or is an individual that does not already have a
+seat via their membership as a Strategic Member or via an Election.
+If there are two or more members of the PMC that satisfy these criteria and wish
+to have a seat on the specification committee then a vote within the PMC is
+carried out to determine the representative.
+
+Decision by +1 on mailing list. Steve will post.
+
+== Next Meeting
+
+Tuesday April 10 at 16:00 CET +
+(EC Meeting at 17:00 CET)
