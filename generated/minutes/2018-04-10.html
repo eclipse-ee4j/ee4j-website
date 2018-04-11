@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<title>EE4J PMC Meeting #11</title>
+<style>
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#ee4j-pmc-meeting-11">EE4J PMC Meeting #11</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#project-proposals">Project Proposals</a>
+<ul class="sectlevel2">
+<li><a href="#use-of-jakarta-ee-name-in-ee4j-projects">Use of Jakarta EE name in EE4J projects</a></li>
+<li><a href="#status">Status</a></li>
+<li><a href="#jsr-330-di">JSR 330 DI</a></li>
+<li><a href="#jpa-api">JPA API</a></li>
+</ul>
+</li>
+<li><a href="#common-code-conventions">Common Code Conventions</a></li>
+<li><a href="#ee4j-parent-pom-xml">EE4J Parent pom.xml</a></li>
+<li><a href="#general-ee4j-wiki">General EE4J Wiki</a></li>
+<li><a href="#issue-tracker-for-pmc-questions">Issue Tracker for PMC Questions</a></li>
+<li><a href="#duke-images">Duke Images</a></li>
+<li><a href="#maintainer-access-to-repositories">Maintainer Access to repositories</a></li>
+<li><a href="#next-meeting">Next Meeting</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="ee4j-pmc-meeting-11"><a class="anchor" href="#ee4j-pmc-meeting-11"></a><a class="link" href="#ee4j-pmc-meeting-11">EE4J PMC Meeting #11</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="general"><a class="anchor" href="#general"></a><a class="link" href="#general">General</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Date: 2018-04-10</p>
+</div>
+<div class="paragraph">
+<p>Present:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dmitry</p>
+</li>
+<li>
+<p>Kevin</p>
+</li>
+<li>
+<p>Steve</p>
+</li>
+<li>
+<p>Wayne</p>
+</li>
+<li>
+<p>David</p>
+</li>
+<li>
+<p>Ivar</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="project-proposals"><a class="anchor" href="#project-proposals"></a><a class="link" href="#project-proposals">Project Proposals</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="use-of-jakarta-ee-name-in-ee4j-projects"><a class="anchor" href="#use-of-jakarta-ee-name-in-ee4j-projects"></a><a class="link" href="#use-of-jakarta-ee-name-in-ee4j-projects">Use of Jakarta EE name in EE4J projects</a></h3>
+<div class="paragraph">
+<p><a href="https://dev.eclipse.org/mhonarc/lists/jakarta.ee-wg/msg00033.html" class="bare">https://dev.eclipse.org/mhonarc/lists/jakarta.ee-wg/msg00033.html</a></p>
+</div>
+<div class="paragraph">
+<p>We will revisit this item later when the Jakarta EE WG is fully operational.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="status"><a class="anchor" href="#status"></a><a class="link" href="#status">Status</a></h3>
+<div class="paragraph">
+<p>Approve Batch 3 of Projects:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Eclipse Glassfish - <strong>ok</strong><br>
+Reach out to community to get contributors</p>
+</li>
+<li>
+<p>Eclipse Project for Interceptors - <strong>ok</strong><br>
+Discussion about combining it into the EJB project or keep as own project.
+Decided to keep as own project for now.</p>
+</li>
+<li>
+<p>Eclipse Project for JCA - <strong>ok</strong></p>
+</li>
+<li>
+<p>Eclipse Project for JACC - <strong>ok</strong></p>
+</li>
+<li>
+<p>Eclipse Project for EJB - <strong>on hold</strong><br>
+Waiting for confirmation for project lead from Red Hat (and Tomitribe?)</p>
+</li>
+<li>
+<p>Eclipse Project for Servlet (API) - <strong>on hold</strong><br>
+Waiting for confirmation for project leads</p>
+</li>
+<li>
+<p>Eclipse Project for JSP (API) - <strong>on hold</strong><br>
+Tomitribe and Red Hat to add committers</p>
+</li>
+<li>
+<p>Eclipse Project for JASPIC - <strong>on hold</strong><br>
+Waiting for committers from Red Hat</p>
+</li>
+<li>
+<p>Eclipse Project for Stable Jakarta APIs - <strong>on hold</strong><br>
+The PMC members are all project leads.
+Question for Mark: should Scott stark represent Red Hat as lead?</p>
+</li>
+<li>
+<p>Eclipse Jakarta EE TCK - <strong>on hold</strong><br>
+The concept is good.
+May be split into several repos/projects later.
+Committers from more vendors and community needed!</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Action for all PMC members to review the project proposals.</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jsr-330-di"><a class="anchor" href="#jsr-330-di"></a><a class="link" href="#jsr-330-di">JSR 330 DI</a></h3>
+<div class="paragraph">
+<p>Nothing new.<br>
+Action for Ivar: Reach out to David Delabassee</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jpa-api"><a class="anchor" href="#jpa-api"></a><a class="link" href="#jpa-api">JPA API</a></h3>
+<div class="paragraph">
+<p>From discussions on mailing list: Missing from Project Bootstrapping Status.
+The project is included in EclipseLink right now.
+Will be split out to separate API project later.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="common-code-conventions"><a class="anchor" href="#common-code-conventions"></a><a class="link" href="#common-code-conventions">Common Code Conventions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is a suggestion on the community mailing list to have common code conventions for all EE4J projects,
+<a href="https://dev.eclipse.org/mhonarc/lists/ee4j-community/msg01432.html" class="bare">https://dev.eclipse.org/mhonarc/lists/ee4j-community/msg01432.html</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Decision:</strong>
+Define recommendations on the EE4J Wiki, but leave it to the projects to enforce.
+Keep the recommendations as “light” as possible to avoid unnecessary maintenance overhead</p>
+</div>
+<div class="paragraph">
+<p>The recommendations on the Wiki may also include collaboration methods as we discussed in
+<a href="https://www.eclipse.org/ee4j/minutes/?date=2018-03-13#preferred-collaboration-methods" class="bare">https://www.eclipse.org/ee4j/minutes/?date=2018-03-13#preferred-collaboration-methods</a></p>
+</div>
+<div class="paragraph">
+<p>Action for Ivar: Create the wiki and start adding content.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ee4j-parent-pom-xml"><a class="anchor" href="#ee4j-parent-pom-xml"></a><a class="link" href="#ee4j-parent-pom-xml">EE4J Parent pom.xml</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://dev.eclipse.org/mhonarc/lists/ee4j-pmc/msg00231.html" class="bare">https://dev.eclipse.org/mhonarc/lists/ee4j-pmc/msg00231.html</a></p>
+</div>
+<div class="paragraph">
+<p>Discussed the need for a EE4J parent pom to replace the java.net parent pom with common things like plugin versions,
+repositories, checkstyle, code coverage, etc.
+There may be need for different parent poms for different project types (API, Spec, Implementation)</p>
+</div>
+<div class="paragraph">
+<p><strong>Decision:</strong>
+Create a parent pom in the EE4J repository <a href="https://github.com/eclipse-ee4j/ee4j" class="bare">https://github.com/eclipse-ee4j/ee4j</a>
+Extract project later if needed.
+Use of the parent pom is recommended, but not mandatory.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="general-ee4j-wiki"><a class="anchor" href="#general-ee4j-wiki"></a><a class="link" href="#general-ee4j-wiki">General EE4J Wiki</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Discussed need for a Wiki for EE4J related information, such as code conventions, configurations for Travis etc.</p>
+</div>
+<div class="paragraph">
+<p><strong>Decision:</strong>
+Use the EE4J Wiki on GitHub, <a href="https://github.com/eclipse-ee4j/ee4j/wiki" class="bare">https://github.com/eclipse-ee4j/ee4j/wiki</a>.<br>
+Ivar will add a page for code conventions as described in separate agenda item.<br>
+Dmitry will add a page for Travis configuration.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="issue-tracker-for-pmc-questions"><a class="anchor" href="#issue-tracker-for-pmc-questions"></a><a class="link" href="#issue-tracker-for-pmc-questions">Issue Tracker for PMC Questions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Discussed more active use of the GitHub issue tracker.
+Communicate on mailing lists that <a href="https://github.com/eclipse-ee4j/ee4j/issues" class="bare">https://github.com/eclipse-ee4j/ee4j/issues</a> can be used for questions to PMC to follow up.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="duke-images"><a class="anchor" href="#duke-images"></a><a class="link" href="#duke-images">Duke Images</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://dev.eclipse.org/mhonarc/lists/ee4j-pmc/msg00234.html" class="bare">https://dev.eclipse.org/mhonarc/lists/ee4j-pmc/msg00234.html</a></p>
+</div>
+<div class="paragraph">
+<p>Is there some way to allow projects to continue use them?<br>
+Tabled to next meeting.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="maintainer-access-to-repositories"><a class="anchor" href="#maintainer-access-to-repositories"></a><a class="link" href="#maintainer-access-to-repositories">Maintainer Access to repositories</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The webmaster will upon request give project leads or designated comMitters maintainer access to repos to maintain settings etc.
+This is always a time-limited, temporary solution.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="next-meeting"><a class="anchor" href="#next-meeting"></a><a class="link" href="#next-meeting">Next Meeting</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tuesday April 24 at 17:00 CET</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
