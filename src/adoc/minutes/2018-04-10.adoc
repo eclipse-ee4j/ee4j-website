@@ -1,0 +1,128 @@
+== EE4J PMC Meeting #11
+
+== General
+
+Date: 2018-04-10
+
+Present:
+
+* Dmitry
+* Kevin
+* Steve
+* Wayne
+* David
+* Ivar
+
+== Project Proposals
+
+=== Use of Jakarta EE name in EE4J projects
+
+https://dev.eclipse.org/mhonarc/lists/jakarta.ee-wg/msg00033.html
+
+We will revisit this item later when the Jakarta EE WG is fully operational.
+
+=== Status
+
+Approve Batch 3 of Projects:
+
+* Eclipse Glassfish - *ok* +
+Reach out to community to get contributors
+
+* Eclipse Project for Interceptors - *ok* +
+Discussion about combining it into the EJB project or keep as own project.
+Decided to keep as own project for now.
+
+* Eclipse Project for JCA - *ok*
+* Eclipse Project for JACC - *ok*
+
+* Eclipse Project for EJB - *on hold* +
+Waiting for confirmation for project lead from Red Hat (and Tomitribe?)
+
+
+* Eclipse Project for Servlet (API) - *on hold* +
+Waiting for confirmation for project leads
+
+* Eclipse Project for JSP (API) - *on hold* +
+Tomitribe and Red Hat to add committers
+
+* Eclipse Project for JASPIC - *on hold* +
+Waiting for committers from Red Hat
+
+* Eclipse Project for Stable Jakarta APIs - *on hold* +
+The PMC members are all project leads.
+Question for Mark: should Scott stark represent Red Hat as lead?
+
+* Eclipse Jakarta EE TCK - *on hold* +
+The concept is good.
+May be split into several repos/projects later.
+Committers from more vendors and community needed!
+
+*Action for all PMC members to review the project proposals.*
+
+=== JSR 330 DI
+
+Nothing new. +
+Action for Ivar: Reach out to David Delabassee
+
+=== JPA API
+
+From discussions on mailing list: Missing from Project Bootstrapping Status.
+The project is included in EclipseLink right now.
+Will be split out to separate API project later.
+
+== Common Code Conventions
+
+There is a suggestion on the community mailing list to have common code conventions for all EE4J projects,
+https://dev.eclipse.org/mhonarc/lists/ee4j-community/msg01432.html
+
+*Decision:*
+Define recommendations on the EE4J Wiki, but leave it to the projects to enforce.
+Keep the recommendations as “light” as possible to avoid unnecessary maintenance overhead
+
+The recommendations on the Wiki may also include collaboration methods as we discussed in
+https://www.eclipse.org/ee4j/minutes/?date=2018-03-13#preferred-collaboration-methods
+
+Action for Ivar: Create the wiki and start adding content.
+
+== EE4J Parent pom.xml
+
+https://dev.eclipse.org/mhonarc/lists/ee4j-pmc/msg00231.html
+
+Discussed the need for a EE4J parent pom to replace the java.net parent pom with common things like plugin versions,
+repositories, checkstyle, code coverage, etc.
+There may be need for different parent poms for different project types (API, Spec, Implementation)
+
+*Decision:*
+Create a parent pom in the EE4J repository https://github.com/eclipse-ee4j/ee4j
+Extract project later if needed.
+Use of the parent pom is recommended, but not mandatory.
+
+== General EE4J Wiki
+
+Discussed need for a Wiki for EE4J related information, such as code conventions, configurations for Travis etc.
+
+*Decision:*
+Use the EE4J Wiki on GitHub, https://github.com/eclipse-ee4j/ee4j/wiki. +
+Ivar will add a page for code conventions as described in separate agenda item. +
+Dmitry will add a page for Travis configuration.
+
+== Issue Tracker for PMC Questions
+
+Discussed more active use of the GitHub issue tracker.
+Communicate on mailing lists that https://github.com/eclipse-ee4j/ee4j/issues can be used for questions to PMC to follow up.
+
+== Duke Images
+
+https://dev.eclipse.org/mhonarc/lists/ee4j-pmc/msg00234.html
+
+Is there some way to allow projects to continue use them? +
+Tabled to next meeting.
+
+== Maintainer Access to repositories
+
+The webmaster will upon request give project leads or designated comMitters maintainer access to repos to maintain settings etc.
+This is always a time-limited, temporary solution.
+
+== Next Meeting
+
+Tuesday April 24 at 17:00 CET
