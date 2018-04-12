@@ -1,4 +1,4 @@
-== EE4J PMC Meeting #11
+= EE4J PMC Meeting #11
 
 == General
 
