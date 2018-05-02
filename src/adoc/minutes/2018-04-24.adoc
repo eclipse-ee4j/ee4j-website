@@ -1,0 +1,73 @@
+= EE4J PMC Meeting #12
+
+== General
+
+Date: 2018-04-24
+
+Present:
+
+* Dmitry
+* Kevin
+* Wayne
+* Steve
+* David
+* Ivar
+
+== Project Proposals
+
+Projects listed as proposals can still be edited (committers added). 
+Until EOD Wednesday.
+Last batch of proposals will be pushed through May 1.
+
+* Eclipse Project for JPA +
+Add committers
+
+* Eclipse ORB +
+Leader missing. 
+Payara will provide a leader. Ask Fujitsu for committers (even leader?).
+Dmitry will send link to steering committee.
+
+* Eclipse SAAJ +
+Put metro-saaj (impl) to Metro
+Discussion around naming, decided to keep the name.
+
+* Eclipse Metro +
+Metro can contain the RIs for saaj, jax-ws
+
+* Eclipse Jakarta EE Platform +
+Discussion around the content of this one. May also contain parent pom for Jakarta EE projects
+EE4J parent is under EE4J top-level project.
+Decision: All PMC members should be project leads for this project.
+
+* JAX-WS +
+Consists of a bunch of smaller repos (API, RI and more).
+Decision: extract RIs to another project (Metro).
+
+* JAX-B +
+Situation same as jax-ws, split out RI to separate project.
+
+== Spec vs API projects
+
+Discussion regarding licensing of specs. An issue for spec committee.
+Add committers and leads within the end of this week.
+
+== Status
+
+EDL Licensing of some of the projects. 
+Discussion around why is the extra license required.
+Components are part of SE, proposal is to add EDL.
+Must be approved by Eclipse Board of Directors.
+
+== Duke Images
+
+https://dev.eclipse.org/mhonarc/lists/ee4j-pmc/msg00234.html[Mailing list discussion]
+
+Is there some way to allow projects to continue use them?
+Legal advice is that derivative work can not be trademarked.
+Duke is public domain. Use of Duke is fine, but not as project logos.
+Wayne will work with Mike and others at the EF to validate understanding and position.
+
+== Next Meeting
+
+Tuesday May 8 at 17:00 CET. 
+
