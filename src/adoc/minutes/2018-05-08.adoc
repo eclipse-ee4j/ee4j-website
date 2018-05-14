@@ -1,0 +1,91 @@
+= EE4J PMC Meeting #13
+
+== General
+
+Date: 2018-05-08
+
+Present:
+
+* David
+* Kevin
+* Wayne
+* Mark
+* Steve
+* Ivar
+
+== Project Proposals
+
+The following projects are ready for submission for creation review.
+
+* Eclipse Project for JPA - *OK* +
+Wayne will verify that the relationship with EclipseLink is stated properly in the description before publishing.
+
+* Eclipse ORB - *OK*
+
+* Eclipse implementation of JAXB - *OK*
+
+* Eclipse Metro - *OK*
+
+* Eclipse Jakarta EE Platform - *OK* +
+Publish for review and then reach out to strategic members such as Fujitsu.
+Tomitribe and IBM will add some committers.
+
+*General for all proposals:* +
+All initial committers must have an Eclipse account.
+Wayne will follow up on the potential email problem with some committers not getting emails.
+
+=== Self-nominated initial committers for TCK project
+
+Discussion around how to handle the self-nominated initial committers for the TCK project.
+Decided that the usual Eclipse process for getting involved should be followed as soon as the project has been established.
+See https://www.eclipse.org/contribute/.
+
+=== Switching representatives from projects
+
+Discussion around the possibility for a company to switch representatives on EE4J projects. +
+How can this be done according to the Eclipse Processes? +
+Can a company have rep on a project that can survive turnover?
+
+Specification process can maybe be formed to ensure that companies can stay represented.
+The topic is relevant for specification projects, so this item is left for discussion at the Jakarta EE Specification Committee.
+The Steering Committee may also have an opinion.
+
+== Jakarta EE Technical Vision
+
+The PMC has been tasked by the Jakarte EE Steering Committee to propose technical direction for the EE4J projects.
+
+We will do this bottom-up by reaching out to the EE4J project leads to get their input.
+Before doing so, we will create a template and guide to structure the input.
+This should include information such as top-three priorities, schedule, release plan etc.
+We will look at the JSR template for inspiration.
+There must also be set a deadline to respond.
+
+*Actions for next meeting*
+
+* Create an example from one of “our own” projects
+** David: JMS
+** Steve: JSF
+** Kevin: Batch or JCA
+** Mark: CDI or BV
+** Ivar: MVC
+
+* Wayne will set up a common place to store the documents (Team Drive)
+
+After next meeting, we will create a template for project leads based on the above mentioned documents.
+
+== Prepare EE4J Website for GDPR
+
+The Eclipse Foundation is preparing for GDPR (May 25).
+
+https://dev.eclipse.org/mhonarc/lists/eclipse.org-project-leadership/msg00163.html
+
+The EE4J Website should be alright.
+Wayne will confirm.
+
+== Jakarta EE Submissions to e.g. Oracle Code One / EclipseCon
+
+Someone from the companies represented in the PMC will most likely be represented at both conferences so e.g. panel sessions should be possible to staff.
+
+== Next Meeting
+
+Tuesday May 22 at 17:00 CET.
