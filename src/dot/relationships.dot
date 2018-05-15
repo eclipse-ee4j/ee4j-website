@@ -1,0 +1,193 @@
+/********************************************************************************
+ * Copyright (c) 2018 Contributors to the Eclipse Foundation
+ * 
+ * See the NOTICE file(s) distributed with this work for additional
+ * information regarding copyright ownership.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Distribution License v. 1.0 which is available at
+ * http://www.eclipse.org/org/documents/edl-v10.php.
+ * 
+ * SPDX-License-Identifier: BSD-3-Clause
+ ********************************************************************************/
+
+// This file defines a graph of the relationship between the
+// EE4J Projects and the various specifications that make up
+// Jakarta EE.
+//
+// Render using Graphviz.
+// e.g. 
+// > dot ee4j_dependencies.dot -Tsvg > dependencies.svg
+//
+
+digraph G {
+	rankdir=LR;
+	rank=same;
+
+	// "Implementer" nodes.
+	// Projects that provide implementations of the
+	// specifications go here. All nodes that represent
+	// projects are prefixed with "project_"
+	node[ shape=box, style="rounded,bold" ]
+	project_eclipselink[ label="EclipseLink" ];
+	project_glassfish[ label="Eclipse\nGlassFish" ];
+	project_grizzly[ label="Eclipse Grizzly" ];
+	project_jersey[ label="Eclipse Jersey" ];
+	project_metro[ label="Eclipse Metro" ];
+	project_mojarra[ label="Eclipse Mojarra" ];
+	project_tyrus[ label="Eclipse Tyrus" ];
+	project_yasson[ label="Eclipse Yasson" ];
+
+	// "Maintainer" nodes
+	// A project is a maintainer when it is responsible
+	// for maintaining a specification and API.
+	node[ shape=box, style="rounded" ]
+	project_platform[ label="Eclipse Project for\nJakarta EE Platform" ];
+
+	project_ca[ label="Eclipse Project for\nCommon Annotations" ];
+	project_ejb[ label="Eclipse Project\nfor EJB" ];
+	project_el[ label="Eclipse Project\nfor Expression Language" ];
+	project_es[ label="Eclipse Project for\nEnterprise Security" ];
+	project_interceptors[ label="Eclipse Project\nfor Interceptors" ];
+	project_jaf[ label="Eclipse Project\nfor JAF" ];
+	project_jca[ label="Eclipse Project\nfor JCA" ];
+	project_jaxb[ label="Eclipse Project\nfor JAXB" ];
+	project_jaxrs[ label="Eclipse Project\nfor JAX-RS" ];
+	project_jaxws[ label="Eclipse Project\nfor JAX-WS" ];
+	project_jms[ label="Eclipse Project\nfor JMS" ];
+	project_jsonp[ label="Eclipse Project\nfor JSON Processing" ];
+	project_jsp[ label="Eclipse Project\nfor JSP" ];
+	project_jstl[ label="Eclipse Project\nfor JSTL" ];
+	project_jta[ label="Eclipse Project\nfor JTA" ];
+	project_servlet[ label="Eclipse Project\nfor Servlet" ];
+	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs" ];
+	project_websocket[ label="Eclipse Project\nfor WebSocket" ];
+
+	// "Specification" nodes
+	// Every specification gets a node. Specifications are
+	// not projects. There is, at least in many cases, a
+	// one-to-one relationship between projects and specifications
+	// (e.g. "Eclipse Project for JPA" maintains the JPA specification),
+	// But there are other relationships.
+	node[ shape=box, style=dotted ];
+	ca[ label="Common\nAnnotations" ];
+	ejb[ label="EJB" ];
+	el[ label="Expression\nLanguage" ];
+	es[ label="Enterprise\nSecurity" ];
+	interceptors[ label="Interceptors" ];
+	jakartaee[ label="Jakarta EE Platform" ];
+	jca[ label="JCA" ];
+	jms[ label="JMS" ];
+	jpa[ label="JPA" ];
+	jsonb[ label="JSON-B" ];
+	jsonp[ label="JSON-P" ];
+	jsf[ label="JSF" ];
+	jsp[ label="JSP" ];
+	jta[ label="JTA" ];
+	jstl[ label="JSTL" ];
+	jaf[ label="JAF" ];
+	jaxb[ label="JAXB" ];
+	jaxrs[ label="JAX-RS" ];
+	jaxws[ label="JAX-WS" ];
+	management[ label="Enterprise\nManagement" ];
+	servlet[ label="Servlets" ];
+	websocket[ label="WebSocket" ];
+	xmlrpc[ label="XML RPC" ];
+	saaj[ label="SAAJ" ];
+	wsit[ label="WSIT" ];
+	stax[ label="StAX" ];
+
+	edge[ fontsize=10 ];
+
+	// References between specifications.
+	// e.g. EJB requires Interceptors, JTA, ...
+	edge[ label="requires", style="dashed" ];
+	jakartaee -> ca;
+	jakartaee -> ejb;
+	jakartaee -> el;
+	jakartaee -> es;
+	jakartaee -> jaf;
+	jakartaee -> jaxb;
+	jakartaee -> jaxrs;
+	jakartaee -> jaxws;
+	jakartaee -> jca;
+	jakartaee -> jms;
+	jakartaee -> jpa;
+	jakartaee -> jsonb;
+	jakartaee -> jsonp;
+	jakartaee -> jsf;
+	jakartaee -> jsp;
+	jakartaee -> jstl;
+	jakartaee -> jta;
+	jakartaee -> management;
+	jakartaee -> servlet;
+	jakartaee -> websocket;
+	jakartaee -> xmlrpc;
+
+	ejb -> interceptors;
+	ejb -> jta;
+	ejb -> jms;
+	jsf -> jsp;
+	jstl -> jsp;
+	jsp -> servlet;
+	jsp -> el;
+
+	// Relationships between reference implementations
+	// and the specification that they implement.
+	edge[ label="implements", style="solid" ];
+	project_glassfish -> ca;
+	project_glassfish -> jsp;
+	project_glassfish -> jca;
+	project_glassfish -> jakartaee;
+	project_glassfish -> ejb;
+	project_mojarra -> jsf;
+	project_metro -> jaxws;
+	project_metro -> saaj;
+	project_metro -> wsit;
+	project_metro -> stax;
+	project_soteria -> es;
+	project_tyrus -> websocket;
+
+	// Relationships between projects and the specs
+	// that they maintain
+	edge[ label="maintains" ]
+	project_platform -> jakartaee;
+	project_ca -> ca;
+	project_eclipselink -> jpa;
+	project_ejb -> ejb;
+	project_el -> el;
+	project_es -> es;
+	project_interceptors -> interceptors;
+	project_jaf -> jaf;
+	project_jaxb -> jaxb;
+	project_jaxrs -> jaxrs;
+	project_jaxws -> jaxws;
+	project_jca -> jca;
+	project_jersey -> jaxrs;
+	project_jms -> jms;
+	project_jsonp -> jsonp;
+	project_jsp -> jsp;
+	project_jstl -> jstl;
+	project_jta -> jta;
+	project_servlet -> servlet;
+	project_stable -> management;
+	project_stable -> xmlrpc;
+	project_stable -> saaj;
+	project_stable -> wsit;
+	project_stable -> stax;
+	project_tyrus -> websocket;
+	project_websocket -> websocket;
+	project_yasson -> jsonb;
+
+	// Straight up consumption. One RI project consumes
+	// the RI from another project.
+	edge[ label="consumes" ];
+	project_glassfish -> project_eclipselink;
+	project_glassfish -> project_jersey;
+	project_glassfish -> project_grizzly;
+	project_glassfish -> project_metro;
+	project_glassfish -> project_mojarra;
+	project_glassfish -> project_soteria;
+	project_glassfish -> project_tyrus;
+	project_glassfish -> project_yasson;
+}
