@@ -49,7 +49,9 @@ digraph G {
 	project_el[ label="Eclipse Project\nfor Expression Language" ];
 	project_es[ label="Eclipse Project for\nEnterprise Security" ];
 	project_interceptors[ label="Eclipse Project\nfor Interceptors" ];
+	project_jacc[label="Eclipse Project\nfor JACC"];
 	project_jaf[ label="Eclipse Project\nfor JAF" ];
+	project_jaspic[label="Eclipse Project\nfor JASPIC"]; 
 	project_jca[ label="Eclipse Project\nfor JCA" ];
 	project_jaxb[ label="Eclipse Project\nfor JAXB" ];
 	project_jaxrs[ label="Eclipse Project\nfor JAX-RS" ];
@@ -75,6 +77,12 @@ digraph G {
 	el[ label="Expression\nLanguage" ];
 	es[ label="Enterprise\nSecurity" ];
 	interceptors[ label="Interceptors" ];
+	jacc[label="JACC"];
+	jaf[ label="JAF" ];
+	jaspic[label="JASPIC"]; 
+	jaxws[ label="JAX-WS" ];
+	jaxb[ label="JAXB" ];
+	jaxrs[ label="JAX-RS" ];
 	jakartaee[ label="Jakarta EE Platform" ];
 	jca[ label="JCA" ];
 	jms[ label="JMS" ];
@@ -83,12 +91,8 @@ digraph G {
 	jsonp[ label="JSON-P" ];
 	jsf[ label="JSF" ];
 	jsp[ label="JSP" ];
-	jta[ label="JTA" ];
 	jstl[ label="JSTL" ];
-	jaf[ label="JAF" ];
-	jaxb[ label="JAXB" ];
-	jaxrs[ label="JAX-RS" ];
-	jaxws[ label="JAX-WS" ];
+	jta[ label="JTA" ];
 	management[ label="Enterprise\nManagement" ];
 	servlet[ label="Servlets" ];
 	websocket[ label="WebSocket" ];
@@ -106,7 +110,9 @@ digraph G {
 	jakartaee -> ejb;
 	jakartaee -> el;
 	jakartaee -> es;
+	jakartaee -> jacc;
 	jakartaee -> jaf;
+	jakartaee -> jaspic;
 	jakartaee -> jaxb;
 	jakartaee -> jaxrs;
 	jakartaee -> jaxws;
@@ -158,10 +164,13 @@ digraph G {
 	project_el -> el;
 	project_es -> es;
 	project_interceptors -> interceptors;
+	project_jacc -> jacc;
 	project_jaf -> jaf;
+	project_jaspic -> jaspic;
 	project_jaxb -> jaxb;
 	project_jaxrs -> jaxrs;
 	project_jaxws -> jaxws;
+	project_jaxws -> saaj;
 	project_jca -> jca;
 	project_jersey -> jaxrs;
 	project_jms -> jms;
@@ -172,7 +181,6 @@ digraph G {
 	project_servlet -> servlet;
 	project_stable -> management;
 	project_stable -> xmlrpc;
-	project_stable -> saaj;
 	project_stable -> wsit;
 	project_stable -> stax;
 	project_tyrus -> websocket;
