@@ -51,6 +51,7 @@ digraph G {
 	project_interceptors[ label="Eclipse Project\nfor Interceptors" ];
 	project_jacc[label="Eclipse Project\nfor JACC"];
 	project_jaf[ label="Eclipse Project\nfor JAF" ];
+	project_javamail[ label="Eclipse Project\nfor JavaMail" ];
 	project_jaspic[label="Eclipse Project\nfor JASPIC"]; 
 	project_jca[ label="Eclipse Project\nfor JCA" ];
 	project_jaxb[ label="Eclipse Project\nfor JAXB" ];
@@ -79,6 +80,7 @@ digraph G {
 	interceptors[ label="Interceptors" ];
 	jacc[label="JACC"];
 	jaf[ label="JAF" ];
+	javamail[ label="JavaMail" ];
 	jaspic[label="JASPIC"]; 
 	jaxws[ label="JAX-WS" ];
 	jaxb[ label="JAXB" ];
@@ -112,6 +114,7 @@ digraph G {
 	jakartaee -> es;
 	jakartaee -> jacc;
 	jakartaee -> jaf;
+	jakartaee -> javamail;
 	jakartaee -> jaspic;
 	jakartaee -> jaxb;
 	jakartaee -> jaxrs;
@@ -137,6 +140,7 @@ digraph G {
 	jstl -> jsp;
 	jsp -> servlet;
 	jsp -> el;
+	javamail -> jaf;
 
 	// Relationships between reference implementations
 	// and the specification that they implement.
@@ -166,6 +170,7 @@ digraph G {
 	project_interceptors -> interceptors;
 	project_jacc -> jacc;
 	project_jaf -> jaf;
+	project_javamail -> javamail;
 	project_jaspic -> jaspic;
 	project_jaxb -> jaxb;
 	project_jaxrs -> jaxrs;
