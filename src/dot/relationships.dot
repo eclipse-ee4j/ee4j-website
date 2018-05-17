@@ -32,10 +32,17 @@ digraph G {
 	project_eclipselink[ label="EclipseLink" ];
 	project_glassfish[ label="Eclipse\nGlassFish" ];
 	project_grizzly[ label="Eclipse Grizzly" ];
+	project_hv[ label="Hibernate Validator" ];
+	project_jaf[ label="Eclipse Project\nfor JAF" ];
+	project_javamail[ label="Eclipse Project\nfor JavaMail" ];
+	project_jbatch[ label="JBatch" ];
 	project_jersey[ label="Eclipse Jersey" ];
+	project_jstl[ label="Eclipse Project\nfor JSTL" ];
 	project_metro[ label="Eclipse Metro" ];
 	project_mojarra[ label="Eclipse Mojarra" ];
+	project_soteria[ label="Eclipse Soteria" ];
 	project_tyrus[ label="Eclipse Tyrus" ];
+	project_weld[ label="Weld" ];
 	project_yasson[ label="Eclipse Yasson" ];
 
 	// "Maintainer" nodes
@@ -50,8 +57,6 @@ digraph G {
 	project_es[ label="Eclipse Project for\nEnterprise Security" ];
 	project_interceptors[ label="Eclipse Project\nfor Interceptors" ];
 	project_jacc[label="Eclipse Project\nfor JACC"];
-	project_jaf[ label="Eclipse Project\nfor JAF" ];
-	project_javamail[ label="Eclipse Project\nfor JavaMail" ];
 	project_jaspic[label="Eclipse Project\nfor JASPIC"]; 
 	project_jca[ label="Eclipse Project\nfor JCA" ];
 	project_jaxb[ label="Eclipse Project\nfor JAXB" ];
@@ -60,7 +65,6 @@ digraph G {
 	project_jms[ label="Eclipse Project\nfor JMS" ];
 	project_jsonp[ label="Eclipse Project\nfor JSON Processing" ];
 	project_jsp[ label="Eclipse Project\nfor JSP" ];
-	project_jstl[ label="Eclipse Project\nfor JSTL" ];
 	project_jta[ label="Eclipse Project\nfor JTA" ];
 	project_servlet[ label="Eclipse Project\nfor Servlet" ];
 	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs" ];
@@ -83,6 +87,7 @@ digraph G {
 	javamail[ label="JavaMail" ];
 	jaspic[label="JASPIC"]; 
 	jaxws[ label="JAX-WS" ];
+	jws[ label="JWS" ];
 	jaxb[ label="JAXB" ];
 	jaxrs[ label="JAX-RS" ];
 	jakartaee[ label="Jakarta EE Platform" ];
@@ -95,13 +100,17 @@ digraph G {
 	jsp[ label="JSP" ];
 	jstl[ label="JSTL" ];
 	jta[ label="JTA" ];
+	deployment[ label="Enterprise\nDeployment" ];
 	management[ label="Enterprise\nManagement" ];
+	jaxr[ label="JAXR" ];
 	servlet[ label="Servlets" ];
 	websocket[ label="WebSocket" ];
-	xmlrpc[ label="XML RPC" ];
+	jaxrpc[ label="JAX-RPC" ];
 	saaj[ label="SAAJ" ];
-	wsit[ label="WSIT" ];
-	stax[ label="StAX" ];
+	cdi[ label="CDI" ];
+	di[ label="Dependency Injection" ];
+	bv[ label="Bean Validation" ];
+	batch[ label="Batch" ];
 
 	edge[ fontsize=10 ];
 
@@ -119,6 +128,7 @@ digraph G {
 	jakartaee -> jaxb;
 	jakartaee -> jaxrs;
 	jakartaee -> jaxws;
+	jakartaee -> jws;
 	jakartaee -> jca;
 	jakartaee -> jms;
 	jakartaee -> jpa;
@@ -131,7 +141,10 @@ digraph G {
 	jakartaee -> management;
 	jakartaee -> servlet;
 	jakartaee -> websocket;
-	jakartaee -> xmlrpc;
+	jakartaee -> jaxrpc;
+	jakartaee -> cdi;
+	jakartaee -> bv;
+	jakartaee -> batch;
 
 	ejb -> interceptors;
 	ejb -> jta;
@@ -141,22 +154,30 @@ digraph G {
 	jsp -> servlet;
 	jsp -> el;
 	javamail -> jaf;
+	jaxws -> jaf;
+	es -> jaspic;
+	cdi -> di;
 
 	// Relationships between reference implementations
 	// and the specification that they implement.
 	edge[ label="implements", style="solid" ];
 	project_glassfish -> ca;
+	project_glassfish -> servlet;
 	project_glassfish -> jsp;
 	project_glassfish -> jca;
 	project_glassfish -> jakartaee;
 	project_glassfish -> ejb;
+	project_glassfish -> deployment;
+	project_glassfish -> management;
 	project_mojarra -> jsf;
 	project_metro -> jaxws;
+	project_metro -> jws;
 	project_metro -> saaj;
-	project_metro -> wsit;
-	project_metro -> stax;
 	project_soteria -> es;
 	project_tyrus -> websocket;
+	project_weld -> cdi;
+	project_hv -> bv;
+	project_jbatch -> batch;
 
 	// Relationships between projects and the specs
 	// that they maintain
@@ -175,6 +196,7 @@ digraph G {
 	project_jaxb -> jaxb;
 	project_jaxrs -> jaxrs;
 	project_jaxws -> jaxws;
+	project_jaxws -> jws;
 	project_jaxws -> saaj;
 	project_jca -> jca;
 	project_jersey -> jaxrs;
@@ -184,10 +206,10 @@ digraph G {
 	project_jstl -> jstl;
 	project_jta -> jta;
 	project_servlet -> servlet;
+	project_stable -> deployment;
 	project_stable -> management;
-	project_stable -> xmlrpc;
-	project_stable -> wsit;
-	project_stable -> stax;
+	project_stable -> jaxr;
+	project_stable -> jaxrpc;
 	project_tyrus -> websocket;
 	project_websocket -> websocket;
 	project_yasson -> jsonb;
@@ -196,11 +218,16 @@ digraph G {
 	// the RI from another project.
 	edge[ label="consumes" ];
 	project_glassfish -> project_eclipselink;
-	project_glassfish -> project_jersey;
 	project_glassfish -> project_grizzly;
+	project_glassfish -> project_hv;
+	project_glassfish -> project_javamail;
+	project_glassfish -> project_jbatch;
+	project_glassfish -> project_jersey;
+	project_glassfish -> project_jstl;
 	project_glassfish -> project_metro;
 	project_glassfish -> project_mojarra;
 	project_glassfish -> project_soteria;
 	project_glassfish -> project_tyrus;
+	project_glassfish -> project_weld;
 	project_glassfish -> project_yasson;
 }
