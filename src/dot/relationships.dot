@@ -30,15 +30,20 @@ digraph G {
 	// projects are prefixed with "project_"
 	node[ shape=box, style="rounded,bold" ]
 	project_eclipselink[ label="EclipseLink" ];
+	project_el[ label="Eclipse Project\nfor Expression Language" ];
 	project_glassfish[ label="Eclipse\nGlassFish" ];
 	project_grizzly[ label="Eclipse Grizzly" ];
 	project_jaf[ label="Eclipse Project\nfor JAF" ];
 	project_javamail[ label="Eclipse Project\nfor JavaMail" ];
+	project_jaxb[ label="Eclipse Project\nfor JAXB" ];
 	project_jersey[ label="Eclipse Jersey" ];
+	project_jms[ label="Eclipse Project\nfor JMS" ];
+	project_jsonp[ label="Eclipse Project\nfor JSON Processing" ];
 	project_jstl[ label="Eclipse Project\nfor JSTL" ];
 	project_metro[ label="Eclipse Metro" ];
 	project_mojarra[ label="Eclipse Mojarra" ];
 	project_soteria[ label="Eclipse Soteria" ];
+	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs" ];
 	project_tyrus[ label="Eclipse Tyrus" ];
 	project_yasson[ label="Eclipse Yasson" ];
 
@@ -58,21 +63,16 @@ digraph G {
 
 	project_ca[ label="Eclipse Project for\nCommon Annotations" ];
 	project_ejb[ label="Eclipse Project\nfor EJB" ];
-	project_el[ label="Eclipse Project\nfor Expression Language" ];
 	project_es[ label="Eclipse Project for\nEnterprise Security" ];
 	project_interceptors[ label="Eclipse Project\nfor Interceptors" ];
 	project_jacc[label="Eclipse Project\nfor JACC"];
 	project_jaspic[label="Eclipse Project\nfor JASPIC"]; 
 	project_jca[ label="Eclipse Project\nfor JCA" ];
-	project_jaxb[ label="Eclipse Project\nfor JAXB" ];
 	project_jaxrs[ label="Eclipse Project\nfor JAX-RS" ];
 	project_jaxws[ label="Eclipse Project\nfor JAX-WS" ];
-	project_jms[ label="Eclipse Project\nfor JMS" ];
-	project_jsonp[ label="Eclipse Project\nfor JSON Processing" ];
 	project_jsp[ label="Eclipse Project\nfor JSP" ];
 	project_jta[ label="Eclipse Project\nfor JTA" ];
 	project_servlet[ label="Eclipse Project\nfor Servlet" ];
-	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs" ];
 	project_websocket[ label="Eclipse Project\nfor WebSocket" ];
 
 	// "Specification" nodes
@@ -95,7 +95,7 @@ digraph G {
 	jws[ label="JWS" ];
 	jaxb[ label="JAXB" ];
 	jaxrs[ label="JAX-RS" ];
-	jakartaee[ label="Jakarta EE Platform" ];
+	// jakartaee[ label="Jakarta EE Platform" ];
 	jca[ label="JCA" ];
 	jms[ label="JMS" ];
 	jpa[ label="JPA" ];
@@ -122,6 +122,9 @@ digraph G {
 	// References between specifications.
 	// e.g. EJB requires Interceptors, JTA, ...
 	edge[ label="requires", style="dashed" ];
+	/*
+	 * Commented out because it makes the picture much more clear.
+	 *
 	jakartaee -> ca;
 	jakartaee -> ejb;
 	jakartaee -> el;
@@ -150,6 +153,7 @@ digraph G {
 	jakartaee -> cdi;
 	jakartaee -> bv;
 	jakartaee -> batch;
+	*/
 
 	ejb -> interceptors;
 	ejb -> jta;
@@ -170,10 +174,14 @@ digraph G {
 	project_glassfish -> servlet;
 	project_glassfish -> jsp;
 	project_glassfish -> jca;
-	project_glassfish -> jakartaee;
+	// project_glassfish -> jakartaee;
 	project_glassfish -> ejb;
 	project_glassfish -> deployment;
 	project_glassfish -> management;
+	project_glassfish -> interceptors;
+	project_glassfish -> jta;
+	project_glassfish -> jaspic;
+	project_glassfish -> jacc;
 	project_mojarra -> jsf;
 	project_metro -> jaxws;
 	project_metro -> jws;
@@ -181,13 +189,15 @@ digraph G {
 	project_soteria -> es;
 	project_tyrus -> websocket;
 	project_weld -> cdi;
+	project_weld -> di;
+	project_weld -> interceptors;
 	project_hv -> bv;
 	project_jbatch -> batch;
 
 	// Relationships between projects and the specs
 	// that they maintain
 	edge[ label="maintains" ]
-	project_platform -> jakartaee;
+	// project_platform -> jakartaee;
 	project_ca -> ca;
 	project_eclipselink -> jpa;
 	project_ejb -> ejb;
@@ -222,15 +232,21 @@ digraph G {
 	// the RI from another project.
 	edge[ label="consumes" ];
 	project_glassfish -> project_eclipselink;
+	project_glassfish -> project_el;
 	project_glassfish -> project_grizzly;
 	project_glassfish -> project_hv;
+	project_glassfish -> project_jaf;
 	project_glassfish -> project_javamail;
+	project_glassfish -> project_jaxb;
 	project_glassfish -> project_jbatch;
 	project_glassfish -> project_jersey;
+	project_glassfish -> project_jms;
+	project_glassfish -> project_jsonp;
 	project_glassfish -> project_jstl;
 	project_glassfish -> project_metro;
 	project_glassfish -> project_mojarra;
 	project_glassfish -> project_soteria;
+	project_glassfish -> project_stable;
 	project_glassfish -> project_tyrus;
 	project_glassfish -> project_weld;
 	project_glassfish -> project_yasson;
