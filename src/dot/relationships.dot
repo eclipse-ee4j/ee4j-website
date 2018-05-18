@@ -215,7 +215,6 @@ digraph G {
 	project_stable -> management;
 	project_stable -> jaxr;
 	project_stable -> jaxrpc;
-	project_tyrus -> websocket;
 	project_websocket -> websocket;
 	project_yasson -> jsonb;
 
