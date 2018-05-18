@@ -32,18 +32,23 @@ digraph G {
 	project_eclipselink[ label="EclipseLink" ];
 	project_glassfish[ label="Eclipse\nGlassFish" ];
 	project_grizzly[ label="Eclipse Grizzly" ];
-	project_hv[ label="Hibernate Validator" ];
 	project_jaf[ label="Eclipse Project\nfor JAF" ];
 	project_javamail[ label="Eclipse Project\nfor JavaMail" ];
-	project_jbatch[ label="JBatch" ];
 	project_jersey[ label="Eclipse Jersey" ];
 	project_jstl[ label="Eclipse Project\nfor JSTL" ];
 	project_metro[ label="Eclipse Metro" ];
 	project_mojarra[ label="Eclipse Mojarra" ];
 	project_soteria[ label="Eclipse Soteria" ];
 	project_tyrus[ label="Eclipse Tyrus" ];
-	project_weld[ label="Weld" ];
 	project_yasson[ label="Eclipse Yasson" ];
+
+	// External "Implementer" nodes
+	// These are open source projects that implement specifications
+	// but are not hosted by the Eclipse Foundation
+	node[ shape=box, style="rounded,filled"]
+	project_hv[ label="Hibernate Validator" ];
+	project_jbatch[ label="JBatch" ];
+	project_weld[ label="Weld" ];
 
 	// "Maintainer" nodes
 	// A project is a maintainer when it is responsible
