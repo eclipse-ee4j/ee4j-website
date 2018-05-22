@@ -29,51 +29,51 @@ digraph G {
 	// specifications go here. All nodes that represent
 	// projects are prefixed with "project_"
 	node[ shape=box, style="rounded,bold" ]
-	project_eclipselink[ label="EclipseLink" ];
-	project_el[ label="Eclipse Project\nfor Expression Language" ];
-	project_glassfish[ label="Eclipse\nGlassFish" ];
-	project_grizzly[ label="Eclipse Grizzly" ];
-	project_jaf[ label="Eclipse Project\nfor JAF" ];
-	project_javamail[ label="Eclipse Project\nfor JavaMail" ];
-	project_jaxb[ label="Eclipse Project\nfor JAXB" ];
-	project_jersey[ label="Eclipse Jersey" ];
-	project_jms[ label="Eclipse Project\nfor JMS" ];
-	project_jsonp[ label="Eclipse Project\nfor JSON Processing" ];
-	project_jstl[ label="Eclipse Project\nfor JSTL" ];
-	project_metro[ label="Eclipse Metro" ];
-	project_mojarra[ label="Eclipse Mojarra" ];
-	project_soteria[ label="Eclipse Soteria" ];
-	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs" ];
-	project_tyrus[ label="Eclipse Tyrus" ];
-	project_yasson[ label="Eclipse Yasson" ];
+	project_eclipselink[ label="EclipseLink", URL="https://projects.eclipse.org/projects/ee4j.eclipselink" ];
+	project_el[ label="Eclipse Project\nfor Expression Language", URL="https://projects.eclipse.org/projects/ee4j.el" ];
+	project_glassfish[ label="Eclipse\nGlassFish", URL="https://projects.eclipse.org/projects/ee4j.glassfish" ];
+	project_grizzly[ label="Eclipse Grizzly", URL="https://projects.eclipse.org/projects/ee4j.grizzly" ];
+	project_jaf[ label="Eclipse Project\nfor JAF", URL="https://projects.eclipse.org/proposals/eclipse-project-jaf" ];
+	project_javamail[ label="Eclipse Project\nfor JavaMail", URL="https://projects.eclipse.org/projects/ee4j.javamail" ];
+	project_jaxb[ label="Eclipse Project\nfor JAXB", URL="https://projects.eclipse.org/proposals/eclipse-project-jaxb" ];
+	project_jersey[ label="Eclipse Jersey", URL="https://projects.eclipse.org/projects/ee4j.jersey" ];
+	project_jms[ label="Eclipse Project\nfor JMS", URL="https://projects.eclipse.org/projects/ee4j.jms" ];
+	project_jsonp[ label="Eclipse Project\nfor JSON Processing", URL="https://projects.eclipse.org/projects/ee4j.jsonp" ];
+	project_jstl[ label="Eclipse Project\nfor JSTL", URL="https://projects.eclipse.org/projects/ee4j.jstl"  ];
+	project_metro[ label="Eclipse Metro", URL="https://projects.eclipse.org/proposals/eclipse-metro" ];
+	project_mojarra[ label="Eclipse Mojarra", URL="https://projects.eclipse.org/projects/ee4j.mojarra" ];
+	project_soteria[ label="Eclipse Soteria", URL="https://projects.eclipse.org/projects/ee4j.soteria" ];
+	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs", URL="https://projects.eclipse.org/projects/ee4j.jakartaee-stable" ];
+	project_tyrus[ label="Eclipse Tyrus", URL="https://projects.eclipse.org/projects/ee4j.tyrus" ];
+	project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
 
 	// External "Implementer" nodes
 	// These are open source projects that implement specifications
 	// but are not hosted by the Eclipse Foundation
 	node[ shape=box, style="rounded,filled"]
-	project_hv[ label="Hibernate Validator" ];
-	project_jbatch[ label="JBatch" ];
-	project_weld[ label="Weld" ];
+	project_hv[ label="Hibernate Validator", URL="http://hibernate.org/validator" ];
+	project_jbatch[ label="JBatch", URL="https://github.com/WASdev/standards.jsr352.jbatch" ];
+	project_weld[ label="Weld", URL="http://weld.cdi-spec.org" ];
 
 	// "Maintainer" nodes
 	// A project is a maintainer when it is responsible
 	// for maintaining a specification and API.
 	node[ shape=box, style="rounded" ]
-	project_platform[ label="Eclipse Project for\nJakarta EE Platform" ];
+	project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
 
-	project_ca[ label="Eclipse Project for\nCommon Annotations" ];
-	project_ejb[ label="Eclipse Project\nfor EJB" ];
-	project_es[ label="Eclipse Project for\nEnterprise Security" ];
-	project_interceptors[ label="Eclipse Project\nfor Interceptors" ];
-	project_jacc[label="Eclipse Project\nfor JACC"];
-	project_jaspic[label="Eclipse Project\nfor JASPIC"]; 
-	project_jca[ label="Eclipse Project\nfor JCA" ];
-	project_jaxrs[ label="Eclipse Project\nfor JAX-RS" ];
-	project_jaxws[ label="Eclipse Project\nfor JAX-WS" ];
-	project_jsp[ label="Eclipse Project\nfor JSP" ];
-	project_jta[ label="Eclipse Project\nfor JTA" ];
-	project_servlet[ label="Eclipse Project\nfor Servlet" ];
-	project_websocket[ label="Eclipse Project\nfor WebSocket" ];
+	project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
+	project_ejb[ label="Eclipse Project\nfor EJB", URL="https://projects.eclipse.org/proposals/eclipse-project-ejb" ];
+	project_es[ label="Eclipse Project for\nEnterprise Security", URL="https://projects.eclipse.org/projects/ee4j.es/" ];
+	project_interceptors[ label="Eclipse Project\nfor Interceptors", URL="https://projects.eclipse.org/proposals/eclipse-project-interceptors" ];
+	project_jacc[label="Eclipse Project\nfor JACC", URL="https://projects.eclipse.org/projects/ee4j.jacc" ];
+	project_jaspic[label="Eclipse Project\nfor JASPIC", URL="https://projects.eclipse.org/projects/ee4j.jaspic" ]; 
+	project_jca[ label="Eclipse Project\nfor JCA", URL="https://projects.eclipse.org/proposals/eclipse-project-jca" ];
+	project_jaxrs[ label="Eclipse Project\nfor JAX-RS", URL="https://projects.eclipse.org/projects/ee4j.jaxrs" ];
+	project_jaxws[ label="Eclipse Project\nfor JAX-WS", URL="https://projects.eclipse.org/proposals/eclipse-project-jax-ws" ];
+	project_jsp[ label="Eclipse Project\nfor JSP", URL="https://projects.eclipse.org/projects/ee4j.jsp" ];
+	project_jta[ label="Eclipse Project\nfor JTA", URL="https://projects.eclipse.org/projects/ee4j.jta" ];
+	project_servlet[ label="Eclipse Project\nfor Servlet", URL="https://projects.eclipse.org/projects/ee4j.servlet" ];
+	project_websocket[ label="Eclipse Project\nfor WebSocket", URL="https://projects.eclipse.org/projects/ee4j.websocket" ];
 
 	// "Specification" nodes
 	// Every specification gets a node. Specifications are
@@ -251,3 +251,4 @@ digraph G {
 	project_glassfish -> project_weld;
 	project_glassfish -> project_yasson;
 }
+
