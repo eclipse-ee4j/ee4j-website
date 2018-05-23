@@ -159,6 +159,8 @@ digraph G {
 	ejb -> jta;
 	ejb -> jms;
 	jsf -> jsp;
+	jsf -> el;
+	jsf -> jstl;
 	jstl -> jsp;
 	jsp -> servlet;
 	jsp -> el;
@@ -166,6 +168,8 @@ digraph G {
 	jaxws -> jaf;
 	es -> jaspic;
 	cdi -> di;
+	cdi -> interceptors;
+	cdi -> el;
 
 	// Relationships between reference implementations
 	// and the specification that they implement.
@@ -182,11 +186,13 @@ digraph G {
 	project_glassfish -> jta;
 	project_glassfish -> jaspic;
 	project_glassfish -> jacc;
+	project_glassfish -> jaxr;
 	project_mojarra -> jsf;
 	project_metro -> jaxws;
 	project_metro -> jws;
 	project_metro -> saaj;
 	project_soteria -> es;
+	project_stable -> jaxrpc;
 	project_tyrus -> websocket;
 	project_weld -> cdi;
 	project_weld -> di;
