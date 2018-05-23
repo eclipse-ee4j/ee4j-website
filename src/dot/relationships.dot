@@ -50,7 +50,7 @@ digraph G {
 	// External "Implementer" nodes
 	// These are open source projects that implement specifications
 	// but are not hosted by the Eclipse Foundation
-	node[ shape=box, style="rounded,filled"]
+	node[ shape=box, style="rounded,filled" ]
 	project_hv[ label="Hibernate Validator", URL="http://hibernate.org/validator" ];
 	project_jbatch[ label="JBatch", URL="https://github.com/WASdev/standards.jsr352.jbatch" ];
 	project_weld[ label="Weld", URL="http://weld.cdi-spec.org" ];
@@ -59,7 +59,10 @@ digraph G {
 	// A project is a maintainer when it is responsible
 	// for maintaining a specification and API.
 	node[ shape=box, style="rounded" ]
-	project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
+	// Leave this out for now; this project references all of the
+	// other projects and so just makes the graph harder to understand
+	// without adding any real value.
+	//project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
 
 	project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
 	project_ejb[ label="Eclipse Project\nfor EJB", URL="https://projects.eclipse.org/proposals/eclipse-project-ejb" ];
@@ -70,6 +73,7 @@ digraph G {
 	project_jca[ label="Eclipse Project\nfor JCA", URL="https://projects.eclipse.org/proposals/eclipse-project-jca" ];
 	project_jaxrs[ label="Eclipse Project\nfor JAX-RS", URL="https://projects.eclipse.org/projects/ee4j.jaxrs" ];
 	project_jaxws[ label="Eclipse Project\nfor JAX-WS", URL="https://projects.eclipse.org/proposals/eclipse-project-jax-ws" ];
+	project_jpa[ label="Eclipse Project\nfor JPA", URL="https://projects.eclipse.org/projects/ee4j.jpa" ]
 	project_jsp[ label="Eclipse Project\nfor JSP", URL="https://projects.eclipse.org/projects/ee4j.jsp" ];
 	project_jta[ label="Eclipse Project\nfor JTA", URL="https://projects.eclipse.org/projects/ee4j.jta" ];
 	project_servlet[ label="Eclipse Project\nfor Servlet", URL="https://projects.eclipse.org/projects/ee4j.servlet" ];
@@ -155,6 +159,7 @@ digraph G {
 	jakartaee -> batch;
 	*/
 
+	/*
 	ejb -> interceptors;
 	ejb -> jta;
 	ejb -> jms;
@@ -166,10 +171,12 @@ digraph G {
 	jaxws -> jaf;
 	es -> jaspic;
 	cdi -> di;
-
+*/
 	// Relationships between reference implementations
 	// and the specification that they implement.
-	edge[ label="implements", style="solid" ];
+	edge[ label="implements", style="solid,bold" ];
+	project_eclipselink -> jpa;
+	project_el -> el
 	project_glassfish -> ca;
 	project_glassfish -> servlet;
 	project_glassfish -> jsp;
@@ -182,25 +189,30 @@ digraph G {
 	project_glassfish -> jta;
 	project_glassfish -> jaspic;
 	project_glassfish -> jacc;
+	project_glassfish -> jaxr;
+	project_hv -> bv;
+	project_jaf -> jaf
+	project_javamail -> javamail;
+	project_jbatch -> batch;
+	project_jsonp -> jsonp
+	project_jstl -> jstl
 	project_mojarra -> jsf;
 	project_metro -> jaxws;
 	project_metro -> jws;
 	project_metro -> saaj;
 	project_soteria -> es;
+	project_stable -> jaxrpc
 	project_tyrus -> websocket;
 	project_weld -> cdi;
 	project_weld -> di;
 	project_weld -> interceptors;
-	project_hv -> bv;
-	project_jbatch -> batch;
-	project_el -> el;
+	project_yasson -> jsonb
 
 	// Relationships between projects and the specs
 	// that they maintain
-	edge[ label="maintains" ]
+	edge[ label="maintains", style="solid" ]
 	// project_platform -> jakartaee;
 	project_ca -> ca;
-	project_eclipselink -> jpa;
 	project_ejb -> ejb;
 	project_el -> el;
 	project_es -> es;
@@ -217,10 +229,12 @@ digraph G {
 	project_jca -> jca;
 	project_jersey -> jaxrs;
 	project_jms -> jms;
+	project_jpa -> jpa;
 	project_jsonp -> jsonp;
 	project_jsp -> jsp;
 	project_jstl -> jstl;
 	project_jta -> jta;
+	project_mojarra -> jsf;
 	project_servlet -> servlet;
 	project_stable -> deployment;
 	project_stable -> management;
