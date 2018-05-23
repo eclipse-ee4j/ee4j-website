@@ -193,6 +193,7 @@ digraph G {
 	project_weld -> interceptors;
 	project_hv -> bv;
 	project_jbatch -> batch;
+	project_el -> el;
 
 	// Relationships between projects and the specs
 	// that they maintain
