@@ -159,7 +159,6 @@ digraph G {
 	ejb -> jta;
 	ejb -> jms;
 	jsf -> jsp;
-	jsf -> bv;
 	jsf -> el;
 	jsf -> jstl;
 	jstl -> jsp;
