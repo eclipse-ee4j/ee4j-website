@@ -1,0 +1,146 @@
+/********************************************************************************
+ * Copyright (c) 2018 Contributors to the Eclipse Foundation
+ * 
+ * See the NOTICE file(s) distributed with this work for additional
+ * information regarding copyright ownership.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Distribution License v. 1.0 which is available at
+ * http://www.eclipse.org/org/documents/edl-v10.php.
+ * 
+ * SPDX-License-Identifier: BSD-3-Clause
+ ********************************************************************************/
+
+// This file defines a graph of the relationship between the Jakarta EE specs.
+//
+// Render using Graphviz.
+// e.g. 
+// > dot specs.dot -Tsvg > specs.svg
+//
+
+digraph G {
+	rankdir=LR;
+	rank=same;
+
+	// "Specification" nodes
+	node[ shape=box, style="rounded" ];
+	jakartaee[ label="Jakarta EE Platform" ]	
+	ca[ label="Common Annotations" ];
+	ejb[ label="EJB" ];
+	el[ label="Expression Language" ];
+	es[ label="Enterprise Security" ];
+	interceptors[ label="Interceptors" ];
+	jacc[label="JACC"];
+	jaf[ label="JAF" ];
+	javamail[ label="JavaMail" ];
+	jaspic[label="JASPIC"]; 
+	jaxws[ label="JAX-WS" ];
+	jws[ label="JWS" ];
+	jaxb[ label="JAXB" ];
+	jaxrs[ label="JAX-RS" ];
+	jca[ label="JCA" ];
+	jms[ label="JMS" ];
+	jpa[ label="JPA" ];
+	jsonb[ label="JSON-B" ];
+	jsonp[ label="JSON-P" ];
+	jsf[ label="JSF" ];
+	jsp[ label="JSP" ];
+	jstl[ label="JSTL" ];
+	jta[ label="JTA" ];
+	deployment[ label="Enterprise Deployment" ];
+	management[ label="Enterprise Management" ];
+	jaxr[ label="JAXR" ];
+	servlet[ label="Servlets" ];
+	websocket[ label="WebSocket" ];
+	jaxrpc[ label="JAX-RPC" ];
+	saaj[ label="SAAJ" ];
+	cdi[ label="CDI" ];
+	di[ label="Dependency Injection" ];
+	bv[ label="Bean Validation" ];
+	batch[ label="Batch" ];
+
+	edge[ fontsize=10 ];
+
+	// References between specifications.
+	// e.g. EJB requires Interceptors, JTA, ...
+	edge[ label="requires", style="solid" ];
+	jakartaee -> ca;
+	jakartaee -> ejb;
+	jakartaee -> el;
+	jakartaee -> es;
+	jakartaee -> jacc;
+	jakartaee -> jaf;
+	jakartaee -> javamail;
+	jakartaee -> jaspic;
+	jakartaee -> jaxb;
+	jakartaee -> jaxrs;
+	jakartaee -> jaxws;
+	jakartaee -> jws;
+	jakartaee -> jca;
+	jakartaee -> jms;
+	jakartaee -> jpa;
+	jakartaee -> jsonb;
+	jakartaee -> jsonp;
+	jakartaee -> jsf;
+	jakartaee -> jsp;
+	jakartaee -> jstl;
+	jakartaee -> jta;
+	jakartaee -> deployment;
+	jakartaee -> management;
+	jakartaee -> saaj;
+	jakartaee -> jaxr;
+	jakartaee -> servlet;
+	jakartaee -> websocket;
+	jakartaee -> jaxrpc;
+	jakartaee -> cdi;
+	jakartaee -> bv;
+	jakartaee -> batch;
+	ejb -> interceptors;
+	ejb -> jta;
+	ejb -> jms;
+	jsf -> jsp;
+	jsf -> el;
+	jsf -> jstl;
+	jstl -> jsp;
+	jsp -> servlet;
+	jsp -> el;
+	javamail -> jaf;
+	jaxws -> jaf;
+	es -> jaspic;
+	es -> cdi;
+	es -> el;
+	cdi -> di;
+	cdi -> interceptors;
+	cdi -> el;
+	cdi -> ca;
+	jaxrs -> ca;
+	jaxrs -> jaxb;
+	jaxws -> ca;
+	jaxws -> saaj;
+	jaxws -> jaxb;
+	jaxb -> jaf;
+	saaj -> jaf;
+
+	// Integrations between specifications.
+	edge[ label="integrates with", style="dashed" ];
+	cdi -> ejb[ dir="both" ];
+	cdi -> el; // TODO: is EL really REQUIRED on Jakarta EE Platform Containers? CDI-EL integration is mandatory for JSP and JSF
+	ejb -> jaxrs [ dir="both" ]; // TODO: both specs define integration semantics
+	ejb -> jaxrpc [ dir="both" ]; // TODO: this is pruned so can't be considered required
+	jaxrs -> servlet;
+	jaxrs -> cdi;
+	jaxrs -> bv;
+	jaxrs -> jsonp;
+	jaxrs -> jsonb;
+	jaxws -> ejb; // TODO: only via JSR109?
+	jaxws -> servlet;
+	jca -> ejb[ dir="both" ]; // TODO: who really defines the relationship?
+	jca -> cdi; // TODO: 21.5 says something about dependency injection. Is JCA really integrated with CDI?
+	jpa -> cdi;
+	bv -> cdi;
+	jsonb -> cdi;
+	jta -> cdi;
+	servlet -> jaspic;
+	websocket -> servlet; // TODO: is this integration REQUIRED on Jakarta EE Platform containers?
+}
+
