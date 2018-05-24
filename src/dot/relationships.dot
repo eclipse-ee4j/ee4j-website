@@ -24,60 +24,61 @@ digraph G {
 	rankdir=LR;
 	rank=same;
 
-	// "Implementer" nodes.
-	// Projects that provide implementations of the
+	// Eclipse project nodes
+	// Projects that provide definitions or implementations of the
 	// specifications go here. All nodes that represent
 	// projects are prefixed with "project_"
-	node[ shape=box, style="rounded,bold" ]
-	project_eclipselink[ label="EclipseLink", URL="https://projects.eclipse.org/projects/ee4j.eclipselink" ];
-	project_el[ label="Eclipse Project\nfor Expression Language", URL="https://projects.eclipse.org/projects/ee4j.el" ];
+	
+	node[ shape=box, style="rounded, bold" ]
 	project_glassfish[ label="Eclipse\nGlassFish", URL="https://projects.eclipse.org/projects/ee4j.glassfish" ];
-	project_grizzly[ label="Eclipse Grizzly", URL="https://projects.eclipse.org/projects/ee4j.grizzly" ];
-	project_jaf[ label="Eclipse Project\nfor JAF", URL="https://projects.eclipse.org/proposals/eclipse-project-jaf" ];
-	project_javamail[ label="Eclipse Project\nfor JavaMail", URL="https://projects.eclipse.org/projects/ee4j.javamail" ];
-	project_jaxb[ label="Eclipse Project\nfor JAXB", URL="https://projects.eclipse.org/proposals/eclipse-project-jaxb" ];
-	project_jersey[ label="Eclipse Jersey", URL="https://projects.eclipse.org/projects/ee4j.jersey" ];
-	project_jms[ label="Eclipse Project\nfor JMS", URL="https://projects.eclipse.org/projects/ee4j.jms" ];
-	project_jsonp[ label="Eclipse Project\nfor JSON Processing", URL="https://projects.eclipse.org/projects/ee4j.jsonp" ];
-	project_jstl[ label="Eclipse Project\nfor JSTL", URL="https://projects.eclipse.org/projects/ee4j.jstl"  ];
-	project_metro[ label="Eclipse Metro", URL="https://projects.eclipse.org/proposals/eclipse-metro" ];
-	project_mojarra[ label="Eclipse Mojarra", URL="https://projects.eclipse.org/projects/ee4j.mojarra" ];
-	project_soteria[ label="Eclipse Soteria", URL="https://projects.eclipse.org/projects/ee4j.soteria" ];
-	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs", URL="https://projects.eclipse.org/projects/ee4j.jakartaee-stable" ];
-	project_tyrus[ label="Eclipse Tyrus", URL="https://projects.eclipse.org/projects/ee4j.tyrus" ];
-	project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
+	{
+		rank = same;
 
-	// External "Implementer" nodes
-	// These are open source projects that implement specifications
-	// but are not hosted by the Eclipse Foundation
-	node[ shape=box, style="rounded,filled" ]
-	project_hv[ label="Hibernate Validator", URL="http://hibernate.org/validator" ];
-	project_jbatch[ label="JBatch", URL="https://github.com/WASdev/standards.jsr352.jbatch" ];
-	project_weld[ label="Weld", URL="http://weld.cdi-spec.org" ];
-
-	// "Maintainer" nodes
-	// A project is a maintainer when it is responsible
-	// for maintaining a specification and API.
-	node[ shape=box, style="rounded" ]
-	// Leave this out for now; this project references all of the
-	// other projects and so just makes the graph harder to understand
-	// without adding any real value.
-	//project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
-
-	project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
-	project_ejb[ label="Eclipse Project\nfor EJB", URL="https://projects.eclipse.org/proposals/eclipse-project-ejb" ];
-	project_es[ label="Eclipse Project for\nEnterprise Security", URL="https://projects.eclipse.org/projects/ee4j.es/" ];
-	project_interceptors[ label="Eclipse Project\nfor Interceptors", URL="https://projects.eclipse.org/proposals/eclipse-project-interceptors" ];
-	project_jacc[label="Eclipse Project\nfor JACC", URL="https://projects.eclipse.org/projects/ee4j.jacc" ];
-	project_jaspic[label="Eclipse Project\nfor JASPIC", URL="https://projects.eclipse.org/projects/ee4j.jaspic" ]; 
-	project_jca[ label="Eclipse Project\nfor JCA", URL="https://projects.eclipse.org/proposals/eclipse-project-jca" ];
-	project_jaxrs[ label="Eclipse Project\nfor JAX-RS", URL="https://projects.eclipse.org/projects/ee4j.jaxrs" ];
-	project_jaxws[ label="Eclipse Project\nfor JAX-WS", URL="https://projects.eclipse.org/proposals/eclipse-project-jax-ws" ];
-	project_jpa[ label="Eclipse Project\nfor JPA", URL="https://projects.eclipse.org/projects/ee4j.jpa" ]
-	project_jsp[ label="Eclipse Project\nfor JSP", URL="https://projects.eclipse.org/projects/ee4j.jsp" ];
-	project_jta[ label="Eclipse Project\nfor JTA", URL="https://projects.eclipse.org/projects/ee4j.jta" ];
-	project_servlet[ label="Eclipse Project\nfor Servlet", URL="https://projects.eclipse.org/projects/ee4j.servlet" ];
-	project_websocket[ label="Eclipse Project\nfor WebSocket", URL="https://projects.eclipse.org/projects/ee4j.websocket" ];
+		node[ shape=box, style="rounded" ]
+		// Leave out platform for now; this project references all of the
+		// other projects and so just makes the graph harder to understand
+		// without adding any real value.
+		//project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
+		project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
+		project_eclipselink[ label="EclipseLink", URL="https://projects.eclipse.org/projects/ee4j.eclipselink" ];
+		project_ejb[ label="Eclipse Project\nfor EJB", URL="https://projects.eclipse.org/proposals/eclipse-project-ejb" ];
+		project_el[ label="Eclipse Project\nfor Expression Language", URL="https://projects.eclipse.org/projects/ee4j.el" ];
+		project_es[ label="Eclipse Project for\nEnterprise Security", URL="https://projects.eclipse.org/projects/ee4j.es/" ];
+		project_grizzly[ label="Eclipse Grizzly", URL="https://projects.eclipse.org/projects/ee4j.grizzly" ];
+		project_interceptors[ label="Eclipse Project\nfor Interceptors", URL="https://projects.eclipse.org/proposals/eclipse-project-interceptors" ];
+		project_jacc[label="Eclipse Project\nfor JACC", URL="https://projects.eclipse.org/projects/ee4j.jacc" ];
+		project_jaf[ label="Eclipse Project\nfor JAF", URL="https://projects.eclipse.org/proposals/eclipse-project-jaf" ];
+		project_javamail[ label="Eclipse Project\nfor JavaMail", URL="https://projects.eclipse.org/projects/ee4j.javamail" ];
+		project_jaspic[label="Eclipse Project\nfor JASPIC", URL="https://projects.eclipse.org/projects/ee4j.jaspic" ]; 
+		project_jaxb[ label="Eclipse Project\nfor JAXB", URL="https://projects.eclipse.org/proposals/eclipse-project-jaxb" ];
+		project_jaxrs[ label="Eclipse Project\nfor JAX-RS", URL="https://projects.eclipse.org/projects/ee4j.jaxrs" ];
+		project_jaxws[ label="Eclipse Project\nfor JAX-WS", URL="https://projects.eclipse.org/proposals/eclipse-project-jax-ws" ];
+		project_jca[ label="Eclipse Project\nfor JCA", URL="https://projects.eclipse.org/proposals/eclipse-project-jca" ];
+		project_jersey[ label="Eclipse Jersey", URL="https://projects.eclipse.org/projects/ee4j.jersey" ];
+		project_jms[ label="Eclipse Project\nfor JMS", URL="https://projects.eclipse.org/projects/ee4j.jms" ];
+		project_jpa[ label="Eclipse Project\nfor JPA", URL="https://projects.eclipse.org/projects/ee4j.jpa" ]
+		project_jsonp[ label="Eclipse Project\nfor JSON Processing", URL="https://projects.eclipse.org/projects/ee4j.jsonp" ];
+		project_jsp[ label="Eclipse Project\nfor JSP", URL="https://projects.eclipse.org/projects/ee4j.jsp" ];
+		project_jstl[ label="Eclipse Project\nfor JSTL", URL="https://projects.eclipse.org/projects/ee4j.jstl"  ];
+		project_jta[ label="Eclipse Project\nfor JTA", URL="https://projects.eclipse.org/projects/ee4j.jta" ];
+		project_metro[ label="Eclipse Metro", URL="https://projects.eclipse.org/proposals/eclipse-metro" ];
+		project_mojarra[ label="Eclipse Mojarra", URL="https://projects.eclipse.org/projects/ee4j.mojarra" ];
+		project_soteria[ label="Eclipse Soteria", URL="https://projects.eclipse.org/projects/ee4j.soteria" ];
+		project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs", URL="https://projects.eclipse.org/projects/ee4j.jakartaee-stable" ];
+		project_servlet[ label="Eclipse Project\nfor Servlet", URL="https://projects.eclipse.org/projects/ee4j.servlet" ];
+		project_tyrus[ label="Eclipse Tyrus", URL="https://projects.eclipse.org/projects/ee4j.tyrus" ];
+		project_websocket[ label="Eclipse Project\nfor WebSocket", URL="https://projects.eclipse.org/projects/ee4j.websocket" ];
+		project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
+	
+		// External project nodes
+		// These are open source projects that define or implement specifications
+		// but are not hosted by the Eclipse Foundation
+		node[ shape=box, style="rounded,filled" ]
+		project_cdi[ label="Contexts & Dependency\nInjection for Java", URL="http://www.cdi-spec.org"];
+		project_hv[ label="Hibernate Validator", URL="http://hibernate.org/validator" ];
+		project_jbatch[ label="JBatch", URL="https://github.com/WASdev/standards.jsr352.jbatch" ];
+		project_weld[ label="Weld", URL="http://weld.cdi-spec.org" ];
+	}
 
 	// "Specification" nodes
 	// Every specification gets a node. Specifications are
@@ -85,42 +86,46 @@ digraph G {
 	// one-to-one relationship between projects and specifications
 	// (e.g. "Eclipse Project for JPA" maintains the JPA specification),
 	// But there are other relationships.
-	node[ shape=box, style=dotted ];
-	ca[ label="Common\nAnnotations" ];
-	ejb[ label="EJB" ];
-	el[ label="Expression\nLanguage" ];
-	es[ label="Enterprise\nSecurity" ];
-	interceptors[ label="Interceptors" ];
-	jacc[label="JACC"];
-	jaf[ label="JAF" ];
-	javamail[ label="JavaMail" ];
-	jaspic[label="JASPIC"]; 
-	jaxws[ label="JAX-WS" ];
-	jws[ label="JWS" ];
-	jaxb[ label="JAXB" ];
-	jaxrs[ label="JAX-RS" ];
-	// jakartaee[ label="Jakarta EE Platform" ];
-	jca[ label="JCA" ];
-	jms[ label="JMS" ];
-	jpa[ label="JPA" ];
-	jsonb[ label="JSON-B" ];
-	jsonp[ label="JSON-P" ];
-	jsf[ label="JSF" ];
-	jsp[ label="JSP" ];
-	jstl[ label="JSTL" ];
-	jta[ label="JTA" ];
-	deployment[ label="Enterprise\nDeployment" ];
-	management[ label="Enterprise\nManagement" ];
-	jaxr[ label="JAXR" ];
-	servlet[ label="Servlets" ];
-	websocket[ label="WebSocket" ];
-	jaxrpc[ label="JAX-RPC" ];
-	saaj[ label="SAAJ" ];
-	cdi[ label="CDI" ];
-	di[ label="Dependency Injection" ];
-	bv[ label="Bean Validation" ];
-	batch[ label="Batch" ];
-
+	{
+		rank=same;
+		
+		node[ shape=box, style=dotted ];
+		ca[ label="Common\nAnnotations" ];
+		ejb[ label="EJB" ];
+		el[ label="Expression\nLanguage" ];
+		es[ label="Enterprise\nSecurity" ];
+		interceptors[ label="Interceptors" ];
+		jacc[label="JACC"];
+		jaf[ label="JAF" ];
+		javamail[ label="JavaMail" ];
+		jaspic[label="JASPIC"]; 
+		jaxws[ label="JAX-WS" ];
+		jws[ label="JWS" ];
+		jaxb[ label="JAXB" ];
+		jaxrs[ label="JAX-RS" ];
+		// jakartaee[ label="Jakarta EE Platform" ];
+		jca[ label="JCA" ];
+		jms[ label="JMS" ];
+		jpa[ label="JPA" ];
+		jsonb[ label="JSON-B" ];
+		jsonp[ label="JSON-P" ];
+		jsf[ label="JSF" ];
+		jsp[ label="JSP" ];
+		jstl[ label="JSTL" ];
+		jta[ label="JTA" ];
+		deployment[ label="Enterprise\nDeployment" ];
+		management[ label="Enterprise\nManagement" ];
+		jaxr[ label="JAXR" ];
+		servlet[ label="Servlets" ];
+		websocket[ label="WebSocket" ];
+		jaxrpc[ label="JAX-RPC" ];
+		saaj[ label="SAAJ" ];
+		cdi[ label="CDI" ];
+		di[ label="Dependency Injection" ];
+		bv[ label="Bean Validation" ];
+		batch[ label="Batch" ];
+	}
+	
 	edge[ fontsize=10 ];
 
 	// References between specifications.
@@ -185,7 +190,6 @@ digraph G {
 	project_glassfish -> ejb;
 	project_glassfish -> deployment;
 	project_glassfish -> management;
-	project_glassfish -> interceptors;
 	project_glassfish -> jta;
 	project_glassfish -> jaspic;
 	project_glassfish -> jacc;
@@ -195,6 +199,7 @@ digraph G {
 	project_jaxb -> jaxb
 	project_javamail -> javamail;
 	project_jbatch -> batch;
+	project_jersey -> jaxrs;
 	project_jms -> jms
 	project_jsonp -> jsonp
 	project_jstl -> jstl
@@ -232,7 +237,6 @@ digraph G {
 	project_jaxws -> saaj;
 	project_jbatch -> batch
 	project_jca -> jca;
-	project_jersey -> jaxrs;
 	project_jms -> jms;
 	project_jpa -> jpa;
 	project_jsonp -> jsonp;
@@ -271,4 +275,3 @@ digraph G {
 	project_glassfish -> project_weld;
 	project_glassfish -> project_yasson;
 }
-
