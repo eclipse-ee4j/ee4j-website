@@ -132,6 +132,7 @@ digraph G {
 	jaxrs -> bv;
 	jaxrs -> jsonp;
 	jaxrs -> jsonb;
+	jaxrs -> cu;
 	jaxws -> ejb; // TODO: only via JSR109?
 	jaxws -> servlet;
 	jca -> ejb[ dir="both" ]; // TODO: who really defines the relationship?
