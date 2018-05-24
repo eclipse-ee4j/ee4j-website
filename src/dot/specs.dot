@@ -58,6 +58,7 @@ digraph G {
 	di[ label="Dependency Injection" ];
 	bv[ label="Bean Validation" ];
 	batch[ label="Batch" ];
+	cu[ label="Concurrency Utilities" ];
 
 	edge[ fontsize=10 ];
 
