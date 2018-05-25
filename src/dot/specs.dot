@@ -96,6 +96,7 @@ digraph G {
 	cdi -> el; // TODO: is EL really REQUIRED on Jakarta EE Platform Containers? CDI-EL integration is mandatory for JSP and JSF
 	ejb -> jaxrs [ dir="both" ]; // TODO: both specs define integration semantics
 	ejb -> jaxrpc [ dir="both" ]; // TODO: this is pruned so can't be considered required
+	ejb -> jacc;
 	jaxrs -> servlet;
 	jaxrs -> cdi;
 	jaxrs -> bv;
@@ -104,6 +105,9 @@ digraph G {
 	jaxrs -> cu;
 	jaxws -> ejb; // TODO: only via JSR109?
 	jaxws -> servlet;
+	jaxws -> jaspic;
+	jaxrpc -> jaspic;
+	jaxws -> jws;
 	jca -> ejb[ dir="both" ]; // TODO: who really defines the relationship?
 	jca -> cdi; // TODO: 21.5 says something about dependency injection. Is JCA really integrated with CDI?
 	jpa -> cdi;
@@ -111,6 +115,10 @@ digraph G {
 	jsonb -> cdi;
 	jta -> cdi;
 	servlet -> jaspic;
+	servlet -> jacc;
 	websocket -> servlet; // TODO: is this integration REQUIRED on Jakarta EE Platform containers?
+	jms -> jca;
+	javamail -> jca;
+	jaxr -> jca;
 }
 
