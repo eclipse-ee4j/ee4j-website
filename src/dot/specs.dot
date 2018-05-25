@@ -77,6 +77,7 @@ digraph G {
 	jsp -> el;
 	javamail -> jaf;
 	jaxws -> jaf;
+	jaxws -> jws;
 	es -> jaspic;
 	es -> cdi;
 	es -> el;
@@ -111,7 +112,6 @@ digraph G {
 	jaxrpc -> jaspic;
 	jaxrpc -> servlet;
 	jaxrpc -> ejb;
-	jaxws -> jws;
 	jca -> ejb[ dir="both" ]; // TODO: who really defines the relationship?
 	jca -> cdi; // TODO: 21.5 says something about dependency injection. Is JCA really integrated with CDI?
 	jpa -> cdi;

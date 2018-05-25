@@ -41,7 +41,7 @@
 <text text-anchor="middle" x="997" y="-189.3" font-family="Times,serif" font-size="14.00" fill="#000000">JACC</text>
 </g>
 <!-- ejb&#45;&gt;jacc -->
-<g id="edge32" class="edge">
+<g id="edge33" class="edge">
 <title>ejb&#45;&gt;jacc</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M330.0518,-659.7738C334.2231,-590.3521 350.5248,-345.1105 374,-320 385.016,-308.2166 928.3422,-212.8775 944,-209 948.9462,-207.7751 954.1168,-206.3714 959.2067,-204.9154"/>
 <polygon fill="#000000" stroke="#000000" points="960.2121,-208.268 968.8151,-202.0843 958.2336,-201.5534 960.2121,-208.268"/>
@@ -54,7 +54,7 @@
 <text text-anchor="middle" x="528.5" y="-649.3" font-family="Times,serif" font-size="14.00" fill="#000000">JAX&#45;RS</text>
 </g>
 <!-- ejb&#45;&gt;jaxrs -->
-<g id="edge30" class="edge">
+<g id="edge31" class="edge">
 <title>ejb&#45;&gt;jaxrs</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.0023,-665.7538C368.6915,-665.0904 371.3769,-664.4946 374,-664 410.7992,-657.062 453.2807,-654.4172 484.3732,-653.4478"/>
 <polygon fill="#000000" stroke="#000000" points="365.0756,-662.3786 356.3518,-668.3908 366.9208,-669.1311 365.0756,-662.3786"/>
@@ -94,7 +94,7 @@
 <text text-anchor="middle" x="528.5" y="-343.3" font-family="Times,serif" font-size="14.00" fill="#000000">JAX&#45;RPC</text>
 </g>
 <!-- ejb&#45;&gt;jaxrpc -->
-<g id="edge31" class="edge">
+<g id="edge32" class="edge">
 <title>ejb&#45;&gt;jaxrpc</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M331.3888,-649.8227C337.6502,-578.9634 355.3476,-397.592 374,-378 381.3129,-370.3187 436.4549,-360.5687 478.7992,-354.0745"/>
 <polygon fill="#000000" stroke="#000000" points="327.8986,-649.5584 330.5163,-659.8248 334.8721,-650.1668 327.8986,-649.5584"/>
@@ -114,7 +114,7 @@
 <text text-anchor="middle" x="765" y="-350.3" font-family="Times,serif" font-size="14.00" fill="#000000">Enterprise Security</text>
 </g>
 <!-- es&#45;&gt;el -->
-<g id="edge16" class="edge">
+<g id="edge17" class="edge">
 <title>es&#45;&gt;el</title>
 <path fill="none" stroke="#000000" d="M844.0592,-356.0424C924.0675,-358.1094 1047.8579,-361.3074 1133.4636,-363.519"/>
 <polygon fill="#000000" stroke="#000000" points="1133.6214,-367.0241 1143.7085,-363.7836 1133.8023,-360.0265 1133.6214,-367.0241"/>
@@ -127,7 +127,7 @@
 <text text-anchor="middle" x="997" y="-280.3" font-family="Times,serif" font-size="14.00" fill="#000000">JASPIC</text>
 </g>
 <!-- es&#45;&gt;jaspic -->
-<g id="edge14" class="edge">
+<g id="edge15" class="edge">
 <title>es&#45;&gt;jaspic</title>
 <path fill="none" stroke="#000000" d="M844.3738,-344.5372C876.1286,-339.096 912.558,-330.72 944,-318 950.8975,-315.2096 957.8737,-311.4996 964.3993,-307.5563"/>
 <polygon fill="#000000" stroke="#000000" points="966.414,-310.4227 972.9686,-302.0988 962.6538,-304.5184 966.414,-310.4227"/>
@@ -140,7 +140,7 @@
 <text text-anchor="middle" x="997" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">CDI</text>
 </g>
 <!-- es&#45;&gt;cdi -->
-<g id="edge15" class="edge">
+<g id="edge16" class="edge">
 <title>es&#45;&gt;cdi</title>
 <path fill="none" stroke="#000000" d="M843.7872,-372.054C888.094,-382.8211 936.0998,-395.7642 944,-403 976.8033,-433.0445 989.3776,-485.2445 994.1462,-517.5792"/>
 <polygon fill="#000000" stroke="#000000" points="990.7062,-518.2652 995.482,-527.7226 997.6463,-517.3512 990.7062,-518.2652"/>
@@ -185,14 +185,14 @@
 <text text-anchor="middle" x="95.5" y="-964.3" font-family="Times,serif" font-size="14.00" fill="#000000">JAX&#45;WS</text>
 </g>
 <!-- jaxws&#45;&gt;ca -->
-<g id="edge23" class="edge">
+<g id="edge24" class="edge">
 <title>jaxws&#45;&gt;ca</title>
 <path fill="none" stroke="#000000" d="M131.1039,-969.2093C151.437,-971.8183 175.8269,-978.5234 191,-995 219.2238,-1025.6483 180.7849,-1056.3437 209,-1087 246.5393,-1127.7872 273.5672,-1121 329,-1121 329,-1121 329,-1121 997,-1121 1111.5134,-1121 1189.4389,-978.2345 1217.7117,-916.6895"/>
 <polygon fill="#000000" stroke="#000000" points="1221.0671,-917.761 1221.9696,-907.2047 1214.6811,-914.8941 1221.0671,-917.761"/>
 <text text-anchor="middle" x="623.5" y="-1124" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- jaxws&#45;&gt;ejb -->
-<g id="edge39" class="edge">
+<g id="edge40" class="edge">
 <title>jaxws&#45;&gt;ejb</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M110.1065,-949.8592C150.0743,-900.2204 261.3544,-762.0138 308.0018,-704.0791"/>
 <polygon fill="#000000" stroke="#000000" points="310.8537,-706.118 314.399,-696.1339 305.4014,-701.7279 310.8537,-706.118"/>
@@ -206,7 +206,7 @@
 <text text-anchor="middle" x="528.5" y="-984" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- jaxws&#45;&gt;jaspic -->
-<g id="edge41" class="edge">
+<g id="edge42" class="edge">
 <title>jaxws&#45;&gt;jaspic</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M97.3954,-949.813C109.4159,-839.1513 179.3768,-261 329,-261 329,-261 329,-261 765,-261 830.0987,-261 904.9733,-270.0785 951.6445,-276.8281"/>
 <polygon fill="#000000" stroke="#000000" points="951.33,-280.3194 961.7334,-278.3146 952.3504,-273.3942 951.33,-280.3194"/>
@@ -219,11 +219,11 @@
 <text text-anchor="middle" x="329" y="-1071.3" font-family="Times,serif" font-size="14.00" fill="#000000">JWS</text>
 </g>
 <!-- jaxws&#45;&gt;jws -->
-<g id="edge45" class="edge">
+<g id="edge14" class="edge">
 <title>jaxws&#45;&gt;jws</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M131.1153,-970.2599C150.9454,-973.2633 174.8204,-980.0133 191,-995 208.0208,-1010.7659 191.8011,-1028.4285 209,-1044 231.431,-1064.3086 265.4284,-1071.6597 291.5164,-1074.1607"/>
+<path fill="none" stroke="#000000" d="M131.1153,-970.2599C150.9454,-973.2633 174.8204,-980.0133 191,-995 208.0208,-1010.7659 191.8011,-1028.4285 209,-1044 231.431,-1064.3086 265.4284,-1071.6597 291.5164,-1074.1607"/>
 <polygon fill="#000000" stroke="#000000" points="291.5623,-1077.6742 301.7981,-1074.9395 292.0911,-1070.6941 291.5623,-1077.6742"/>
-<text text-anchor="middle" x="246.5" y="-1075" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
+<text text-anchor="middle" x="246.5" y="-1075" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- jaxb -->
 <g id="node12" class="node">
@@ -232,7 +232,7 @@
 <text text-anchor="middle" x="765" y="-898.3" font-family="Times,serif" font-size="14.00" fill="#000000">JAXB</text>
 </g>
 <!-- jaxws&#45;&gt;jaxb -->
-<g id="edge25" class="edge">
+<g id="edge26" class="edge">
 <title>jaxws&#45;&gt;jaxb</title>
 <path fill="none" stroke="#000000" d="M131.0942,-967.0445C220.5891,-964.2631 462.0566,-954.4108 661,-925 683.4318,-921.6838 708.236,-916.2673 727.993,-911.5235"/>
 <polygon fill="#000000" stroke="#000000" points="728.9431,-914.8944 737.8252,-909.1188 727.28,-908.0948 728.9431,-914.8944"/>
@@ -245,7 +245,7 @@
 <text text-anchor="middle" x="765" y="-173.3" font-family="Times,serif" font-size="14.00" fill="#000000">Servlets</text>
 </g>
 <!-- jaxws&#45;&gt;servlet -->
-<g id="edge40" class="edge">
+<g id="edge41" class="edge">
 <title>jaxws&#45;&gt;servlet</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M97.06,-949.8229C106.4119,-842.8018 156.4134,-297.7748 209,-247 281.7918,-176.7161 560.6971,-205.3342 661,-192 679.291,-189.5684 699.3637,-186.7166 716.9548,-184.1563"/>
 <polygon fill="#000000" stroke="#000000" points="717.6051,-187.5985 726.9932,-182.6879 716.5919,-180.6722 717.6051,-187.5985"/>
@@ -258,28 +258,28 @@
 <text text-anchor="middle" x="422.5" y="-1028.3" font-family="Times,serif" font-size="14.00" fill="#000000">SAAJ</text>
 </g>
 <!-- jaxws&#45;&gt;saaj -->
-<g id="edge24" class="edge">
+<g id="edge25" class="edge">
 <title>jaxws&#45;&gt;saaj</title>
 <path fill="none" stroke="#000000" d="M131.0849,-975.9726C149.3389,-980.5817 171.7279,-987.0485 191,-995 199.4599,-998.4905 200.3027,-1002.1521 209,-1005 268.6988,-1024.5484 342.0756,-1030.0655 385.4115,-1031.5499"/>
 <polygon fill="#000000" stroke="#000000" points="385.3971,-1035.0508 395.4938,-1031.8404 385.5987,-1028.0537 385.3971,-1035.0508"/>
 <text text-anchor="middle" x="246.5" y="-1025" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- jaxb&#45;&gt;jaf -->
-<g id="edge26" class="edge">
+<g id="edge27" class="edge">
 <title>jaxb&#45;&gt;jaf</title>
 <path fill="none" stroke="#000000" d="M792.0856,-901.9329C828.3237,-902.8136 893.8321,-907.8533 944,-931 954.5733,-935.8783 964.704,-943.4701 973.2242,-951.0376"/>
 <polygon fill="#000000" stroke="#000000" points="970.8686,-953.6268 980.5626,-957.902 975.6505,-948.5147 970.8686,-953.6268"/>
 <text text-anchor="middle" x="906.5" y="-934" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- jaxrs&#45;&gt;ca -->
-<g id="edge21" class="edge">
+<g id="edge22" class="edge">
 <title>jaxrs&#45;&gt;ca</title>
 <path fill="none" stroke="#000000" d="M558.0371,-671.2104C561.5717,-673.9499 564.9892,-676.9028 568,-680 578.3121,-690.6077 574.4815,-698.7162 586,-708 613.7026,-730.3281 628.3751,-721.8017 661,-736 669.2013,-739.5692 670.5694,-742.0126 679,-745 752.7921,-771.148 775.0547,-763.992 851,-783 959.1764,-810.075 1083.4745,-845.7759 1159.2339,-868.0582"/>
 <polygon fill="#000000" stroke="#000000" points="1158.5573,-871.5075 1169.1388,-870.9763 1160.5356,-864.7929 1158.5573,-871.5075"/>
 <text text-anchor="middle" x="906.5" y="-810" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- jaxrs&#45;&gt;jaxb -->
-<g id="edge22" class="edge">
+<g id="edge23" class="edge">
 <title>jaxrs&#45;&gt;jaxb</title>
 <path fill="none" stroke="#000000" d="M560.7528,-671.0308C563.5719,-673.7098 566.0783,-676.6974 568,-680 592.3355,-721.8231 550.8595,-863.7355 586,-897 605.6779,-915.6275 681.5521,-911.2055 727.968,-906.4871"/>
 <polygon fill="#000000" stroke="#000000" points="728.3846,-909.9626 737.9568,-905.4213 727.6419,-903.0021 728.3846,-909.9626"/>
@@ -292,7 +292,7 @@
 <text text-anchor="middle" x="765" y="-505.3" font-family="Times,serif" font-size="14.00" fill="#000000">JSON&#45;B</text>
 </g>
 <!-- jaxrs&#45;&gt;jsonb -->
-<g id="edge37" class="edge">
+<g id="edge38" class="edge">
 <title>jaxrs&#45;&gt;jsonb</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M534.1887,-634.6607C542.1216,-612.1863 558.6904,-574.5655 586,-554 624.6532,-524.8922 679.9877,-514.4664 718.8749,-510.8107"/>
 <polygon fill="#000000" stroke="#000000" points="719.2043,-514.2955 728.8823,-509.9843 718.6281,-507.3192 719.2043,-514.2955"/>
@@ -305,21 +305,21 @@
 <text text-anchor="middle" x="765" y="-660.3" font-family="Times,serif" font-size="14.00" fill="#000000">JSON&#45;P</text>
 </g>
 <!-- jaxrs&#45;&gt;jsonp -->
-<g id="edge36" class="edge">
+<g id="edge37" class="edge">
 <title>jaxrs&#45;&gt;jsonp</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M562.6366,-654.5877C603.8165,-656.5031 673.2136,-659.7309 719.0644,-661.8635"/>
 <polygon fill="#000000" stroke="#000000" points="719.1741,-665.3723 729.326,-662.3407 719.4994,-658.3798 719.1741,-665.3723"/>
 <text text-anchor="middle" x="623.5" y="-663" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- jaxrs&#45;&gt;servlet -->
-<g id="edge33" class="edge">
+<g id="edge34" class="edge">
 <title>jaxrs&#45;&gt;servlet</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M532.216,-634.75C538.9068,-605.3881 555.2351,-546.9184 586,-507 611.2329,-474.2595 640.364,-487.8162 661,-452 698.2685,-387.3162 650.6234,-354.0486 679,-285 692.1683,-252.9576 717.8808,-222.6705 737.7752,-202.3706"/>
 <polygon fill="#000000" stroke="#000000" points="740.4625,-204.6339 745.0768,-195.0966 735.5222,-199.6748 740.4625,-204.6339"/>
 <text text-anchor="middle" x="623.5" y="-510" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- jaxrs&#45;&gt;cdi -->
-<g id="edge34" class="edge">
+<g id="edge35" class="edge">
 <title>jaxrs&#45;&gt;cdi</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M562.6832,-646.7668C655.4952,-629.7705 907.6771,-583.083 944,-571 949.3698,-569.2137 954.9083,-567.0234 960.2887,-564.6889"/>
 <polygon fill="#000000" stroke="#000000" points="962.0826,-567.7178 969.7321,-560.3874 959.1808,-561.3476 962.0826,-567.7178"/>
@@ -332,7 +332,7 @@
 <text text-anchor="middle" x="765" y="-559.3" font-family="Times,serif" font-size="14.00" fill="#000000">Bean Validation</text>
 </g>
 <!-- jaxrs&#45;&gt;bv -->
-<g id="edge35" class="edge">
+<g id="edge36" class="edge">
 <title>jaxrs&#45;&gt;bv</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M540.4071,-634.9801C550.7275,-620.9052 566.9726,-602.0946 586,-592 617.8818,-575.0858 657.1056,-567.5049 690.7023,-564.29"/>
 <polygon fill="#000000" stroke="#000000" points="691.2634,-567.7552 700.9338,-563.4269 690.6749,-560.7799 691.2634,-567.7552"/>
@@ -345,7 +345,7 @@
 <text text-anchor="middle" x="765" y="-714.3" font-family="Times,serif" font-size="14.00" fill="#000000">Concurrency Utilities</text>
 </g>
 <!-- jaxrs&#45;&gt;cu -->
-<g id="edge38" class="edge">
+<g id="edge39" class="edge">
 <title>jaxrs&#45;&gt;cu</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M562.651,-666.1666C570.2826,-668.9142 578.375,-671.678 586,-674 614.2063,-682.5894 645.2958,-690.6955 673.5396,-697.5536"/>
 <polygon fill="#000000" stroke="#000000" points="672.8604,-700.99 683.4016,-699.9261 674.4977,-694.1841 672.8604,-700.99"/>
@@ -534,42 +534,42 @@
 <text text-anchor="middle" x="528.5" y="-155" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- jaxrpc&#45;&gt;ejb -->
-<g id="edge44" class="edge">
+<g id="edge45" class="edge">
 <title>jaxrpc&#45;&gt;ejb</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M488.9392,-332.1908C454.3736,-322.0749 405.0022,-314.8731 374,-342 350.9395,-362.178 335.618,-571.8888 330.7054,-649.4062"/>
 <polygon fill="#000000" stroke="#000000" points="327.1837,-649.6478 330.0564,-659.8457 334.1702,-650.0822 327.1837,-649.6478"/>
 <text text-anchor="middle" x="422.5" y="-345" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- jaxrpc&#45;&gt;jaspic -->
-<g id="edge42" class="edge">
+<g id="edge43" class="edge">
 <title>jaxrpc&#45;&gt;jaspic</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M568.2305,-353.3671C595.85,-355.8442 632.6472,-355.1245 661,-340 672.7642,-333.7245 667.3882,-322.5531 679,-316 724.5177,-290.3121 875.2531,-285.1021 951.6981,-284.1419"/>
 <polygon fill="#000000" stroke="#000000" points="952.0108,-287.6388 961.9731,-284.0329 951.9365,-280.6392 952.0108,-287.6388"/>
 <text text-anchor="middle" x="765" y="-319" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- jaxrpc&#45;&gt;servlet -->
-<g id="edge43" class="edge">
+<g id="edge44" class="edge">
 <title>jaxrpc&#45;&gt;servlet</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M568.0828,-334.5757C574.0841,-332.7016 580.2048,-330.7956 586,-329 619.3035,-318.6809 632.1247,-325.5402 661,-306 663.6995,-304.1732 714.7307,-240.2414 744.2867,-203.0813"/>
 <polygon fill="#000000" stroke="#000000" points="747.1104,-205.1537 750.5939,-195.1479 741.631,-200.7974 747.1104,-205.1537"/>
 <text text-anchor="middle" x="623.5" y="-332" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- saaj&#45;&gt;jaf -->
-<g id="edge27" class="edge">
+<g id="edge28" class="edge">
 <title>saaj&#45;&gt;jaf</title>
 <path fill="none" stroke="#000000" d="M449.635,-1035.5284C528.3044,-1044.7698 762.429,-1065.2636 944,-1009 951.1892,-1006.7723 958.3777,-1003.3252 965.037,-999.4841"/>
 <polygon fill="#000000" stroke="#000000" points="967.0912,-1002.3285 973.7401,-994.0796 963.3983,-996.3818 967.0912,-1002.3285"/>
 <text text-anchor="middle" x="623.5" y="-1049" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- cdi&#45;&gt;ca -->
-<g id="edge20" class="edge">
+<g id="edge21" class="edge">
 <title>cdi&#45;&gt;ca</title>
 <path fill="none" stroke="#000000" d="M1004.5983,-564.1543C1014.0726,-586.0898 1031.3127,-623.8092 1050,-654 1099.776,-734.4171 1170.8645,-820.7874 1206.8169,-862.9005"/>
 <polygon fill="#000000" stroke="#000000" points="1204.355,-865.4064 1213.5221,-870.7182 1209.6684,-860.8491 1204.355,-865.4064"/>
 <text text-anchor="middle" x="1087.5" y="-763" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- cdi&#45;&gt;ejb -->
-<g id="edge28" class="edge">
+<g id="edge29" class="edge">
 <title>cdi&#45;&gt;ejb</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M994.15,-574.5048C985.9196,-638.7539 955.5515,-792.7181 851,-837 776.8621,-868.4005 566.5328,-843.7044 489,-822 433.8755,-806.5685 414.779,-804.1735 374,-764 357.4904,-747.7355 345.732,-724.1255 338.3847,-705.7567"/>
 <polygon fill="#000000" stroke="#000000" points="997.6589,-574.6373 995.3663,-564.2935 990.708,-573.8093 997.6589,-574.6373"/>
@@ -577,21 +577,21 @@
 <text text-anchor="middle" x="623.5" y="-851" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- cdi&#45;&gt;el -->
-<g id="edge19" class="edge">
+<g id="edge20" class="edge">
 <title>cdi&#45;&gt;el</title>
 <path fill="none" stroke="#000000" d="M1006.4201,-527.7837C1015.7726,-510.9944 1031.3805,-486.1538 1050,-469 1087.5145,-434.4384 1138.6245,-406.5332 1176.7134,-388.5308"/>
 <polygon fill="#000000" stroke="#000000" points="1178.5063,-391.5572 1186.1003,-384.1693 1175.5566,-385.209 1178.5063,-391.5572"/>
 <text text-anchor="middle" x="1087.5" y="-472" font-family="Times,serif" font-size="10.00" fill="#000000">requires</text>
 </g>
 <!-- cdi&#45;&gt;el -->
-<g id="edge29" class="edge">
+<g id="edge30" class="edge">
 <title>cdi&#45;&gt;el</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1024.0899,-535.3637C1051.1599,-523.9973 1093.2132,-504.288 1125,-480 1158.5875,-454.3361 1190.3863,-417.122 1209.8932,-392.2707"/>
 <polygon fill="#000000" stroke="#000000" points="1212.9134,-394.0866 1216.2632,-384.0352 1207.3764,-389.8038 1212.9134,-394.0866"/>
 <text text-anchor="middle" x="1087.5" y="-527" font-family="Times,serif" font-size="10.00" fill="#000000">integrates with</text>
 </g>
 <!-- cdi&#45;&gt;interceptors -->
-<g id="edge18" class="edge">
+<g id="edge19" class="edge">
 <title>cdi&#45;&gt;interceptors</title>
 <path fill="none" stroke="#000000" d="M1021.4421,-564.2922C1063.6764,-595.8998 1150.298,-660.7262 1197.3553,-695.9433"/>
 <polygon fill="#000000" stroke="#000000" points="1195.282,-698.7633 1205.3854,-701.9529 1199.4763,-693.159 1195.282,-698.7633"/>
@@ -604,7 +604,7 @@
 <text text-anchor="middle" x="1229.5" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">Dependency Injection</text>
 </g>
 <!-- cdi&#45;&gt;di -->
-<g id="edge17" class="edge">
+<g id="edge18" class="edge">
 <title>cdi&#45;&gt;di</title>
 <path fill="none" stroke="#000000" d="M1024.1257,-546C1050.8479,-546 1093.2722,-546 1132.6426,-546"/>
 <polygon fill="#000000" stroke="#000000" points="1132.8423,-549.5001 1142.8423,-546 1132.8423,-542.5001 1132.8423,-549.5001"/>
