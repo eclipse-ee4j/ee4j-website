@@ -24,7 +24,6 @@ digraph G {
 
 	// "Specification" nodes
 	node[ shape=box, style="rounded" ];
-	jakartaee[ label="Jakarta EE Platform" ]	
 	ca[ label="Common Annotations" ];
 	ejb[ label="EJB" ];
 	el[ label="Expression Language" ];
@@ -65,37 +64,6 @@ digraph G {
 	// References between specifications.
 	// e.g. EJB requires Interceptors, JTA, ...
 	edge[ label="requires", style="solid" ];
-	jakartaee -> ca;
-	jakartaee -> ejb;
-	jakartaee -> el;
-	jakartaee -> es;
-	jakartaee -> jacc;
-	jakartaee -> jaf;
-	jakartaee -> javamail;
-	jakartaee -> jaspic;
-	jakartaee -> jaxb;
-	jakartaee -> jaxrs;
-	jakartaee -> jaxws;
-	jakartaee -> jws;
-	jakartaee -> jca;
-	jakartaee -> jms;
-	jakartaee -> jpa;
-	jakartaee -> jsonb;
-	jakartaee -> jsonp;
-	jakartaee -> jsf;
-	jakartaee -> jsp;
-	jakartaee -> jstl;
-	jakartaee -> jta;
-	jakartaee -> deployment;
-	jakartaee -> management;
-	jakartaee -> saaj;
-	jakartaee -> jaxr;
-	jakartaee -> servlet;
-	jakartaee -> websocket;
-	jakartaee -> jaxrpc;
-	jakartaee -> cdi;
-	jakartaee -> bv;
-	jakartaee -> batch;
 	ejb -> interceptors;
 	ejb -> jta;
 	ejb -> jms;
