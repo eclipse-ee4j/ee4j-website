@@ -1,0 +1,51 @@
+= EE4J PMC Meeting #14
+
+== General
+
+Date: 2018-05-22
+
+Present:
+
+* Dmitry
+* Kevin
+* Mark
+* Wayne
+* Ivar
+
+== Action Items
+
+Discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Project Proposals
+
+All proposals are done. Currently in different state of creation.
+
+See https://www.eclipse.org/ee4j/status.php for details.
+
+== Jakarta EE Technical Vision
+
+Discussion regarding the approach agreed upon at the last meeting (https://www.eclipse.org/ee4j/minutes/?date=2018-05-08)
+was a little bit too ambitious.
+Dmitry pointed out that it is probably a little more than the Steering Committee actually asked for.
+Decided to create a document similar to the original marketing vision document presented by the Jakarta EE working group at the Jakarta EE launch.
+This document should be created as a strawman proposal and be used for gathering input from the community:
+
+https://docs.google.com/document/d/12vO9Ztcxyd6oxDnKFi73p7JsYaPgifpepggFxzW_uyE/edit?usp=sharing
+
+Next meeting: Incorporate comments from community and finalize vision document.
+
+== PMC Lead
+
+Revisited decision from 2018-02-13, https://www.eclipse.org/ee4j/minutes/?date=2018-02-13#pmc-lead-swap,
+where we decided to keep it as it is for now and continue with Ivar as PMC Lead.
+When someone wants to take over, we will take it from there.
+
+As long as everyone is happy, we will keep status quo.
+The item will be revisited approximately every six months or so to keep track unless another PMC member wants to take over as PMC Lead,
+or Ivar wants to step down.
+
+== Next Meeting
+
+Tuesday Jun 05 at 17:00 CET. +
+Several PMC members will be present at EclipseCon France (June 13-14).
+Those present will meet there informally.
