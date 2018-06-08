@@ -58,6 +58,8 @@ digraph G {
 		project_jms[ label="Eclipse Project\nfor JMS", URL="https://projects.eclipse.org/projects/ee4j.jms" ];
 		project_jpa[ label="Eclipse Project\nfor JPA", URL="https://projects.eclipse.org/projects/ee4j.jpa" ]
 		project_jsonp[ label="Eclipse Project\nfor JSON Processing", URL="https://projects.eclipse.org/projects/ee4j.jsonp" ];
+		project_jsonb[ label="Eclipse Project\nfor JSON Binding", URL="https://projects.eclipse.org/projects/ee4j.jsonb" ];
+		project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
 		project_jsp[ label="Eclipse Project\nfor JSP", URL="https://projects.eclipse.org/projects/ee4j.jsp" ];
 		project_jstl[ label="Eclipse Project\nfor JSTL", URL="https://projects.eclipse.org/projects/ee4j.jstl"  ];
 		project_jta[ label="Eclipse Project\nfor JTA", URL="https://projects.eclipse.org/projects/ee4j.jta" ];
@@ -68,7 +70,6 @@ digraph G {
 		project_servlet[ label="Eclipse Project\nfor Servlet", URL="https://projects.eclipse.org/projects/ee4j.servlet" ];
 		project_tyrus[ label="Eclipse Tyrus", URL="https://projects.eclipse.org/projects/ee4j.tyrus" ];
 		project_websocket[ label="Eclipse Project\nfor WebSocket", URL="https://projects.eclipse.org/projects/ee4j.websocket" ];
-		project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
 	
 		// External project nodes
 		// These are open source projects that define or implement specifications
@@ -240,6 +241,7 @@ digraph G {
 	project_jms -> jms;
 	project_jpa -> jpa;
 	project_jsonp -> jsonp;
+	project_jsonb -> jsonb;
 	project_jsp -> jsp;
 	project_jstl -> jstl;
 	project_jta -> jta;
@@ -250,7 +252,6 @@ digraph G {
 	project_stable -> jaxr;
 	project_stable -> jaxrpc;
 	project_websocket -> websocket;
-	project_yasson -> jsonb;
 
 	// Straight up consumption. One RI project consumes
 	// the RI from another project.
