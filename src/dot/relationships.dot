@@ -40,6 +40,7 @@ digraph G {
 		// without adding any real value.
 		//project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
 		project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
+		project_cu[ label="Eclipse Project for\nConcurrency Utils", URL="https://projects.eclipse.org/projects/ee4j.cu" ];
 		project_eclipselink[ label="EclipseLink", URL="https://projects.eclipse.org/projects/ee4j.eclipselink" ];
 		project_ejb[ label="Eclipse Project\nfor EJB", URL="https://projects.eclipse.org/proposals/eclipse-project-ejb" ];
 		project_el[ label="Eclipse Project\nfor Expression Language", URL="https://projects.eclipse.org/projects/ee4j.el" ];
@@ -91,6 +92,7 @@ digraph G {
 		
 		node[ shape=box, style=dotted ];
 		ca[ label="Common\nAnnotations" ];
+		cu[ label="Concurrency\nUtils" ];
 		ejb[ label="EJB" ];
 		el[ label="Expression\nLanguage" ];
 		es[ label="Enterprise\nSecurity" ];
@@ -100,7 +102,7 @@ digraph G {
 		javamail[ label="JavaMail" ];
 		jaspic[label="JASPIC"]; 
 		jaxws[ label="JAX-WS" ];
-		jws[ label="JWS" ];
+		jws[ label="Java Web Services" ]; // JSR-109
 		jaxb[ label="JAXB" ];
 		jaxrs[ label="JAX-RS" ];
 		// jakartaee[ label="Jakarta EE Platform" ];
@@ -180,6 +182,7 @@ digraph G {
 	// Relationships between reference implementations
 	// and the specification that they implement.
 	edge[ label="implements", style="solid,bold" ];
+	project_cu -> cu;
 	project_eclipselink -> jpa;
 	project_el -> el
 	project_glassfish -> ca;
@@ -220,6 +223,7 @@ digraph G {
 	edge[ label="defines", style="solid" ]
 	// project_platform -> jakartaee;
 	project_ca -> ca;
+	project_cu -> cu;
 	project_cdi -> cdi
 	project_ejb -> ejb;
 	project_el -> el;
@@ -255,6 +259,7 @@ digraph G {
 	// Straight up consumption. One RI project consumes
 	// the RI from another project.
 	edge[ label="consumes" ];
+	project_glassfish -> project_cu;
 	project_glassfish -> project_eclipselink;
 	project_glassfish -> project_el;
 	project_glassfish -> project_grizzly;
