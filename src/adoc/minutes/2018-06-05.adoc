@@ -28,7 +28,7 @@ Wayne brought up that someone from the PMC should join the Security Team mailing
 Went through comments and suggestions in technical vision document.
 The document should be ready for publish on the EE4J website within the end of the week.
 
-https://www.eclipse.org/ee4j/news/?date=2018-06-05 
+https://www.eclipse.org/ee4j/news/?date=2018-06-08
 
 In the discussions, it was brought up that we may be need for a more technical detailed document later.
 We even discussed the need for some sort of Architecture Committee. 
