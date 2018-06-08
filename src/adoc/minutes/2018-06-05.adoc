@@ -1,0 +1,38 @@
+= EE4J PMC Meeting #15
+
+== General
+
+Date: 2018-06-05
+
+Present:
+
+* Dmitry
+* Kevin
+* Mark
+* Wayne
+* Steve
+* Ivar
+
+== Action Items
+
+https://github.com/eclipse-ee4j/ee4j/issues.
+
+Tabled the action items until next meeting. 
+
+== Join the EF Security Team Mailing List
+
+Wayne brought up that someone from the PMC should join the Security Team mailing list to monitor if something comes up that affects EE4J. Wayne will post details on the mailing list.
+
+== Jakarta EE Technical Vision
+
+Went through comments and suggestions in technical vision document.
+The document should be ready for publish on the EE4J website within the end of the week.
+
+https://www.eclipse.org/ee4j/news/?date=2018-06-05 
+
+In the discussions, it was brought up that we may be need for a more technical detailed document later.
+We even discussed the need for some sort of Architecture Committee. 
+This committee should in that case be represented by as many projects as possible.
+
+== Next Meeting
+Tuesday Jun 19 at 17:00 CET. 
