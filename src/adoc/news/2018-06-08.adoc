@@ -1,5 +1,7 @@
 = EE4J Projects - Technical Direction
 
+Date: 2018-06-08
+
 == Introduction
 
 Jakarta EEfootnote:[Jakarta EE is the brand for the platform and specifications developed at the Eclipse Foundation as Eclipse Enterprise For Java (EE4J).] is the future of cloud-native Java.
