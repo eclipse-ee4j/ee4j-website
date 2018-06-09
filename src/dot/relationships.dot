@@ -51,6 +51,7 @@ digraph G {
 		project_javamail[ label="Eclipse Project\nfor JavaMail", URL="https://projects.eclipse.org/projects/ee4j.javamail" ];
 		project_jaspic[label="Eclipse Project\nfor JASPIC", URL="https://projects.eclipse.org/projects/ee4j.jaspic" ]; 
 		project_jaxb[ label="Eclipse Project\nfor JAXB", URL="https://projects.eclipse.org/proposals/eclipse-project-jaxb" ];
+		project_jaxb_impl[ label="Eclipse Implementation\nof JAXB", URL="https://projects.eclipse.org/proposals/eclipse-implementation-jaxb" ];
 		project_jaxrs[ label="Eclipse Project\nfor JAX-RS", URL="https://projects.eclipse.org/projects/ee4j.jaxrs" ];
 		project_jaxws[ label="Eclipse Project\nfor JAX-WS", URL="https://projects.eclipse.org/proposals/eclipse-project-jax-ws" ];
 		project_jca[ label="Eclipse Project\nfor JCA", URL="https://projects.eclipse.org/proposals/eclipse-project-jca" ];
@@ -197,7 +198,7 @@ digraph G {
 	project_glassfish -> jaxr;
 	project_hv -> bv;
 	project_jaf -> jaf
-	project_jaxb -> jaxb
+	project_jaxb_impl -> jaxb
 	project_javamail -> javamail;
 	project_jbatch -> batch;
 	project_jersey -> jaxrs;
