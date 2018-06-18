@@ -1,0 +1,94 @@
+/********************************************************************************
+ * Copyright (c) 2018 Contributors to the Eclipse Foundation
+ * 
+ * See the NOTICE file(s) distributed with this work for additional
+ * information regarding copyright ownership.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Distribution License v. 1.0 which is available at
+ * http://www.eclipse.org/org/documents/edl-v10.php.
+ * 
+ * SPDX-License-Identifier: BSD-3-Clause
+ ********************************************************************************/
+
+// This file defines a graph of the relationship between the
+// EE4J Projects that make up Jakarta EE.
+//
+// Render using Graphviz.
+// e.g. 
+// > dot dependencies.dot -Tsvg > dependencies.svg
+//
+
+digraph G {
+	rankdir=LR;
+	rank=same;
+
+	// Eclipse project nodes
+	// Projects that provide definitions or implementations of the
+	// specifications go here. All nodes that represent
+	// projects are prefixed with "project_"
+	
+	node[ shape=box, style="rounded" ]
+	//project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
+	project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
+	project_cu[ label="Eclipse Project for\nConcurrency Utils", URL="https://projects.eclipse.org/projects/ee4j.cu" ];
+	project_eclipselink[ label="EclipseLink", URL="https://projects.eclipse.org/projects/ee4j.eclipselink" ];
+	project_ejb[ label="Eclipse Project\nfor EJB", URL="https://projects.eclipse.org/proposals/eclipse-project-ejb" ];
+	project_el[ label="Eclipse Project\nfor Expression Language", URL="https://projects.eclipse.org/projects/ee4j.el" ];
+	project_es[ label="Eclipse Project for\nEnterprise Security", URL="https://projects.eclipse.org/projects/ee4j.es/" ];
+	project_grizzly[ label="Eclipse Grizzly", URL="https://projects.eclipse.org/projects/ee4j.grizzly" ];
+	project_interceptors[ label="Eclipse Project\nfor Interceptors", URL="https://projects.eclipse.org/proposals/eclipse-project-interceptors" ];
+	project_jacc[label="Eclipse Project\nfor JACC", URL="https://projects.eclipse.org/projects/ee4j.jacc" ];
+	project_jaf[ label="Eclipse Project\nfor JAF", URL="https://projects.eclipse.org/proposals/eclipse-project-jaf" ];
+	project_javamail[ label="Eclipse Project\nfor JavaMail", URL="https://projects.eclipse.org/projects/ee4j.javamail" ];
+	project_jaspic[label="Eclipse Project\nfor JASPIC", URL="https://projects.eclipse.org/projects/ee4j.jaspic" ]; 
+	project_jaxb[ label="Eclipse Project\nfor JAXB", URL="https://projects.eclipse.org/proposals/eclipse-project-jaxb" ];
+	project_jaxb_impl[ label="Eclipse Implementation\nof JAXB", URL="https://projects.eclipse.org/proposals/eclipse-implementation-jaxb" ];
+	project_jaxrs[ label="Eclipse Project\nfor JAX-RS", URL="https://projects.eclipse.org/projects/ee4j.jaxrs" ];
+	project_jaxws[ label="Eclipse Project\nfor JAX-WS", URL="https://projects.eclipse.org/proposals/eclipse-project-jax-ws" ];
+	project_jca[ label="Eclipse Project\nfor JCA", URL="https://projects.eclipse.org/proposals/eclipse-project-jca" ];
+	project_jersey[ label="Eclipse Jersey", URL="https://projects.eclipse.org/projects/ee4j.jersey" ];
+	project_jms[ label="Eclipse Project\nfor JMS", URL="https://projects.eclipse.org/projects/ee4j.jms" ];
+	project_jpa[ label="Eclipse Project\nfor JPA", URL="https://projects.eclipse.org/projects/ee4j.jpa" ]
+	project_jsonp[ label="Eclipse Project\nfor JSON Processing", URL="https://projects.eclipse.org/projects/ee4j.jsonp" ];
+	project_jsonb[ label="Eclipse Project\nfor JSON Binding", URL="https://projects.eclipse.org/projects/ee4j.jsonb" ];
+	project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
+	project_jsp[ label="Eclipse Project\nfor JSP", URL="https://projects.eclipse.org/projects/ee4j.jsp" ];
+	project_jstl[ label="Eclipse Project\nfor JSTL", URL="https://projects.eclipse.org/projects/ee4j.jstl"  ];
+	project_jta[ label="Eclipse Project\nfor JTA", URL="https://projects.eclipse.org/projects/ee4j.jta" ];
+	project_metro[ label="Eclipse Metro", URL="https://projects.eclipse.org/proposals/eclipse-metro" ];
+	project_mojarra[ label="Eclipse Mojarra", URL="https://projects.eclipse.org/projects/ee4j.mojarra" ];
+	project_openmq[ label="Eclipse OpenMQ", URL="https://projects.eclipse.org/projects/ee4j.openmq" ];
+	project_orb[ label="Eclipse ORB" ];
+	project_ozark[ label="Eclipse Ozark" ];	
+	project_soteria[ label="Eclipse Soteria", URL="https://projects.eclipse.org/projects/ee4j.soteria" ];
+	project_stable[ label="Eclipse Project for\nStable Jakarta EE APIs", URL="https://projects.eclipse.org/projects/ee4j.jakartaee-stable" ];
+	project_servlet[ label="Eclipse Project\nfor Servlet", URL="https://projects.eclipse.org/projects/ee4j.servlet" ];
+	project_tyrus[ label="Eclipse Tyrus", URL="https://projects.eclipse.org/projects/ee4j.tyrus" ];
+	project_websocket[ label="Eclipse Project\nfor WebSocket", URL="https://projects.eclipse.org/projects/ee4j.websocket" ];
+
+	// Dependencies between projects.
+	// e.g. EJB requires Interceptors, JTA, ...
+	edge[ style="solid" ];
+	project_ejb -> project_interceptors;
+	project_ejb -> project_jta;
+	project_ejb -> project_jms;
+	project_mojarra -> project_jsp;
+	project_jstl -> project_jsp;
+	project_jsp -> project_servlet;
+	project_jsp -> project_el;
+	project_javamail -> project_jaf;
+	project_jaxb_impl -> project_jaxb;
+	project_jaxws -> project_jaf;
+	project_jaxws -> project_jaxb;
+	project_metro -> project_jaxws;
+	project_metro -> project_jaxb;
+	project_es -> project_jaspic;
+	project_jsonb -> project_jsonp;
+	project_yasson -> project_jsonb;
+	project_yasson -> project_jsonp;
+	project_tyrus -> project_websocket;
+	project_jersey -> project_jaxrs;
+	project_eclipselink -> project_jpa;
+	project_soteria -> project_es;
+}
