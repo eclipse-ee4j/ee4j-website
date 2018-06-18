@@ -17,7 +17,7 @@
 //
 // Render using Graphviz.
 // e.g. 
-// > dot ee4j_dependencies.dot -Tsvg > dependencies.svg
+// > dot src/dot/relationships.dot -Tsvg > generated/images/relationships.svg
 //
 
 digraph G {
@@ -104,7 +104,8 @@ digraph G {
 		javamail[ label="JavaMail" ];
 		jaspic[label="JASPIC"]; 
 		jaxws[ label="JAX-WS" ];
-		jws[ label="Java Web Services" ]; // JSR-109
+		jws[ label="Web Services\nMetadata" ]; // JSR-181
+		iews[ label="Enterprise\nWeb Services" ]; // JSR-109
 		jaxb[ label="JAXB" ];
 		jaxrs[ label="JAX-RS" ];
 		// jakartaee[ label="Jakarta EE Platform" ];
@@ -199,6 +200,7 @@ digraph G {
 	project_glassfish -> jaspic;
 	project_glassfish -> jacc;
 	project_glassfish -> jaxr;
+	project_glassfish -> iews;
 	project_hv -> bv;
 	project_jaf -> jaf
 	project_jaxb_impl -> jaxb;
@@ -256,6 +258,7 @@ digraph G {
 	project_stable -> management;
 	project_stable -> jaxr;
 	project_stable -> jaxrpc;
+	project_stable -> iews;
 	project_websocket -> websocket;
 
 	// Straight up consumption. One RI project consumes
