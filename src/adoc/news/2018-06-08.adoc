@@ -1,0 +1,114 @@
+= EE4J Projects - Technical Direction
+
+Date: 2018-06-08
+
+== Introduction
+
+Jakarta EEfootnote:[Jakarta EE is the brand for the platform and specifications developed at the Eclipse Foundation as Eclipse Enterprise For Java (EE4J).] is the future of cloud-native Java.
+Jakarta EE’s mission is to provide frequent releases, lower barriers to participation,
+and to put the community back into what was formerly the Java EE platform.
+
+Eclipse EE4Jfootnote:[See Footnote 1.] PMC has released this following technical direction document which all EE4J projects should consider when
+driving innovations in Jakarta EE.
+
+== Technical Direction - Guiding Principles
+
+=== Open for Innovation
+
+As Jakarta EE evolves we expect innovation from a range of open source communities to be quickly adopted into new versions
+of the platform to help developers create portable cloud-native applications.
+We also expect that the rapid innovation occurring in other areas of cloud native development (e.g. Kubernetes, Istio, etc.)
+as well as in other development languages, will be reflected within Jakarta EE evolution.
+
+We encourage projects which are implementing Jakarta EE-related APIs to join the EE4J top-level project.
+We would like to encourage Jakarta EE-related innovation, regardless if it’s in Eclipse, Apache, or somewhere else.
+And, when these innovations have solidified and matured, we would like to see these projects become more integrated with Jakarta EE
+and become part of the platform.
+
+=== Split stand-alone Jakarta EE TCK into individual projects
+
+Each API project should have a corresponding TCK test repository project.
+This technical direction is near the top of the list because this effort is not trivial!
+All projects have to use the same standard mechanism for TCK.
+We don’t want to face a situation where different projects use different frameworks and it is a challenge to run TCK tests
+for each of them. It will require some PMC guidance and community input about how new TCK tests are organized,
+what testing frameworks are used, etc.
+
+=== Embrace JPMS
+
+Despite the fact that the first release of Jakarta EE will be JDK8 based, projects should start preparation for the module system, i.e.
+JDK9+ support. First step would be adding automatic-module-name in MANIFEST.MF.
+Then if it is possible to provide a correct module-info.java.
+If not, it can wait for the next project release. The global definition and usage of modules needs to be defined at the Platform level (PMC),
+again with community input, and then adhered to by the various EE4J component projects.
+
+=== Standardise on the Maven build system
+
+Apache Maven is a de facto standard build system for Java projects.
+There are currently some older EE4J projects that use Ant which should be mavenized.
+Also, projects should use default Maven directory structures and build processes.
+The project builds should produce standard Maven artifacts (sources.jar, binaries.jar, javadoc.jar) and be as simple to execute as
+running mvn clean install without providing complicated properties.
+Projects should use recommended versions of Maven and plugins as defined in EE4J parent pom.
+
+=== Deprecate old technologies and provide optional modules
+
+Requiring all components to preserve backwards compatibility increases the maintenance burden in both size and complexity.
+We should extract old and rarely used technologies to optional modules and leave it up to users if they want to use them.
+Backwards compatibility has always been a strength for Java EE for many adopters, but at the same time a weakness for others,
+particularly as it often appears to throttle the pace of innovation.
+We need a way to ensure that those who require backwards compatibility (often for years) can rely upon it,
+whilst others can move forward with quicker releases without requiring compatibility with previous versions of Jakarta EE.
+
+=== Prefer soft dependencies
+
+Think carefully before adding hard dependencies.
+Components depending on half of the world are heavy and not suitable for microservices development.
+Use a modular approach that  allows users to include only functionality that's needed in their application,
+while maintaining platform consistency.
+
+=== Integration with CDI and Config
+
+Dependency injection and configuration should be included in all projects.
+It will provide consistency between all Jakarta EE components if they are configured the same way.
+
+=== Release Cadence
+
+We are recommending one year cadence for the Jakarta EE platform.
+For components the recommendation is 3+1 yearly cadence,
+where one major release is synchronized with the Platform release and 3 quarterly minor releases.
+
+E.g. Something like (please do *NOT* take this example as an actual roadmap)
+
+|===
+|2019 Q1 | 2019 Q2 | 2019 Q3 | 2019 Q4 | 2020 Q1
+
+| Jakarta EE 8.0
+| ...
+| ...
+| ...
+| Jakarta EE 9.0
+
+| CompX 3.0
+| CompX 3.1
+| CompX 3.2
+| CompX 4.0
+| CompX 4.1
+
+| ...
+| ...
+| ...
+| ...
+| ...
+|===
+
+=== Focus on testing
+
+The PMC regards tests to be a very important part of every project.
+Specifications and APIs should be designed the way that applications using them can be easily tested.
+
+=== Standard formatting of Specification and Documentation
+
+Documentation and specs should be created using standard format and tooling.
+The Maven tooling (see above) should render this as part of the build and resulting documentation in pdf / html format.
+These artifacts should be part of the release.

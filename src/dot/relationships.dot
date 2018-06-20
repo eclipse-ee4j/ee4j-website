@@ -17,7 +17,7 @@
 //
 // Render using Graphviz.
 // e.g. 
-// > dot ee4j_dependencies.dot -Tsvg > dependencies.svg
+// > dot src/dot/relationships.dot -Tsvg > generated/images/relationships.svg
 //
 
 digraph G {
@@ -40,6 +40,7 @@ digraph G {
 		// without adding any real value.
 		//project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
 		project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
+		project_cu[ label="Eclipse Project for\nConcurrency Utils", URL="https://projects.eclipse.org/projects/ee4j.cu" ];
 		project_eclipselink[ label="EclipseLink", URL="https://projects.eclipse.org/projects/ee4j.eclipselink" ];
 		project_ejb[ label="Eclipse Project\nfor EJB", URL="https://projects.eclipse.org/proposals/eclipse-project-ejb" ];
 		project_el[ label="Eclipse Project\nfor Expression Language", URL="https://projects.eclipse.org/projects/ee4j.el" ];
@@ -51,6 +52,7 @@ digraph G {
 		project_javamail[ label="Eclipse Project\nfor JavaMail", URL="https://projects.eclipse.org/projects/ee4j.javamail" ];
 		project_jaspic[label="Eclipse Project\nfor JASPIC", URL="https://projects.eclipse.org/projects/ee4j.jaspic" ]; 
 		project_jaxb[ label="Eclipse Project\nfor JAXB", URL="https://projects.eclipse.org/proposals/eclipse-project-jaxb" ];
+		project_jaxb_impl[ label="Eclipse Implementation\nof JAXB", URL="https://projects.eclipse.org/proposals/eclipse-implementation-jaxb" ];
 		project_jaxrs[ label="Eclipse Project\nfor JAX-RS", URL="https://projects.eclipse.org/projects/ee4j.jaxrs" ];
 		project_jaxws[ label="Eclipse Project\nfor JAX-WS", URL="https://projects.eclipse.org/proposals/eclipse-project-jax-ws" ];
 		project_jca[ label="Eclipse Project\nfor JCA", URL="https://projects.eclipse.org/proposals/eclipse-project-jca" ];
@@ -58,6 +60,8 @@ digraph G {
 		project_jms[ label="Eclipse Project\nfor JMS", URL="https://projects.eclipse.org/projects/ee4j.jms" ];
 		project_jpa[ label="Eclipse Project\nfor JPA", URL="https://projects.eclipse.org/projects/ee4j.jpa" ]
 		project_jsonp[ label="Eclipse Project\nfor JSON Processing", URL="https://projects.eclipse.org/projects/ee4j.jsonp" ];
+		project_jsonb[ label="Eclipse Project\nfor JSON Binding", URL="https://projects.eclipse.org/projects/ee4j.jsonb" ];
+		project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
 		project_jsp[ label="Eclipse Project\nfor JSP", URL="https://projects.eclipse.org/projects/ee4j.jsp" ];
 		project_jstl[ label="Eclipse Project\nfor JSTL", URL="https://projects.eclipse.org/projects/ee4j.jstl"  ];
 		project_jta[ label="Eclipse Project\nfor JTA", URL="https://projects.eclipse.org/projects/ee4j.jta" ];
@@ -68,7 +72,6 @@ digraph G {
 		project_servlet[ label="Eclipse Project\nfor Servlet", URL="https://projects.eclipse.org/projects/ee4j.servlet" ];
 		project_tyrus[ label="Eclipse Tyrus", URL="https://projects.eclipse.org/projects/ee4j.tyrus" ];
 		project_websocket[ label="Eclipse Project\nfor WebSocket", URL="https://projects.eclipse.org/projects/ee4j.websocket" ];
-		project_yasson[ label="Eclipse Yasson", URL="https://projects.eclipse.org/projects/ee4j.yasson" ];
 	
 		// External project nodes
 		// These are open source projects that define or implement specifications
@@ -91,6 +94,7 @@ digraph G {
 		
 		node[ shape=box, style=dotted ];
 		ca[ label="Common\nAnnotations" ];
+		cu[ label="Concurrency\nUtils" ];
 		ejb[ label="EJB" ];
 		el[ label="Expression\nLanguage" ];
 		es[ label="Enterprise\nSecurity" ];
@@ -100,7 +104,8 @@ digraph G {
 		javamail[ label="JavaMail" ];
 		jaspic[label="JASPIC"]; 
 		jaxws[ label="JAX-WS" ];
-		jws[ label="JWS" ];
+		jws[ label="Web Services\nMetadata" ]; // JSR-181
+		iews[ label="Enterprise\nWeb Services" ]; // JSR-109
 		jaxb[ label="JAXB" ];
 		jaxrs[ label="JAX-RS" ];
 		// jakartaee[ label="Jakarta EE Platform" ];
@@ -180,6 +185,7 @@ digraph G {
 	// Relationships between reference implementations
 	// and the specification that they implement.
 	edge[ label="implements", style="solid,bold" ];
+	project_cu -> cu;
 	project_eclipselink -> jpa;
 	project_el -> el
 	project_glassfish -> ca;
@@ -194,9 +200,10 @@ digraph G {
 	project_glassfish -> jaspic;
 	project_glassfish -> jacc;
 	project_glassfish -> jaxr;
+	project_glassfish -> iews;
 	project_hv -> bv;
 	project_jaf -> jaf
-	project_jaxb -> jaxb
+	project_jaxb_impl -> jaxb;
 	project_javamail -> javamail;
 	project_jbatch -> batch;
 	project_jersey -> jaxrs;
@@ -220,6 +227,7 @@ digraph G {
 	edge[ label="defines", style="solid" ]
 	// project_platform -> jakartaee;
 	project_ca -> ca;
+	project_cu -> cu;
 	project_cdi -> cdi
 	project_ejb -> ejb;
 	project_el -> el;
@@ -240,6 +248,7 @@ digraph G {
 	project_jms -> jms;
 	project_jpa -> jpa;
 	project_jsonp -> jsonp;
+	project_jsonb -> jsonb;
 	project_jsp -> jsp;
 	project_jstl -> jstl;
 	project_jta -> jta;
@@ -249,12 +258,13 @@ digraph G {
 	project_stable -> management;
 	project_stable -> jaxr;
 	project_stable -> jaxrpc;
+	project_stable -> iews;
 	project_websocket -> websocket;
-	project_yasson -> jsonb;
 
 	// Straight up consumption. One RI project consumes
 	// the RI from another project.
 	edge[ label="consumes" ];
+	project_glassfish -> project_cu;
 	project_glassfish -> project_eclipselink;
 	project_glassfish -> project_el;
 	project_glassfish -> project_grizzly;
