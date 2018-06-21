@@ -1,0 +1,5 @@
+= Jakarta EE Platform specs
+
+This page provides an overview of the Jakarta EE Platform specs and their relationships between one another.
+
+graphviz::../dot/specs.dot[format=svg]
