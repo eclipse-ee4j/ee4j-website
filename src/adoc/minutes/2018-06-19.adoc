@@ -1,0 +1,60 @@
+= EE4J PMC Meeting #16
+
+== General
+
+Date: 2018-06-19
+
+Present:
+
+* Dmitry
+* Steve
+* David
+* Wayne
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Promote EE4J Technical Direction
+
+Discussed whether we should promote the technical direction document (https://www.eclipse.org/ee4j/news/?date=2018-06-08) in some way.
+
+Point to the Marketing Committee in this direction?
+Agreed that we should tweet about it from our personal accounts as well as ask the Jakarta EE Marketing Committee to tweet a link from @JakartaEE.
+
+The document should also be moved to a more suitable place than a news item on the web page. Ivar will add an action item to the issue tracker for this.
+
+https://github.com/eclipse-ee4j/ee4j/issues/28 
+
+We should get control of the @EclipseEE4J Twitter handle. Wayne will try to find out if anyone in the Eclipse Foundation controls this handle.
+
+== Overall process to get SNAPSHOTS into Maven Central (OSSR)
+
+The EE4J projects will sooner or later have the need to publish SNAPSHOT version. 
+We need to first figure out what is legally possible
+Then get the correct permissions from Sonatype to push. 
+We will have to wait for Oracle agreement to be in place.
+Probably best to do this as a bulk operation rather than every project having to do this on their own.
+
+Ivar will create an action item on GitHub for creating a list of all the group id’s that will be affected. Typically, org.glassfish, javax, net.java etc.
+
+https://github.com/eclipse-ee4j/ee4j/issues/27
+
+Wayne will mention it for the Jakarta EE Steering Committee meeting later today.
+
+== Release Reviews and Dependency Graphs
+
+We need a way to ensure that release reviews are made in the correct order.
+Dmitry has created a starting point for a project tree that defines the dependencies between the projects and thus the order to perform release reviews.
+We will publish the picture on the revamped website and get community to review.
+There will probably be some need for educating the projects so project dependencies are well understood.
+
+== EE4J Website
+
+Current setup was just something to get us started and it has reached its limit regarding scaling.
+Wayne will set up a new structure that is more suitable for our needs.
+
+== Next Meeting
+
+Tuesday Jul 03 at 17:00 CET. 
