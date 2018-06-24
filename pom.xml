@@ -1,85 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.eclipse.ee4j</groupId>
-	<artifactId>website</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
-	<name>EE4J Website</name>
-	<description>Build EE4J Project Website content.</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>org.eclipse.ee4j</groupId>
+   <artifactId>website</artifactId>
+   <version>0.2.0-SNAPSHOT</version>
+   <name>EE4J Website</name>
+   <description>Build EE4J Project Website content.</description>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
-		<asciidoctorj.version>1.5.6</asciidoctorj.version>
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
+      <asciidoctorj.version>1.5.6</asciidoctorj.version>
       <asciidoctorj.diagram.version>1.5.4.1</asciidoctorj.diagram.version>
-		<jruby.version>1.7.26</jruby.version>
-	</properties>
+      <jruby.version>1.7.26</jruby.version>
+   </properties>
 
-	<build>
-		<defaultGoal>process-resources</defaultGoal>
-		<plugins>
-			<plugin>
-				<groupId>org.asciidoctor</groupId>
-				<artifactId>asciidoctor-maven-plugin</artifactId>
-				<version>${asciidoctor.maven.plugin.version}</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.jruby</groupId>
-						<artifactId>jruby-complete</artifactId>
-						<version>${jruby.version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.asciidoctor</groupId>
-						<artifactId>asciidoctorj</artifactId>
-						<version>${asciidoctorj.version}</version>
-					</dependency>
+   <build>
+      <defaultGoal>process-resources</defaultGoal>
+      <plugins>
+         <plugin>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctor-maven-plugin</artifactId>
+            <version>${asciidoctor.maven.plugin.version}</version>
+            <dependencies>
+               <dependency>
+                  <groupId>org.jruby</groupId>
+                  <artifactId>jruby-complete</artifactId>
+                  <version>${jruby.version}</version>
+               </dependency>
+               <dependency>
+                  <groupId>org.asciidoctor</groupId>
+                  <artifactId>asciidoctorj</artifactId>
+                  <version>${asciidoctorj.version}</version>
+               </dependency>
                <dependency>
                   <groupId>org.asciidoctor</groupId>
                   <artifactId>asciidoctorj-diagram</artifactId>
                   <version>${asciidoctorj.diagram.version}</version>
                </dependency>
-				</dependencies>
-				<configuration>
-					<sourceDirectory>src/adoc</sourceDirectory>
-					<outputDirectory>generated</outputDirectory>
-					<preserveDirectories>true</preserveDirectories>
+            </dependencies>
+            <configuration>
+               <sourceDirectory>src/adoc</sourceDirectory>
+               <outputDirectory>${basedir}/target/generated</outputDirectory>
+               <preserveDirectories>true</preserveDirectories>
                <requires>
                   <require>asciidoctor-diagram</require>
                </requires>
-					<attributes>
-						<endpoint-url>http://www.eclipse.org/ee4j</endpoint-url>
-						<sourcedir>${project.build.sourceDirectory}</sourcedir>
-						<project-version>${project.version}</project-version>
-						<nofooter/>
-					</attributes>
-				</configuration>
-				<executions>
-					<execution>
-						<id>asciidoc-to-html</id>
-						<phase>generate-resources</phase>
-						<goals>
-							<goal>process-asciidoc</goal>
-						</goals>
-						<configuration>
-							<backend>html5</backend>
-							<attributes>
-								<embedded>true</embedded>
-								<header_footer>false</header_footer>
-								<imagesdir>./images</imagesdir>
-								<toc>left</toc>
-								<icons>font</icons>
-								<sectanchors>true</sectanchors>
-								<sectlinks>true</sectlinks>
-								<idprefix />
-								<idseparator>-</idseparator>
-								<docinfo1>true</docinfo1>
-								<stylesheet>style.css</stylesheet>
-							</attributes>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+               <attributes>
+                  <endpoint-url>http://www.eclipse.org/ee4j</endpoint-url>
+                  <sourcedir>${project.build.sourceDirectory}</sourcedir>
+                  <project-version>${project.version}</project-version>
+                  <nofooter />
+               </attributes>
+            </configuration>
+            <executions>
+               <execution>
+                  <id>asciidoc-to-html</id>
+                  <phase>generate-resources</phase>
+                  <goals>
+                     <goal>process-asciidoc</goal>
+                  </goals>
+                  <configuration>
+                     <backend>html5</backend>
+                     <attributes>
+                        <embedded>true</embedded>
+                        <header_footer>false</header_footer>
+                        <imagesdir>./images</imagesdir>
+                        <toc>left</toc>
+                        <icons>font</icons>
+                        <sectanchors>true</sectanchors>
+                        <sectlinks>true</sectlinks>
+                        <idprefix />
+                        <idseparator>-</idseparator>
+                        <docinfo1>true</docinfo1>
+                        <stylesheet>style.css</stylesheet>
+                     </attributes>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <!-- Use the Maven resources plugin to copy over the resources 
+               (e.g. PHP code) that we need to make the website run. -->
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+               <execution>
+                  <id>copy-resources</id>
+                  <phase>generate-resources</phase>
+                  <goals>
+                     <goal>copy-resources</goal>
+                  </goals>
+                  <configuration>
+                     <outputDirectory>${basedir}/target</outputDirectory>
+                     <resources>
+                        <resource>
+                           <directory>resources</directory>
+                           <include>**/*.php</include>
+                        </resource>
+                     </resources>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>default-jar</id>
+            <phase>never</phase>
+            <configuration>
+              <finalName>unwanted</finalName>
+              <classifier>unwanted</classifier>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      </plugins>
+   </build>
 </project>
