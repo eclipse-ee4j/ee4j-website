@@ -107,7 +107,7 @@ digraph G {
 	project_glassfish -> project_jaxrs;
 	project_glassfish -> project_jaxws;
 	project_glassfish -> project_jca;
-	project_glassfish -> project_jersey;
+	project_glassfish -> project_jersey [color=red]; // CIRCULAR DEPENDENCY!!!
 	project_glassfish -> project_jms;
 	project_glassfish -> project_jpa;
 	project_glassfish -> project_jsonp;
@@ -116,7 +116,7 @@ digraph G {
 	project_glassfish -> project_jsp;
 	project_glassfish -> project_jstl;
 	project_glassfish -> project_jta;
-	project_glassfish -> project_metro;
+	project_glassfish -> project_metro [color=red]; // CIRCULAR DEPENDENCY!!!
 	project_glassfish -> project_mojarra;
 	project_glassfish -> project_openmq;
 	project_glassfish -> project_orb;
@@ -146,11 +146,14 @@ digraph G {
 	project_eclipselink -> project_jms;
 	project_eclipselink -> project_javamail;
 
+	// JAXRS 
+	// no dependencies
+
 	// Jersey
 	project_jersey -> project_jaxrs;
 	project_jersey -> project_ca;
 	project_jersey -> project_jta;
-	project_jersey -> project_glassfish; // CYCLIC DEPENDENCY!!! hk2*, org.glassfish.main.ejb.ejb-container, org.glassfish.main.common.container-common, org.glassfish.web.javax.el
+	project_jersey -> project_glassfish [color=red]; // CIRCULAR DEPENDENCY: hk2*, org.glassfish.main.ejb.ejb-container, org.glassfish.main.common.container-common, org.glassfish.web.javax.el
 	project_jersey -> project_grizzly;
 	project_jersey -> project_jaxb;
 	project_jersey -> project_jaxb_impl;
@@ -161,6 +164,33 @@ digraph G {
 	project_jersey -> project_jsonp;
 	project_jersey -> project_jsonb;
 	project_jersey -> project_yasson;
+
+	// JAXB 
+	// no dependencies
+
+	// JAXB implementation
+	project_jaxb_impl -> project_jaxb;
+	project_jaxb_impl -> project_metro  [color=red]; // CIRCULAR DEPENDENCY: metro-stax-ex
+	project_jaxb_impl -> project_jaf;
+
+	// JAX-WS
+	project_jaxws -> project_jaxb; 
+
+	// Metro
+	//	External: com.sun.xml.registry:jaxr-impl, net.java.dev.stax-utils:stax-utils
+	project_metro -> project_jaxb_impl [color=red]; // CIRCULAR DEPENDENCY: metro-stax-ex
+	project_metro -> project_jaxws;
+	project_metro -> project_stable; // jax-rpc, javax.xml.registry:javax.xml.registry-api
+	project_metro -> project_grizzly; // com.sun.grizzly:grizzly-framework-http
+	project_metro -> project_ca;
+	project_metro -> project_javamail;
+	project_metro -> project_jca;
+	project_metro -> project_jaspic; // javax.security.auth.message:javax.security.auth.message-api
+	project_metro -> project_servlet;
+	project_metro -> project_jta;
+	project_metro -> project_glassfish [color=red]; // CIRCULAR DEPENDENCY: org.glassfish.ha:ha-api + several other
+	project_metro -> project_ejb;
+	project_metro -> project_orb; // org.glassfish.gmbal:gmbal, org.glassfish.external:management-api
 
 	// Tests dependencies
 	edge[ style="dashed" ];
