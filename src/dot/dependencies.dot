@@ -67,7 +67,7 @@ digraph G {
 	project_tyrus[ label="Eclipse Tyrus", URL="https://projects.eclipse.org/projects/ee4j.tyrus" ];
 	project_websocket[ label="Eclipse Project\nfor WebSocket", URL="https://projects.eclipse.org/projects/ee4j.websocket" ];
 
-	// Dependencies between projects.
+	// Compile time sependencies between projects.
 	// e.g. EJB requires Interceptors, JTA, ...
 	edge[ style="solid" ];
 	project_ejb -> project_interceptors;
@@ -89,6 +89,21 @@ digraph G {
 	project_yasson -> project_jsonp;
 	project_tyrus -> project_websocket;
 	project_jersey -> project_jaxrs;
-	project_eclipselink -> project_jpa;
 	project_soteria -> project_es;
+	project_eclipselink -> project_jpa;
+	project_eclipselink -> project_jaxrs;
+	project_eclipselink -> project_jaxws;
+	project_eclipselink -> project_ca;
+	project_eclipselink -> project_jaxb;
+	project_eclipselink -> project_jaxb_impl;
+	project_eclipselink -> project_jsonp;
+	project_eclipselink -> project_jta;
+	project_eclipselink -> project_servlet;
+	project_eclipselink -> project_jca;
+	project_eclipselink -> project_jms;
+	project_eclipselink -> project_javamail;
+
+	// Tests dependencies
+	edge[ style="dashed" ];
+	project_eclipselink -> project_ejb;				
 }
