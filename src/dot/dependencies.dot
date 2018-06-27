@@ -29,7 +29,7 @@ digraph G {
 	// projects are prefixed with "project_"
 	
 	node[ shape=box, style="rounded" ]
-	//project_platform[ label="Eclipse Project for\nJakarta EE Platform", URL="https://projects.eclipse.org/proposals/eclipse-jakarta-ee-platform" ];
+	project_glassfish[ label="Eclipse Glassfish", URL="https://projects.eclipse.org/projects/ee4j.glassfish" ];
 	project_ca[ label="Eclipse Project for\nCommon Annotations", URL="https://projects.eclipse.org/projects/ee4j.ca" ];
 	project_cu[ label="Eclipse Project for\nConcurrency Utils", URL="https://projects.eclipse.org/projects/ee4j.cu" ];
 	project_eclipselink[ label="EclipseLink", URL="https://projects.eclipse.org/projects/ee4j.eclipselink" ];
@@ -70,9 +70,7 @@ digraph G {
 	// Compile time sependencies between projects.
 	// e.g. EJB requires Interceptors, JTA, ...
 	edge[ style="solid" ];
-	project_ejb -> project_interceptors;
-	project_ejb -> project_jta;
-	project_ejb -> project_jms;
+
 	project_mojarra -> project_jsp;
 	project_jstl -> project_jsp;
 	project_jsp -> project_servlet;
@@ -90,6 +88,51 @@ digraph G {
 	project_tyrus -> project_websocket;
 	project_jersey -> project_jaxrs;
 	project_soteria -> project_es;
+
+	// GlassFish
+	project_glassfish -> project_ca;
+	project_glassfish -> project_cu;
+	project_glassfish -> project_eclipselink;
+	project_glassfish -> project_ejb;
+	project_glassfish -> project_el;
+	project_glassfish -> project_es;
+	project_glassfish -> project_grizzly;
+	project_glassfish -> project_interceptors;
+	project_glassfish -> project_jacc;
+	project_glassfish -> project_jaf;
+	project_glassfish -> project_javamail;
+	project_glassfish -> project_jaspic;
+	project_glassfish -> project_jaxb;
+	project_glassfish -> project_jaxb_impl;
+	project_glassfish -> project_jaxrs;
+	project_glassfish -> project_jaxws;
+	project_glassfish -> project_jca;
+	project_glassfish -> project_jersey;
+	project_glassfish -> project_jms;
+	project_glassfish -> project_jpa;
+	project_glassfish -> project_jsonp;
+	project_glassfish -> project_jsonb;
+	project_glassfish -> project_yasson;
+	project_glassfish -> project_jsp;
+	project_glassfish -> project_jstl;
+	project_glassfish -> project_jta;
+	project_glassfish -> project_metro;
+	project_glassfish -> project_mojarra;
+	project_glassfish -> project_openmq;
+	project_glassfish -> project_orb;
+	project_glassfish -> project_ozark;
+	project_glassfish -> project_soteria;
+	project_glassfish -> project_stable;
+	project_glassfish -> project_servlet;
+	project_glassfish -> project_tyrus;
+	project_glassfish -> project_websocket;	
+	
+	// EJB
+	project_ejb -> project_interceptors;
+	project_ejb -> project_jta;
+	project_ejb -> project_jms;
+	
+	// EclipseLink
 	project_eclipselink -> project_jpa;
 	project_eclipselink -> project_jaxrs;
 	project_eclipselink -> project_jaxws;
@@ -102,6 +145,22 @@ digraph G {
 	project_eclipselink -> project_jca;
 	project_eclipselink -> project_jms;
 	project_eclipselink -> project_javamail;
+
+	// Jersey
+	project_jersey -> project_jaxrs;
+	project_jersey -> project_ca;
+	project_jersey -> project_jta;
+	project_jersey -> project_glassfish; // CYCLIC DEPENDENCY!!! hk2*, org.glassfish.main.ejb.ejb-container, org.glassfish.main.common.container-common, org.glassfish.web.javax.el
+	project_jersey -> project_grizzly;
+	project_jersey -> project_jaxb;
+	project_jersey -> project_jaxb_impl;
+	project_jersey -> project_eclipselink; // Moxy
+	project_jersey -> project_jpa;
+	project_jersey -> project_ejb;
+	project_jersey -> project_el;
+	project_jersey -> project_jsonp;
+	project_jersey -> project_jsonb;
+	project_jersey -> project_yasson;
 
 	// Tests dependencies
 	edge[ style="dashed" ];
