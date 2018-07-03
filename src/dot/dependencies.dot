@@ -71,23 +71,23 @@ digraph G {
 	// e.g. EJB requires Interceptors, JTA, ...
 	edge[ style="solid" ];
 
+	// Mojarra
 	project_mojarra -> project_jsp;
-	project_jstl -> project_jsp;
-	project_jsp -> project_servlet;
-	project_jsp -> project_el;
-	project_javamail -> project_jaf;
-	project_jaxb_impl -> project_jaxb;
-	project_jaxws -> project_jaf;
-	project_jaxws -> project_jaxb;
-	project_metro -> project_jaxws;
-	project_metro -> project_jaxb;
-	project_es -> project_jaspic;
+
+	// JSONB
 	project_jsonb -> project_jsonp;
+
+	// Yasson
 	project_yasson -> project_jsonb;
 	project_yasson -> project_jsonp;
-	project_tyrus -> project_websocket;
-	project_jersey -> project_jaxrs;
+
+	// Soteria
 	project_soteria -> project_es;
+
+	// Javamail
+	project_javamail -> project_jaf;
+	project_javamail -> project_jsp;
+	project_javamail -> project_servlet;
 
 	// GlassFish
 	project_glassfish -> project_ca;
@@ -96,31 +96,22 @@ digraph G {
 	project_glassfish -> project_ejb;
 	project_glassfish -> project_el;
 	project_glassfish -> project_es;
-	project_glassfish -> project_grizzly;
 	project_glassfish -> project_interceptors;
 	project_glassfish -> project_jacc;
-	project_glassfish -> project_jaf;
 	project_glassfish -> project_javamail;
 	project_glassfish -> project_jaspic;
 	project_glassfish -> project_jaxb;
 	project_glassfish -> project_jaxb_impl;
 	project_glassfish -> project_jaxrs;
-	project_glassfish -> project_jaxws;
 	project_glassfish -> project_jca;
-	project_glassfish -> project_jersey [color=red]; // CIRCULAR DEPENDENCY!!!
 	project_glassfish -> project_jms;
-	project_glassfish -> project_jpa;
 	project_glassfish -> project_jsonp;
 	project_glassfish -> project_jsonb;
 	project_glassfish -> project_yasson;
 	project_glassfish -> project_jsp;
 	project_glassfish -> project_jstl;
-	project_glassfish -> project_jta;
-	project_glassfish -> project_metro [color=red]; // CIRCULAR DEPENDENCY!!!
 	project_glassfish -> project_mojarra;
-	project_glassfish -> project_openmq;
 	project_glassfish -> project_orb;
-	project_glassfish -> project_ozark;
 	project_glassfish -> project_soteria;
 	project_glassfish -> project_stable;
 	project_glassfish -> project_servlet;
@@ -128,9 +119,7 @@ digraph G {
 	project_glassfish -> project_websocket;	
 	
 	// EJB
-	project_ejb -> project_interceptors;
 	project_ejb -> project_jta;
-	project_ejb -> project_jms;
 	
 	// EclipseLink
 	project_eclipselink -> project_jpa;
@@ -153,7 +142,6 @@ digraph G {
 	project_jersey -> project_jaxrs;
 	project_jersey -> project_ca;
 	project_jersey -> project_jta;
-	project_jersey -> project_glassfish [color=red]; // CIRCULAR DEPENDENCY: hk2*, org.glassfish.main.ejb.ejb-container, org.glassfish.main.common.container-common, org.glassfish.web.javax.el
 	project_jersey -> project_grizzly;
 	project_jersey -> project_jaxb;
 	project_jersey -> project_jaxb_impl;
@@ -170,7 +158,6 @@ digraph G {
 
 	// JAXB implementation
 	project_jaxb_impl -> project_jaxb;
-	project_jaxb_impl -> project_metro  [color=red]; // CIRCULAR DEPENDENCY: metro-stax-ex
 	project_jaxb_impl -> project_jaf;
 
 	// JAX-WS
@@ -178,7 +165,6 @@ digraph G {
 
 	// Metro
 	//	External: com.sun.xml.registry:jaxr-impl, net.java.dev.stax-utils:stax-utils
-	project_metro -> project_jaxb_impl [color=red]; // CIRCULAR DEPENDENCY: metro-stax-ex
 	project_metro -> project_jaxws;
 	project_metro -> project_stable; // jax-rpc, javax.xml.registry:javax.xml.registry-api
 	project_metro -> project_grizzly; // com.sun.grizzly:grizzly-framework-http
@@ -188,10 +174,81 @@ digraph G {
 	project_metro -> project_jaspic; // javax.security.auth.message:javax.security.auth.message-api
 	project_metro -> project_servlet;
 	project_metro -> project_jta;
-	project_metro -> project_glassfish [color=red]; // CIRCULAR DEPENDENCY: org.glassfish.ha:ha-api + several other
 	project_metro -> project_ejb;
 	project_metro -> project_orb; // org.glassfish.gmbal:gmbal, org.glassfish.external:management-api
 
+	// Grizzly
+	project_grizzly -> project_jersey;
+	project_grizzly -> project_jaxb;
+	project_grizzly -> project_jaxb_impl;
+	project_grizzly -> project_metro;
+	project_grizzly -> project_ca;
+	project_grizzly -> project_jaxws;
+	project_grizzly -> project_servlet;
+	project_grizzly -> project_stable;
+
+	// OpenMQ
+	project_openmq -> project_metro;
+	project_openmq -> project_jms;
+	project_openmq -> project_javamail;
+	project_openmq -> project_jaf;
+	project_openmq -> project_jca;
+	project_openmq -> project_servlet;
+	project_openmq -> project_jsp;
+	project_openmq -> project_jaxws;
+	project_openmq -> project_grizzly;
+	project_openmq -> project_jsonp;
+	project_openmq -> project_tyrus;
+
+	// Eclipse ORB
+	project_orb -> project_ejb;
+
+	// Ozark
+	project_ozark -> project_servlet;
+	project_ozark -> project_jersey;
+	project_ozark -> project_el;
+	project_ozark -> project_glassfish;
+
+	// JACC
+	project_jacc -> project_servlet;
+
+	// JCA
+	project_jca -> project_jta;
+
+	// JSP
+	project_jsp -> project_servlet;
+	project_jsp -> project_el;
+
+	// JSTL
+	project_jstl -> project_jsp;
+	project_jstl -> project_servlet;
+	project_jstl -> project_el;
+	
+	// Stable
+	project_stable -> project_servlet;
+	project_stable -> project_javamail;
+	project_stable -> project_jaxws;
+	project_stable -> project_jaxb_impl;
+
+	// Tyrus
+	project_tyrus -> project_websocket;
+	project_tyrus -> project_ejb;
+	project_tyrus -> project_jsonp;
+	project_tyrus -> project_servlet;
+	project_tyrus -> project_jaxrs;
+	project_tyrus -> project_grizzly;
+	project_tyrus -> project_jersey;
+
+	// Circular dependencies
+	project_jta -> project_glassfish [dir=both;color=red];
+	project_glassfish -> project_metro [dir=both;color=red];
+	project_glassfish -> project_jersey [dir=both;color=red];
+	project_glassfish -> project_grizzly [dir=both;color=red];
+	project_openmq -> project_glassfish [dir=both;color=red];
+	project_orb -> project_grizzly [dir=both;color=red];
+	project_metro -> project_jaxb_impl [dir=both; color=red];
+	project_ejb -> project_stable [dir=both; color=red];
+		
 	// Tests dependencies
 	edge[ style="dashed" ];
 	project_eclipselink -> project_ejb;				
