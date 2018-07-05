@@ -19,6 +19,7 @@
 //
 
 digraph G {
+	bgcolor="transparent";
 	rankdir=LR;
 	rank=same;
 
