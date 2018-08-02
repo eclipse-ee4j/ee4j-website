@@ -1,0 +1,80 @@
+= EE4J PMC Meeting #18
+
+== General
+
+Date: 2018-07-17
+
+Present:
+
+* Dmitry
+* Mark
+* Wayne
+* Tanja
+* David
+* Kevin
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues,
+https://github.com/eclipse-ee4j/ee4j/issues.
+
+== PMC Seat at the Jakarta EE Specification Committee
+
+At least one seat is allocated to a representative of the EE4J PMC. The EE4J PMC may decide how to select its representative.
+
+The current process: +
+The PMC appoints a representative from within the PMC that is a member of an organisation or is an individual that does not already have a seat via their membership as a Strategic Member or via an Election. If there are two or more members of the PMC that satisfy these criteria and wish to have a seat on the specification committee then a vote within the PMC is carried out to determine the representative.
+
+*How should we handle the situation now that all PMC members/organizations are now represented?*
+
+The PMC agreed that it would not be ideal to add members to the PMC just in order to be able to fill the PMC seat in the Specification Committee.
+
+Ivar will see if it is possible to let the runner up committer representative get the committer seat and continue representat the PMC as of today.
+
+== SNAPSHOT releases
+
+Clarify what the situation is regarding Sonatype permissions and/or legal issues.
+Can e.g. JAX-RS publish snapshots to Maven central?
+Can we do development in javax namespace? 
+Release not ok? 
+
+*Action:* Official request to Jakarta EE Steering Committee for what we are allowed to do: +
+Can the EE4J projects develop under javax? If so, which ones? +
+Can EE4J projects release snapshots? +
+Can EE4J projects release released artifacts? +
+
+== Project Status Overview
+
+We're waiting for an initial contribution for these projects: +
+Eclipse Project for JAF +
+Eclipse Jakarta EE Platform +
+Eclipse Jakarta EE TCK +
+Eclipse Project for JavaMail + 
+Eclipse Project for JAXB + 
+Eclipse Implementation of JAXB +
+Eclipse Project for JAX-WS +
+Eclipse Project for JPA +
+Eclipse Project for JSON-B +
+Eclipse Project for JSP +
+Eclipse Project for JSTL +
+Eclipse Metro +
+Eclipse ORB
+
+Note that the Eclipse Project for JPA will be created on Wednesday (tomorrow).
+
+Release reviews have been requested for: +
+Eclipse Project for Servlets + 
+Eclipse Project for Interceptors
+
+The following projects have full approval for their initial contributions: +
+Eclipse Jersey +
+Eclipse Project for JMS
+
+== Release Reviews
+
+Will start the process of releasing the first version of projects (EE4J), api projects.
+
+== Next Meeting
+
+Tuesday Jul 31 at 17:00 CET. 
