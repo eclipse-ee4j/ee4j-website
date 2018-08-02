@@ -1,0 +1,52 @@
+= EE4J PMC Meeting #17
+
+== General
+
+Date: 2018-07-03
+
+Present:
+
+* Mark
+* Dmitry
+* Steve
+* Wayne
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== PMC Seat at the Jakarta EE Specification Committee
+
+At least one seat is allocated to a representative of the EE4J PMC. The EE4J PMC may decide how to select its representative.
+
+The current process: +
+The PMC appoints a representative from within the PMC that is a member of an organisation or is an individual that does not already have a seat via their membership as a Strategic Member or via an Election. If there are two or more members of the PMC that satisfy these criteria and wish to have a seat on the specification committee then a vote within the PMC is carried out to determine the representative.
+
+The PMC decied to wait and see how the election goes before acting on this issue.
+
+== Release Reviews
+
+Dmitry walked through the dependency graphs of the EE4J projects.
+
+Implementations are a bit more difficult as there are some circular dependencies on project level. 
+These can be solved by going deeper to artifact level.
+API projects looks good to be released.
+
+The process will need to inlude asking the projects what artifacts they will release.
+Add list to release review requests.
+We need to start asking projects to submit release reviews in order to be able to release according to planned Jakarta EE milestones.
+Encourage release reviews early.
+
+Action items:
+
+* Start conversation on the pmc mailing list
+* Finalize diagram
+ 
+== EE4J Twitter Handle
+
+Marketing team will own it. Three pmc members will get access to tweet from it (limited by Tweedeck).
+
+== Next Meeting
+
+Tuesday Jul 17 at 17:00 CET. 
