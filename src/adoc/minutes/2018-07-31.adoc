@@ -1,0 +1,64 @@
+= EE4J PMC Meeting #19
+
+== General
+
+Date: 2018-07-31
+
+Present:
+
+* Dmitry
+* Steve
+* Wayne
+* Tanja
+* Kevin
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Adding Committers to EE4J Projects
+
+There has been some comments (on private mail) from community members regarding the addition of Oracle personnel to the projects. 
+
+We should communicate more clearly about the fact that releasing Eclipse Glassfish is a significant part of the transfer from Oracle to Eclipse, 
+thus there is need to quickly add Oracle personnel to the project to make that release happen. 
+Meaning that some of the normal practices for accepting committers may have to be bypassed.
+
+
+== Release Reviews
+
+Dmitry has created a document. 
+
+https://docs.google.com/document/d/1tJdMBpUq10Arly1RBdcMITmCg1GemvFM0HwKF89O6QU/edit#heading=h.uyqe1vucf7dy
+
+What about SNAPSHOTS?
+Dmitry will add a small comment about releasing snapshots.
+Instructions will be updated after JSON-P is released.
+
+Release reviews for all API projects on the way. Only licenses updated.
+Before release review, all ip review of the initial contribution must be passed.
+Wayne propose a single release review for all components that are intermingled.
+The leaf projects can be pushed through before.
+Projects will release milestones to a “staging repository”, OSSRH.
+
+*javax Namespace*
+
+Development ok, as long as nothing is released. Are staging releases ok with modified namespaces? Raise the discussion in the Jakarta EE Steering Committee. Ask for interpretation of the agreement between Oracle and Eclipse Foundation. Follow up.
+
+== Relationship between Java EE and Java SE
+
+Some EE 8 specs are part of SE. 
+Discussed the relationship with SE and the modules deprecated for removal
+
+https://github.com/eclipse-ee4j/ee4j/issues/6 
+
+== Status of the builds
+
+What is the status of the builds?
+We must make sure that all projects builds. 
+Wayne will ask for a list of all EE4J project builds.
+
+== Next Meeting
+
+Tuesday Aug 28 at 17:00 CET. 
