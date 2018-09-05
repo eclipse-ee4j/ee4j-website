@@ -1,0 +1,96 @@
+= EE4J PMC Meeting #20
+
+== General
+
+Date: 2018-08-28
+
+Present:
+
+* David
+* Mark
+* Wayne
+* Kevin
+* Dmitry
+* Steve
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+Defer to next meeting.
+
+== Release Reviews
+
+https://projects.eclipse.org/projects/ee4j.jaxrs/reviews/2.1.1-release-review 
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=538340 
+
+Wayne will initiate the process. At least one PMC member needed to +1.
+Look out for javax namespace e.g.
+
+== CI/CD Pipelines
+
+Dmitry went through the status.
+Concern that there is a lack of commitment and initiative from community.
+Only active project seems to be jax-rs and jersey.
+
+Actions: 
+
+* Dmitry will add project leads to the spreadsheet
+* Reach out the the project leads (all, to respective organization) and push them
+* Encourage project leads to subscribe to the pmc mailing list as well as the dev-list of their project (Ivar mail on community lists)
+* Cross post link to minutes on both community and pmc list
+
+== CQ Walkthrough
+
+Wayne went through the list of CQs and their status.
+PMC do a quick technical assessment in order to approve. IP team will do a thorough review.
+Look for third party, namespaces, license
+
+Action: All PMC members go through the workswith CQ and give a +1 in comment field if ok.
+
+https://dev.eclipse.org/ipzilla/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=ee4j&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=NEW&emailassigned_to1=1&emailtype1=substring&email1=&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=[Open EE4J CQs] 
+
+== PMC Presence at OC1 and ECE
+
+We have a room with classroom-like setup, with a capacity of about 130 people dedicated to Jakarta EE and MicroProfile.
+
+Eclipse Foundation seeks input from the  PMC on what type of activities we should plan for this event? 
+
+Here are some of the questions:
+
+*Who from the PMC is going to EclipseCon Europe 2018?*
+
+*ECE*
+
+* Steve
+* Kevin
+* Wayne
+* Dmitry
+
+*OC1*
+
+* David
+* Ivar
+* Mark
+
+
+*What can we do on the Jakarta EE and MicroProfile Community Day?*
+
+For example, we can possibly do Specification related conversation (current state and future)
+Covered by the Jakarta EE Marketing Committee. Ask them to reach to the PMC members going to the conferences. 
+
+*Plan for activities related to EE4J projects.* 
+
+Action: Ivar mail list of pmc members to Tanya
+
+*What other activities we can plan?*
+
+Can we do hands-on of some type on MicroProfile?
+
+== Project Status
+
+8 projects lack initial contribution. Should be right around the corner. 
+
+== Next Meeting
+
+Tuesday Sep 11 at 18:00 CET (NOTE this will be a 30 min meeting). 
