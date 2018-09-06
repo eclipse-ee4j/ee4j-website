@@ -117,6 +117,8 @@ digraph G {
 	project_glassfish -> project_servlet;
 	project_glassfish -> project_tyrus;
 	project_glassfish -> project_websocket;	
+	project_glassfish -> project_jta;
+	project_glassfish -> project_grizzly;
 	
 	// EJB
 	project_ejb -> project_jta;
@@ -167,7 +169,6 @@ digraph G {
 	//	External: com.sun.xml.registry:jaxr-impl, net.java.dev.stax-utils:stax-utils
 	project_metro -> project_jaxws;
 	project_metro -> project_stable; // jax-rpc, javax.xml.registry:javax.xml.registry-api
-	project_metro -> project_grizzly; // com.sun.grizzly:grizzly-framework-http
 	project_metro -> project_ca;
 	project_metro -> project_javamail;
 	project_metro -> project_jca;
@@ -178,14 +179,7 @@ digraph G {
 	project_metro -> project_orb; // org.glassfish.gmbal:gmbal, org.glassfish.external:management-api
 
 	// Grizzly
-	project_grizzly -> project_jersey;
-	project_grizzly -> project_jaxb;
-	project_grizzly -> project_jaxb_impl;
-	project_grizzly -> project_metro;
-	project_grizzly -> project_ca;
-	project_grizzly -> project_jaxws;
 	project_grizzly -> project_servlet;
-	project_grizzly -> project_stable;
 
 	// OpenMQ
 	project_openmq -> project_metro;
@@ -232,20 +226,15 @@ digraph G {
 
 	// Tyrus
 	project_tyrus -> project_websocket;
-	project_tyrus -> project_ejb;
 	project_tyrus -> project_jsonp;
-	project_tyrus -> project_servlet;
-	project_tyrus -> project_jaxrs;
 	project_tyrus -> project_grizzly;
-	project_tyrus -> project_jersey;
 
 	// Circular dependencies
-	project_jta -> project_glassfish [dir=both;color=red];
 	project_glassfish -> project_metro [dir=both;color=red];
 	project_glassfish -> project_jersey [dir=both;color=red];
-	project_glassfish -> project_grizzly [dir=both;color=red];
 	project_openmq -> project_glassfish [dir=both;color=red];
 	project_orb -> project_grizzly [dir=both;color=red];
+	project_metro -> project_grizzly [dir=both;color=red];
 	project_metro -> project_jaxb_impl [dir=both; color=red];
 	project_ejb -> project_stable [dir=both; color=red];
 		
