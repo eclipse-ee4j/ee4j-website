@@ -2,7 +2,7 @@
 
 As part of our next weekly build team sync up meeting we are hosting a webinar “Creating CI/CD pipelines for EE4J projects”. Authors of two working pipelines Tomas Kraus (JSON-P project) and Markus Karg (JAX-RS project) will demonstrate their work and explain it in details. Eclipse webmasters are also participating, so you will have an opportunity to get answers to your questions about the Eclipse infrastructure. Feel free to forward this invitation to all interesting parties.
 
-* Meeting details:*
+*Meeting details:*
 
 Creating CI/CD pipelines for EE4J projects
 
