@@ -1,0 +1,61 @@
+= EE4J PMC Meeting #21
+
+== General
+
+Date: 2018-09-11
+
+Present:
+
+* Dmitry
+* Wayne
+* Tanja
+* Kevin
+* David
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the https://github.com/eclipse-ee4j/ee4j/issues[GitHub Issues].
+
+Discussed the notion of temporary committers in the setup phase.
+The EDP allows the PMC to add/remove committers under exceptional circumstances.
+These cases to be discussed on the PMC mailing list followed by a request to the EMO
+
+== CI/CD Pipelines
+
+*Follow up on Actions:*
+
+* Dmitry will add project leads to the spreadsheet
+https://docs.google.com/spreadsheets/d/1e8inaprMOjnq04hU2o76egHhC8AF3-vNvqjRq6GR0eM/edit#gid=0 - *DONE*
+* Reach out the the project leads (all, to respective organization) and push them - *ongoing*
+* Encourage project leads to subscribe to the pmc mailing list as well as the dev-list of their project (Ivar mail on community lists) - *ongoing*
+* Cross post link to minutes on both community and pmc list - *DONE*
+
+Dmitry updated on the status. 
+There are sessions planned for getting people up to speed on setting up CI/CD pipelines.
+Discussed the schedule and possible deadlines for the release of Eclipse GlassFish 5.1. 
+Will be published on the PMC mailing list when ready.
+
+*Risks*
+
+* Contribution of assessments to complete (IP checks slow)
+* Community commitment to CI/CD
+* No experience with simultaneous release reviews
+
+== Community Day at ECE
+
+https://wiki.eclipse.org/JakartaEE_-_MicroProfile_-_Community_day
+
+The PMC encourages community members and vendors to join and contribute to making this a successful event.
+
+== CQ Workswith
+
+*Follow up on Action:*
+
+All PMC members go through the workswith CQ and give a +1 in comment field if ok.
+
+https://dev.eclipse.org/ipzilla/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=ee4j&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=NEW&emailassigned_to1=1&emailtype1=substring&email1=&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=[Open EE4J CQs] 
+
+== Next Meeting
+
+Tuesday Sep 25 at 17:00 CET
