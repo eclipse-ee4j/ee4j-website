@@ -1,0 +1,72 @@
+= EE4J PMC Meeting #23
+
+== General
+
+Date: 2018-10-09
+
+Present:
+
+* Tanja
+* Wayne
+* Kevin
+* Dmitry
+* David
+* Mark
+* Steve
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Maven coordinates for implementation projects
+
+There are some implementations using com.sun and org.glassfish groupIds. We need to make a statement about how to deal with it. 
+Options are:
+Leave it as it is for now and change it in the next GF release (I vote for it)
+Change it now to something eclipse/ee4j related
+
+Recommend using standard Eclipse groupIds like: org.eclipse.<projectname> for the next GlassFish release. Use existing for this upcoming release (if the current TM owners are ok with it). 
+
+== Module Names
+
+https://www.eclipse.org/lists/ee4j-pmc/msg01229.html 
+
+https://www.eclipse.org/lists/ee4j-pmc/msg01195.html 
+
+=== Specification Projects
+
+For the upcoming release, i.e. re-releasing the EE 8 versions, nothing should be changed.
+No changes in module names for upcoming release. No module names must be added for this release.
+
+Decision:
+For future releases (master branch), the names should follow a standard, but we are not sure how and by whom this standard should be created.
+
+Proposal:
+One way is that it is derived from a community discussion facilitated by the PMC.
+Start of the discussion with a statement where the PMC recommends using “jakarta.*” as module names.
+
+=== Implementation Projects
+
+The jakarta namespace must not be used for implementation projects. Eclipse standard practices should be used. The PMC suggests “org.eclipse.*” as module name. Present on the mailing list and see how the feedback will be.
+
+Ivar: Create a GitHub issue and email a link to the issue. One for each of the project types.
+
+Spec Projects: https://github.com/eclipse-ee4j/ee4j/issues/34
+
+Implementation Projects: https://github.com/eclipse-ee4j/ee4j/issues/35
+
+== New lead for Common Annotations project
+
+Werner Keil and Markus Karg volunteered. The PMC suggest to propose them as co-leads. They must first be voted in as committers. Move discussion to the mailing list.
+
+== PMC members involvement
+
+Users are complaining that emails in PMC mailing list are not answered or the response is slow.
+
+PMC members are encouraged to be more active on the mailing list.
+
+== Next Meeting
+
+Tuesday Nov 6 at 17:00 CET +
+*NOTE that we skip the meeting scheduled during EclipseCon/Code One*
