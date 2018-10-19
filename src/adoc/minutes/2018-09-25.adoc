@@ -1,0 +1,67 @@
+= EE4J PMC Meeting #22
+
+== General
+
+Date: 2018-09-25
+
+Present:
+
+* Dmitry Kornilov
+* David Blevins
+* Steve Millidge
+* Mark Little
+* Ivar Grimstad
+* Tanja Obradovic
+* Wayne Beaton
+
+== Action Items
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+“Meet the Specs” session at EclipseCon Europe
+Immediate Committer status for Mark Wareham on Eclipse Project for Concurrency.
+Working Group Meeting
+
+== Meet the Specs
+
+* Please respond to Heiko’s email regarding participating in the EclipseCon Europe “Community Day” session. Solicit participants to join the session to present their specifications to the community. 
+
+== Committer Status
+
+Wayne will grant Mark Wareham status based on PMC request.
+
+== Working Group Meeting
+
+Thank you to Ivar and Dmitry for their participation in the first Working Group Meeting on Monday, September 24/2018.
+Meetings will be organized monthly. Please respond to the Doodle Poll.
+Regular PMC engagement in the Working Group call going forward will be valuable.
+Make a PMC update be a regular feature.
+
+== Project Websites
+
+The Jakarta EE Marketing Committee suggests a homogeneous look and feel for the project websites, similar to MicroProfile (https://microprofile.io).
+
+Are we interested? If so, the Marketing Committee will create a template and description for us to use.
+
+Each specification has an existing website. Next step is to migrate existing websites.
+
+Presence of the Specification projects on the jakarta.ee website. Consider generating from GitHub repositories. Eclipse MicroProfile project has code to do this automatically. Provide link to GitHub repo with Asciidoctor file in a standard format. Dmitry and David will coordinate.
+
+The PMC thinks that this is a good idea and welcomes the Marketing Committee’s template. EE4J Projects will be encouraged to participate (based on the intrinsic value of the concept). If you want to be part of the Jakarta EE website, do this. Otherwise, good luck to you.
+
+== PMC Communications
+
+It has been suggested on the mailing list that we are clear when communicating on the mailing list. Something in the lines of [PMC DECISION] compared to [PERSONAL OPINION].
+
+PMC policies, requirements, best practices, etc. will be posted on the EE4J Website (or Wiki); the website/wiki becomes the source of truth. PMC mailing list is for discussion.
+
+Open question: “which website/wiki?” We decided to move discussion to the PMC Mailing list.
+
+== Eclipse GlassFish
+
+* All code is contributed! The IP Team has granted “checkin” and all projects have code in Eclipse Foundation Git repositories.
+* Eclipse GlassFish is building on Eclipse CI.
+* Java EE 8 CTS tests are running.
+* Dmitry has concerns that the CI/CD release pipelines are not progressing as quickly as they need to. 30 “to do items”; 67 “in progress”, 10 “done”. Again, we need the community leaders/vendors to work with their people to step up to make sure that these tasks are completed.
+
+== Next Meeting
+
+Tuesday Oct 9 at 17:00 CET
