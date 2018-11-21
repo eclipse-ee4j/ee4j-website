@@ -1,0 +1,40 @@
+= EE4J PMC Meeting #25
+
+== General
+
+Date: 2018-11-20
+
+Present:
+
+* Dmitry
+* Mark
+* Kevin
+* Wayne
+* Tanja
+* Steve
+
+== OSSRH issues
+
+Staging artifacts get deleted after 2 weeks. The solution could be in moving maven.java.net to the Eclipse Foundation. PMC will follow up.
+
+== Common Annotations project
+
+PMC is making Ray a committer and a lead of the project. PMC needs to be more transparent in this area.
+
+ACTION: Wayne will deal with communication it out to the community.
+
+== Non EE4J projects
+
+The PMC urge the non-EE4J projects to release a version of their spec ASAP with the jakarta group id.
+
+ACTION: Mark will push it. 
+
+== New PMC Member
+
+Wayne nominated Kenji Kazumura as a new PMC Member and requests a vote.
+
+== Ohter topics
+
+ACTION: Dmitry will find out the status of transferring schemas repository.
+
+We discussed a role of the platform project and the platform roadmap ownership. Will follow up on it.
