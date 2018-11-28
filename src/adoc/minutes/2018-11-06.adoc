@@ -1,0 +1,115 @@
+= EE4J PMC Meeting #24
+
+== General
+
+Date: 2018-11-06
+
+Present:
+
+* Dmitry
+* Kevin
+* Wayne
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Module Names
+
+https://www.eclipse.org/lists/ee4j-pmc/msg01229.html 
+
+https://www.eclipse.org/lists/ee4j-pmc/msg01195.html 
+
+=== Specification Projects
+
+Close discussion on https://github.com/eclipse-ee4j/ee4j/issues/34 and make recommendation.
+
+According to discussions in the PMC following this thread, the PMC will issue a statement saying that jakarta.* will be a requirement as module names for future releases. The current release should keep the module names as defined in the Java EE 8 version of the spec, or no module name at all.
+
+=== Implementation Projects
+
+Close discussion on https://github.com/eclipse-ee4j/ee4j/issues/35 and make recommendation.
+
+This statement is only about module names, not package names. Module names must not be jakarta.* or anything containing ee4j. Otherwise common Eclipse practice must be followed. Note that this is not about package names.
+Action: Take this statement to the mailing list and.
+
+== GIT Tag name conventions
+
+https://www.eclipse.org/lists/ee4j-pmc/msg01186.html 
+
+The PMC recommends:
+
+* Use version number as TAG name
+* Use annotated tags
+
+If a project wants to deviate from this, it is ok. A released version MUST be tagged.
+
+== GIT Security Alerts
+
+https://www.eclipse.org/lists/ee4j-pmc/msg01313.html 
+
+Decide on how we should handle this.
+Do project leads get these notifications?
+Who’s responsibility is it to handle these? Eclipse Security team?
+
+Action: Wayne will create an issue so we can discuss what we should do and define a process.
+
+== Release Reviews
+
+Some members have noticed EE4J projects being released to Maven Central without release review according to the EDP. 
+Discussion thread: https://www.eclipse.org/lists/ee4j-pmc/msg01357.html 
+
+=== EJB
+
+https://projects.eclipse.org/projects/ee4j.ejb/governance
+https://search.maven.org/search?q=g:jakarta.ejb
+
+=== JPA
+
+https://projects.eclipse.org/projects/ee4j.jpa/governance 
+https://search.maven.org/search?q=g:jakarta.persistence
+
+== Annotations API
+
+https://projects.eclipse.org/projects/ee4j.ca/governance 
+https://search.maven.org/search?q=g:jakarta.annotation
+
+Decide on how we should handle this. 
+EDP require that a project engage in a release review prior to performing a release. Please be careful.
+
+Communicate to projects that it is better to submit a release review earlier than later.
+Set up a 30 min call and invite project leads to go through the process.
+
+== Common Annotations project
+
+The project has no active project lead. The PMC will set up Ray Auge as project lead.
+Action: Email EMO
+Write on the mailing list thread.
+
+== Jakarta NoSQL Specification project proposal
+
+https://projects.eclipse.org/proposals/jakarta-ee-nosql 
+
+All Jakarta WG members are allowed to have representatives on the spec projects
+
+== Non EE4J projects
+
+The PMC urge the non-EE4J projects to release a version of their spec ASAP with the jakarta group id.
+Lift this issue to Steering Committee. Ivar will bring it up at the SC meeting.
+
+== EE4J Representative on the Security Team
+
+Email: security@eclipse.org
+
+Action: Select a representative for the security team. Wayne will educate us.
+
+== New PMC Member
+
+Wayne to nominate a new PMC Member and request a vote.
+Table to next meeting.
+
+== Next Meeting
+
+Tuesday Nov 20 at 17:00 CET
+*NOTE: Ivar is in Australia that week, so someone else will have to lead this call*
