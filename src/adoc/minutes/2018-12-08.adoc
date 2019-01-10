@@ -1,0 +1,60 @@
+= EE4J PMC Meeting #26
+
+== General
+
+Date: 2018-12-04
+
+Present:
+
+* Steve
+* Dmitry
+* Kevin
+* David
+* Wayne
+* Tanja
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+A discussion came up that we will need to split the projects between GlassFish components and API/Spec projects preferably early next year. A split of PMC will also most likely be a part of this.
+
+== Eclipse GlassFish 5.1 release plan
+
+Dmitry gave a walkthrough of the progress with GlassFish. 
+CTS 2nd Dec: 99.37% pass. 
+Will inform the Steering Committee SC today to move GF release date to January 2019. 
+Best case is that everything is integrated by Christmas. 
+Two additional weeks from beginning of January needed to run the tests (best case).
+
+Marketing Committee must have two weeks notice for the release date. 
+Will provide the release date probably by the end of December, at the latest the first week of January.
+
+== Non EE4J projects
+
+A move of release date enables uptake of these projects.
+
+== EE4J Representative on the Security Team
+
+Email: security@eclipse.org
+
+ACTION: Select a representative for the security team. 
+Wayne will educate us.
+Tabled to next meeting.
+
+== Platform Project
+
+Follow up discussion from last meeting.
+
+Discuss Road map
+The Steering Committee requests that the Eclipse Jakarta EE Platform project develop and maintain the technical roadmap for Jakarta EE, and asks the Jakarta EE Platform project team to provide its technical roadmap recommendations to the Steering Committee on at least a semi-annual basis.
+
+The PMC is not responsible for the roadmap. 
+EE4J contains more projects than potentially is a part of the Jakarta EE platform. 
+We should set up a separate meeting for the platform project. 
+Start this up January 2019.
+
+== Next Meeting
+
+Tuesday, Jan 8 at 17:00 CET
