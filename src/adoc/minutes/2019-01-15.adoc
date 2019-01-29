@@ -57,7 +57,7 @@ Followed up on the discussion regarding splitting up EE4J (and with that the PMC
 The split would in practice be to split out the implementation projects to a GlassFish top level project with its own PMC and rename the EE4J project to Jakarta (or Jakarta EE?).
 Minor updates would be needed to the EE4J charter and a new charter for the GlassFish project would need to be written.
 
-*The PMC suggests we split EE4J into GlassFish and Jakarta after the 5.1 release.*
+The PMC discussed that we possibly could split EE4J into GlassFish and Jakarta sometime after the 5.1 release.
 
 The reason for this is that we don’t know the timeline for GlassFish 5.2 and don’t want this split to cause any further delays.
 
