@@ -1,0 +1,69 @@
+= EE4J PMC Meeting #2019-02
+
+== General
+
+Date: 2019-01-29
+
+Present:
+
+* Tanja
+* David
+* Kenji
+* Kevin
+* Dmitry
+* Steve
+* Wayne
+* Ivar
+
+*NOTE That we now have a shared calendar.*
+
+== Approve Minutes from the last meeting
+
+The minutes from the last meeting with a couple of comments that were updated during the meeting.
+
+== Split EE4J? (i.e. creating a different PMC for GlassFish)
+
+Discussed the implications of a “split”. At the moment the TCK ships with _a_ version of GlassFish. 
+This needs to be further discussed with the Jakarta EE working group following the Jakarta EE 8 release.
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Eclipse GlassFish 5.1
+
+Congratulations! Eclipse GlassFish 5.1 is GA and Java EE 8 Compatible!
+
+Released to Maven Central as well as https://projects.eclipse.org/projects/ee4j.glassfish/downloads 
+
+== EE4J Representative on the Security Team
+
+More information at https://eclipse.org/security 
+
+*ACTION* from the last meeting: Select a rep on the next meeting. 
+Could be anyone, preferably a committer, from one of the member organizations with a security background. 
+Kevin and Steve are looking in their organizations if there is anyone that could take this role.
+
+== JAX-B TCK Contribution from Oracle
+
+Dmitry asked where to put this TCK, api, impl or new project?
+
+The PMC suggested adding a repo for the TCK in the API project
+
+== Work after GlassFish 5.1
+
+Recommendations for how to work on the next version of GlassFish (e.g. branching strategy). 
+Since we lack a final agreement on the use of javax.* namespace, the current structure should be kept (same branches) for the Jakarta EE 8 release of GlassFish. Same restrictions apply.
+
+== Jakarta EE Town Hall Meeting
+
+January 30th 11 AM EST. 
+Open for everyone!
+The PMC will participate in the panel (Dmitry, Kevin, David, Dan, Ivar,...).
+
+Heiko Rupp will be moderating the panel.
+
+== Next Meeting
+
+Tuesday, Feb 12 at 17:00 CET
+
