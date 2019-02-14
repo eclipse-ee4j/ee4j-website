@@ -1,0 +1,32 @@
+= EE4J PMC Meeting #2019-03
+
+== General
+
+Date: 2019-02-12
+
+Present:
+
+* Kenji
+* Dmitry
+* Wayne
+* Steve
+* Kevin
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE Developer Survey
+
+Wayne encouraged the PMC to email him if they are interested in helping form the upcoming Jakarta EE Developer Survey.
+
+== EE4J Representative on the Security Team
+
+More information at https://eclipse.org/security. +
+Wayne has received suggested representatives from Payara and IBM.
+
+== Next Meeting
+
+Tuesday, Feb 26 at 17:00 CET
+
