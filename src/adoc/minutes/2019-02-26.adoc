@@ -1,0 +1,30 @@
+= EE4J PMC Meeting #2019-04
+
+== General
+
+Date: 2019-02-26
+
+Present:
+
+* Dmitry
+* Kevin
+* Tanja
+* Wayne
+* Kenji
+* Steve
+* David
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+Discussed the tasks associated with the Jakarta EE 8 release regarding release reviews. 
+The project scopes, titles, and descriptions will need to be updated in order to transition the API projects to Jakarta EE specification projects.
+
+== Next Meeting
+
+Tuesday, Mar 12 at 17:00 CET
+
