@@ -1,0 +1,61 @@
+= EE4J PMC Meeting #2019-06
+
+== General
+
+Date: 2019-03-26
+
+Present:
+
+* Dmitry
+* Tanja
+* Wayne
+* Kenji
+* Steve
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Revise + Communicate PMC restrictions on projects
+
+https://www.eclipse.org/ee4j/news/?date=2018-02-16 
+
+We discussed sending out updated information regarding restrictions for the projects in order to be able to release Jakarta EE 8.
+Ivar will send out the following message on the mailing list: 
+
+Projects may go on with developing new features as well _as long as we are able to release Jakarta EE 8 and Eclipse GlassFish 5.2 versions with only the necessary changes required for the release (e.g. name and version number)_. 
+*These changes must be possible to merge into the master branch after the release.* 
+It is up to the projects if they want to keep the EE4J_8 branch for this purpose or create a new release branch from the tag created for the GlassFish 5.1 release.
+
+Nightly builds of SNAPSHOT releases for the API projects may be set up for the projects and be made available on build servers, but *may not be published* through channels such as Maven Central, OSSRH or similar until the trademark agreement between Oracle and Eclipse Foundation regarding the javax.* namespace is finalized.
+
+== Jakarta EE 8
+
+Scope statements for the API projects must be produced in order to be able to convert them into Specification Projects.
+
+*Actions:* 
+
+* Create a couple of examples and refer to them on the eclipse wiki (*Ivar and Wayne*)
+* Create an issue for each project with tasks for creating scope statements (*Ivar*)
+* Set up a board to follow the status of scope statements on GitHub (*Ivar*)
+* Reach out to projects to create their scope statements  (*PMC*)
+* Get approval from the Spec Committee for the scope statements (*Projects, PMC*)
+
+The PMC discussed how to handle non-responsive projects and concluded that if nobody steps up, the PMC will probably need to do it.
+
+*Resources*
+
+* https://github.com/eclipse-ee4j/jakartaee-platform/projects/3 
+* https://docs.google.com/spreadsheets/d/1FPLjo_DJDOQngVtdrYgaDk98d9NBG-0ODgdmOG3LOsI/edit?usp=sharing 
+
+== Tech Talks and blogs
+
+Community members are encouraged to sign up for Jakarta EE Tech Talks: https://docs.google.com/spreadsheets/d/19AfvCUdScUHwJejMYg370tum5mi7zI4bvkZczcQXiUM/edit#gid=0
+
+Community members are encouraged to blog about Jakarta EE and list the blog entries https://docs.google.com/spreadsheets/d/1JflN_xJ9d5ZWu5VUbDV9Spj7mc8WuPGMfd6EZgabXz0/edit#gid=0, to make the Jakarta EE social media aware of it to help promote the blogs.
+
+== Next Meeting
+
+Tuesday, April 9 at 17:00 CEST (11:00 EDT)
+
