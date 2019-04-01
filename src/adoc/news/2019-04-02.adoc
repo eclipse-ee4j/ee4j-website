@@ -1,0 +1,9 @@
+= Updated PMC statement for work Jakarta EE Specifications
+
+Date: 2019-04-02
+
+Projects may go on with developing new features as well as long as we are able to release Jakarta EE 8 and Eclipse GlassFish 5.2 versions with only the necessary changes required for the release (e.g. name and version number).
+These changes must be possible to merge into the master branch after the release.
+It is up to the projects if they want to keep the ´EE4J_8´ branch for this purpose or create a new release branch from the tag created for the GlassFish 5.1 release.
+
+Nightly builds of SNAPSHOT releases for the API projects may be set up for the projects and be made available on build servers, but may not be published through channels such as Maven Central, OSSRH or similar until the trademark agreement between Oracle and Eclipse Foundation regarding the javax.* namespace is finalized.
