@@ -1,4 +1,4 @@
-= Updated PMC statement for work Jakarta EE Specifications
+= Updated PMC statement for on work Jakarta EE Specifications
 
 Date: 2019-04-02
 
