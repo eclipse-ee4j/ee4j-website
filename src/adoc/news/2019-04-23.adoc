@@ -1,0 +1,14 @@
+= Naming Standard for Jakarta EE Specification Projects
+
+Date: 2019-04-23
+
+The Jakarta EE Specification committee has approved the following naming standard for Jakarta EE Specification projects: 
+
+* Replace “Java” with “Jakarta” (e.g. “Java Message Service” becomes “Jakarta Message Service”)
+* Add a space in cases where names are mashed together (e.g. “JavaMail” becomes “Jakarta Mail”)
+* Add “Jakarta” when it is missing (e.g. “Expression Language” becomes “Jakarta Expression Language”)
+* Rework names to consistently start with “Jakarta” (“Enterprise JavaBeans” becomes “Jakarta Enterprise Beans”)
+* Simplify/shorten names by removing words that do not add value (e.g. "Jakarta Message Service" becomes "Jakarta Messaging" and "Jakarta Servlet API" becomes "Jakarta Servlet")
+
+The EE4J PMC has been asked to rename the existing specifications according to this standard. 
+Tracking of the renaming is shown on the EE4J GitHub organization, https://github.com/orgs/eclipse-ee4j/projects/11
