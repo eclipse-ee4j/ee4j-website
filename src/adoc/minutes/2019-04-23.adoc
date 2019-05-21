@@ -1,0 +1,93 @@
+= EE4J PMC Meeting #2019-08
+
+== General
+
+Date: 2019-04-23
+
+Present:
+
+* Dmitry
+* Kenji
+* Kevin
+* Steve
+* Wayne
+* Tanja
+* David
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+=== Scope Statements
+
+Scope statements for the API projects must be produced in order to be able to convert them into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/10 
+
+.Actions
+* [x] Create a couple of examples and refer to them on the eclipse wiki (Ivar and Wayne)
+* [x] Create an issue for each project with tasks for creating scope statements (Ivar)
+* [x] Set up a board to follow the status of scope statements on GitHub (Ivar)
+* [ ] Reach out to projects to create their scope statements  (PMC)
+* [ ] Get approval from the Spec Committee for the scope statements
+* [ ] Verify that the list is complete (Ivar)
+* [ ] Create a couple of examples and refer to them on the eclipse wiki (Ivar and Wayne)
+* [ ] Create an issue for each project with tasks for creating scope statements (Ivar)
+
+Progress on names and scope statements.
+PMC will follow up. 
+Request steering committee to explain why names must change.
+
+.Discussion
+Scope statements for spec or project.
+What we need is scope for the specifications.
+Scope for project is doc, api and tck. The tck does not need to be a part of the project, but is in the scope of the project.
+
+=== Specification Names
+Specifications (and the specification projects) must be renamed in order to be converted into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/11 
+
+.Actions 
+* [x] Set up board to follow the status of renaming (Ivar)
+* [x] Create issues for each project/specification on GitHub (Ivar)
+* [ ] Communicate why this is necessary
+* [x] Naming standard communicated to Specification Committee with one +1
+* [ ] Publish an official naming standard on the ee4j news web page (Ivar)
+* [ ] Get approval from the Spec Committee for the names
+
+Announce that the discussion has been open for a month and this is the proposals.
+
+Push through the creation of a couple of spec projects once we have five/six ready to verify the process.
+
+Discussed CDI.
+
+== Samples Project Proposal
+
+.Current samples projects
+* Older versions of javaee samples: https://github.com/javaee-samples (MIT + fuzzy stuff)
+* GlassFish samples: https://github.com/javaee/glassfish-samples (CDDL-1.1 -> EDL)
+* Java EE 7 samples: https://github.com/javaee/javaee7-samples (CDDL-1.1 -> EDL)
+* Cargotracker https://github.com/javaee/cargotracker (CDDL-1.1 -> EDL)
+
+The new samples project (Jakarta EE Examples) proposal is based on:
+https://github.com/manorrock/jakartaee-examples (BSD-0)
+Wayne will follow up on the licensing options and post status on the email thread on the pmc-mailing list
+
+== Jakarta EE 9 Namespaces
+
+Discussed how to bring the message to the community.
+
+== Frequency of PMC meetings
+
+Agreed on keeping the current schedule.
+
+== Next Meeting
+
+Tuesday, May 7 at 17:00 CEST (11:00 EDT)
+
