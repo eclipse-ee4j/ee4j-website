@@ -1,0 +1,64 @@
+= EE4J PMC Meeting #2019-09
+
+== General
+
+Date: 2019-05-07
+
+Present:
+
+* Dmitry
+* Kenji
+* Kevin
+* David
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+=== Scope Statements
+
+Scope statements for the API projects must be produced in order to be able to convert them into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/10 
+
+.Actions 
+* [x] Create a couple of examples and refer to them on the eclipse wiki (Ivar and Wayne)
+* [x] Create an issue for each project with tasks for creating scope statements (Ivar)
+* [x] Set up a board to follow the status of scope statements on GitHub (Ivar)
+* [x] Reach out to projects to create their scope statements  (PMC)
+* [x] Wayne will email project leads
+* [ ] Get approval from the Spec Committee for the scope statements
+* [ ] Verify that the list is complete (Ivar)
+* [x] Progress on names and scope statements
+* [ ] PMC will follow up 
+* [x] Request steering committee to explain why names must change
+
+Use the traction on the platform mailing list to encourage scope statements to be proposed.
+Ivar will post a new thread.
+
+Names may be influenced by package names.
+
+=== Specification Names
+
+Specifications (and the specification projects) must be renamed in order to be converted into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/11 
+
+.Actions 
+* [x] Set up board to follow the status of renaming (Ivar)
+* [x] Create issues for each project/specification on GitHub (Ivar)
+* [x] Communicate why this is necessary
+* [x] Naming standard communicated to Specification Committee with one +1
+* [x] Publish an official naming standard on the ee4j news web page (Ivar)
+* [ ] Get approval from the Spec Committee for the names
+
+Names may be influenced by package names.
+
+== Next Meeting
+
+Tuesday, May 21 at 17:00 CEST (11:00 EDT)
