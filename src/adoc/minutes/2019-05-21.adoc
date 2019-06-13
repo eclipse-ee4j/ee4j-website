@@ -1,0 +1,82 @@
+= EE4J PMC Meeting #2019-10
+
+== General
+
+Date: 2019-05-21
+
+Present:
+
+* Ivar
+* Dmitry
+* Kevin
+* Kenji
+* Mark
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+=== Specification Projects
+
+Jakarta Batch - Everything is in place for the Creation Review, scheduled for June 5.
+Wayne has started the vote via an email thread to the Spec Committee.
+After these complete, then it should be ready for provisioning and migration from existing sources/repos.
+
+=== Scope Statements
+
+Scope statements for the API projects must be produced in order to be able to convert them into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/10
+
+.Actions
+* [x] Create a couple of examples and refer to them on the eclipse wiki (Ivar and Wayne)
+* [x] Create an issue for each project with tasks for creating scope statements (Ivar)
+* [x] Set up a board to follow the status of scope statements on GitHub (Ivar)
+* [x] Reach out to projects to create their scope statements  (PMC)
+* [x] Wayne will email project leads
+* [ ] Get approval from the Spec Committee for the scope statements
+* [ ] Verify that the list is complete (Ivar)
+* [x] Progress on names and scope statements
+* [ ] PMC will follow up
+* [x] Request steering committee to explain why names must change
+
+Is there anything we can do to speed up the process?
+Can we just create statements for the projects that are missing?
+What should we do with the project teams that haven’t responded yet? M
+ake the point that these statements are important
+
+.Give a deadline for statements
+
+We will need the scope statements by the 31th of May, otherwise, we will provide it for them.
+State that the lack of activity is a major concern for the PMC. May have to revisit the composition of the unresponsive projects.
+Ivar and Wayne will compose a message and send on the mailing list.
+
+=== Specification Names
+
+Specifications (and the specification projects) must be renamed in order to be converted into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/11
+
+.Actions
+* [x] Set up board to follow the status of renaming (Ivar)
+* [x] Create issues for each project/specification on GitHub (Ivar)
+* [x] Communicate why this is necessary
+* [x] Naming standard communicated to Specification Committee with one +1
+* [x] Publish an official naming standard on the ee4j news web page (Ivar)
+* [ ] Get approval from the Spec Committee for the names
+
+Same message applies to the names as for the scope statements.
+
+== Specification Project Releases
+
+Discussed sending out a mail to the PMC mailing list about not releasing new versions of specifications until the provisioning of the projects has been done.
+Kevin will draft a message for review before we send i on the PMC mailing list.
+
+== Next Meeting
+
+Tuesday, Jun 04 at 17:00 CEST (11:00 EDT)
+
