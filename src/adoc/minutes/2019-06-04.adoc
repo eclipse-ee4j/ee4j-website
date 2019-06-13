@@ -1,0 +1,79 @@
+= EE4J PMC Meeting #2019-11
+
+== General
+
+Date: 2019-06-04
+
+Present:
+
+* David
+* Kevin
+* Wayne
+* Tanja
+* Dmitry
+* Kenji
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+== Specification Projects Creation
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/13
+
+Discussed if API, spec and TCK sources should be in the same repository.
+
+The PMC recommends to keep the API and spec sources in the same repository but leaves the decision to the projects.
+The TCK is up to the project to decide, but the projects should be aware of the potential.
+
+=== Scope Statements
+
+Scope statements for the API projects must be produced in order to be able to convert them into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/10
+
+We need to create statements for the projects that are missing.
+
+.Action for all:
+Complete the missing statements or nudge issues, move to ongoing.
+
+Wayne will present 2-3 projects for restructuring to the spec committee and email status on the PMC mailing list.
+
+=== Specification Names
+
+Specifications (and the specification projects) must be renamed in order to be converted into Specification Projects.
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/11
+
+.Action
+Update GitHub issue status - all
+
+Write a suggested name and state that this will be chosen the 7th.
+
+== Jakarta EE 8 Release Schedule
+
+Dmitry presented the proposed release schedule.
+The goal is to deliver Jakarta EE 8 before Oracle Code One.
+Everything need to be completed and ready for release review by August 5 in order to meet this goal.
+_Placeholder specification documents_ will be used in the cases we haven’t received the specifications from Oracle yet, or time does not allow for updating the documents in order to meet the deadline.
+The PMC will ask the Steering committee to ask the EF to set up Nexus Pro to allow for TCK artifacts to live longer than the default 1 month.
+Dmitry will present the schedule to the Steering Committee.
+
+== Jakarta EE Platform Team Meetings
+
+Leave this to the project leads to decide.
+
+== Frequency of PMC meetings
+
+Change to weekly meetings the following couple of weeks. Tanja will update the calendar.
+
+== Next Meeting
+
+Tuesday, Jun 11 at 17:00 CEST (11:00 EDT)
+
