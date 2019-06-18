@@ -1,0 +1,57 @@
+= EE4J PMC Meeting #2019-12
+
+== General
+
+Date: 2019-06-11
+
+Present:
+
+* Mark
+* Steve
+* Kevin
+* Kenji
+* David
+* Wayne
+* Tanja
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+== Specification Projects Creation
+
+https://github.com/orgs/eclipse-ee4j/projects/13
+
+Help projects to create scope statements and names.
+Close issue when project is satisfied.
+Get them from todo and in progress to the “Ready for review” column.
+Discussed the projects that are both impl and spec projects.
+
+.JAF, JSF and JavaMail
+* Convert existing project into specification project
+* Create new project for implementation projects
+    ** Name: *Eclipse GlassFish Mail* and *Eclipse GlassFish Activation*
+    ** Scope: Implement the spec
+    ** Committers: same as spec project
+    ** Inform the project team: use github
+    ** Could these two be moved to the GlassFish project (as separate repositories)?
+* Create new spec project for JSF
+    ** Name: Jakarta Server Faces
+    ** Scope: _<tbd>_
+    ** Committers: Same as Mojarra
+
+.Action
+Ask Dmitry to explain javax.rmi in the ORB project.
+
+== Javax Namespace Issue
+
+We should create a list for each project what dependencies it has.
+Reach out to the projects and ask them to do this.
+Continue this discussion next week.
+
+== Next Meeting
+
+Tuesday, Jun 18 at 17:00 CEST (11:00 EDT)
