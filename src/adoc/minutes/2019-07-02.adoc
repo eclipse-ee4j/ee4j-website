@@ -1,0 +1,51 @@
+= EE4J PMC Meeting #2019-15
+
+== General
+
+Date: 2019-07-02
+
+Present:
+
+* Mark
+* Kevin
+* Dmitry
+* Kenji
+* Wayne
+* David
+* Ed (observer)
+* Ivar
+* Ed (observer)
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+== Specification Projects Creation
+
+https://github.com/orgs/eclipse-ee4j/projects/13
+
+Round 1 - completed +
+Round 2 - completed + 
+Round 3 - complete tomorrow + a JSF project
+
+== Specification Documents
+
+.Instructions 
+https://wiki.eclipse.org/How_to_Prepare_API_Projects_to_Jakarta_EE_8_Release
+
+- [ ] Create Issue in each project with ref to the above document a checkbox list with the items - Ivar
+- [ ] Create a tracking board - Ivar
+- [ ] Email on the PMC list + jakarta community list - Ivar
+- [ ] Each pmc member emails the project leads in their organization
+- [ ] Assist the projects and follow up progress - ALL
+
+For future, request to create a spec lead mailing list - David - *DONE*
+
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=548876 
+
+== Next Meeting
+
+Tuesday, Jul 09 at 17:00 CEST (11:00 EDT)
+
