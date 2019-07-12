@@ -1,0 +1,41 @@
+= EE4J PMC Meeting #2019-14
+
+== General
+
+Date: 2019-06-25
+
+Present:
+
+* Kevin
+* Dmitry
+* David
+* Wayne
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+== Specification Projects Creation
+
+https://github.com/orgs/eclipse-ee4j/projects/13
+
+Discuessed the need for creating an issue to merge the security projects to contain all security related specs. JACC, jaspic and security api.
+
+== Specification Documents
+
+Concern that project (leads) do not know what to update in the spec docs. 
+We should provide some guidance to the project leads about what they need to do. 
+The docs will be standard boilerplate. Will be on the steering committee
+
+== Eclipse Yasson Project
+
+Encourage participation from Payara and Red Hat.
+Oracle’s intention is to support Yasson in the future.
+
+== Next Meeting
+
+Tuesday, Jul 02 at 17:00 CEST (11:00 EDT)
+

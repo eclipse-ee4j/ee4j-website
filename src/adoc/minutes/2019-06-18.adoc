@@ -1,0 +1,48 @@
+= EE4J PMC Meeting #2019-13
+
+== General
+
+Date: 2019-06-18
+
+Present:
+
+* Dmitry
+* Kevin
+* Steve
+* Wayne
+* David
+* Tanja
+* Ivar
+* Ed (observer)
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+== Specification Projects Creation
+
+https://github.com/orgs/eclipse-ee4j/projects/13
+
+Discussed creating a spreadsheet with projects, specifications, new and old names + scope statements.
+
+=== Names
+
+All ready for review except the Stable APIs project
+
+.Scopes and names here
+https://docs.google.com/document/d/1B7CCkxS-euNzi4VFLSBolgoiICBLScm60zTVsh4E70g/edit#
+
+
+=== Scopes
+
+== Javax Namespace Issue
+
+We should create a list for each project what dependencies it has. Reach out to the projects and ask them to do this. 
+Continue this discussion next week.
+
+== Next Meeting
+
+Tuesday, Jun 25 at 17:00 CEST (11:00 EDT)
+
