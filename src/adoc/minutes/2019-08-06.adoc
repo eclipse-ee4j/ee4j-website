@@ -1,0 +1,34 @@
+= EE4J PMC Meeting #2019-20
+
+== General
+
+Date: 2019-08-06
+
+Present:
+
+* Kenji
+* David
+* Steve
+* Kevin
+* Dmitry
+* Ivar
+* Ed (observer)
+
+== Action Items (skipped)
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+Specification documents: 20 done, 12 in progress +
+TCKs: BV (⅛) and CDI (3/6). The rest looks ok. 
+
+Should be able to have all PRs ready by the end of August. 
+Suggest to shorten the 14 day voting period a little in order to make it to the release deadline?
+
+Approval of API
+
+== Next Meeting
+
+Tuesday, Aug 13 at 17:00 CEST (11:00AM EDT, 08:00AM PDT)
+
