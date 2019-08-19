@@ -1,0 +1,51 @@
+= EE4J PMC Meeting #2019-18
+
+== General
+
+Date: 2019-07-23
+
+Present:
+
+* David
+* Dmitry
+* Ivar
+* Ed (observer)
+
+== Action Items (skipped)
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+== Specification Documents
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/15 
+
+13 Done +
+16 In Progress +
+No appearant issues
+
+.New tasks added to:
+https://wiki.eclipse.org/How_to_Prepare_API_Projects_for_the_Jakarta_EE_8_Release
+
+Track item 6 +
+7 is out of scope for Jakarta EE 8 (separate tracking board) +
+9,10,11 need to be clarified +
+Bring up on the Steering Committee if Release Review is needed for these changes (Jakarta EE 8) since it is only minor updates.
+
+Update board according to steering committee input on 9-10-11 (submit release review):
+
+Submit PR to jakartaee-api +
+Submit Release Review (?)
+
+== General
+
+Attendance on PMC meetings. 
+Concern, but nothing to act on right now.
+Discussed that some of the spec projects have release tags with snapshots in it. 
+
+== Next Meeting
+
+Tuesday, Jul 30 at 17:00 CEST (11:00 EDT)
+
