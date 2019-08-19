@@ -1,0 +1,71 @@
+= EE4J PMC Meeting #2019-19
+
+== General
+
+Date: 2019-07-30
+
+Present:
+
+* Kevin
+* Wayne
+* David
+* Dmitry
+* Ivar
+* Ed (observer)
+
+== Action Items (skipped)
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+=== TCKs
+
+.List of TCK binaries (staging directory)
+https://download.eclipse.org/ee4j/jakartaee-tck/jakartaee8-eftl/promoted/ 
+
+JavaMail is here: http://download.eclipse.org/ee4j/javamail/tck/eftl/eclipse-mail-tck-1.6.0.zip 
+
+Batch is here: http://download.eclipse.org/jakartabatch/tck/eftl/jakarta.batch.official.tck-1.0.2.zip 
+
+CDI BV, @Inject missing +
+Mark will send Gunnar and Antoine an email
+
+Stable APIs +
+Deployments - Dmitry - done +
+Management - Kevin +
+JAX-R - David +
+JAX-RPC - Dmitry +
+
+The TCK files should be renamed to jakarta-* and not eclipse-*
+
+TCK results should be attached to the compatible implementation.
+
+
+=== Specification Documents
+
+.Tracking
+https://github.com/orgs/eclipse-ee4j/projects/15 
+
+ Done
+ In Progress
+
+== Jakarta Common Annotations
+
+Ray resigned as PL.
+Will not search for a new at this point. 
+Dmitry will be able to get resources from Oracle to finish it for Jakarta EE 8 release.
+Suggestion to incorporate into Platform Specification in the future.
+
+== JAX-WS
+
+Not a part of Jakarta EE 8
+Currently a part of Java SE 8. Must be included in Jakarta in the future since they have been removed from Java SE 9+. 
+Also applies to Activation.
+
+Recommend to start preparing these specs for final review after the Jakarta EE 8 specs enter final review.
+
+== Next Meeting
+
+Tuesday, Aug 6 at 17:00 CEST (11:00 EDT)
+
