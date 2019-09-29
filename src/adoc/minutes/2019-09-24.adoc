@@ -1,0 +1,51 @@
+= EE4J PMC Meeting #2019-23
+
+== General
+
+Date: 2019-09-24
+
+Present:
+
+* Dmitry
+* Kevin
+* Tanja
+* Ivar
+
+== Action Items (skipped)
+
+Review, discuss and update the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== PMC Meeting Frequency
+
+Suggestions:
+
+* Bi-weekly (every two weeks)
+* Monthly
+* Other
+
+Deferred to the next meeting.
+Platform meetings will also need to be scheduled. 
+Discussed using the same time slot as the PMC meetings when they are held less frequently.
+
+== Project Renaming
+
+Should be done according to the Eclipse Dev Process.
+Projects that want to rename must file an issue to the Eclipse webmaster. 
+Discussed whether the PMC should approve before the change is done. 
+
+	Wayne: No ceremony is required by the EDP. Just connect with the webmaster.
+
+A question to Wayne: What is impacted by a name change?
+
+	Wayne: Impacted are Project id, Git repo, mailing list, forum, website, IPzilla.
+
+== Jakarta EE Survey?
+
+Discussed whether we should have a survey specifically for Jakarta EE?
+Should it be initiated by the Platform project?
+Communicate from the PMC that we want to give the Platform project the task of creating a survey.
+
+== Next Meeting
+
+Tuesday, October 1 at 17:00 CEST (11:00AM EDT, 08:00AM PDT)
+

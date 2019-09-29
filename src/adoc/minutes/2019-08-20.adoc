@@ -1,0 +1,32 @@
+= EE4J PMC Meeting #2019-21
+
+== General
+
+Date: 2019-08-20
+
+Present:
+
+* Dmitry
+* Kenji
+* Ed 
+* Steve
+* David
+* Kevin
+* Ivar
+
+== Action Items (skipped)
+
+Revie, discuss, and updat the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== Jakarta EE 8
+
+Discussed whether the project teams know what to do with certification requests?
+Decided to publish a message from the PMC to guide the teams. 
+Spent the meeting discussing the content of this message.
+
+https://www.eclipse.org/lists/jakartaee-spec-project-leads/msg00224.html
+
+== Next Meeting
+
+Tuesday, Sep 3 at 17:00 CEST (11:00AM EDT, 08:00AM PDT)
+
