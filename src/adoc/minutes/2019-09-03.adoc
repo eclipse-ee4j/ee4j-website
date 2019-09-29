@@ -1,0 +1,40 @@
+= EE4J PMC Meeting #2019-22
+
+== General
+
+Date: 2019-09-03
+
+Present:
+
+* Dmitry
+* Kevin
+* Tanja
+* Ivar
+
+== Action Items (skipped)
+
+Review, discuss and update the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== PMC Meeting Frequency
+
+Suggestions:
+
+* Bi-weekly (every two weeks)
+* Monthly
+* Other
+
+Deferred to the next meeting.
+
+== What’s next
+
+Discussed how to move platform related discussions over to the platform project.
+Help this project get started. Suggest scheduling regular meetings with the project.
+
+== Jakarta EE 8
+
+One of the tasks for project teams after ballot passed is to go through the merged spec website page to verify all the links are valid. Need to provide a link to this website https://jakarta.ee/specifications/ so they know where to check the links.
+
+== Next Meeting
+
+Tuesday, September 24 at 17:00 CEST (11:00AM EDT, 08:00AM PDT)
+
