@@ -1,0 +1,59 @@
+= EE4J PMC Meeting #2019-24
+
+== General
+
+Date: 2019-10-01
+
+Present:
+
+* Mark
+* Dmitry
+* Steve
+* Ivar
+
+== Action Items
+
+Review, discuss and update the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+Deferred to next meeting.
+
+== PMC Meeting Frequency
+
+.Suggestions
+* Bi-weekly (every two weeks)
+* Monthly
+* Other
+
+Discussed meeting frequence and decided to suggest monthly meetings with the 1st Tuesday every month as meeting slot? 
+
+Action: Send suggestion for discussion on the PMC mailing list (Ivar)
+
+== Ivar joins Eclipse Foundation
+
+Discussed the impact on PMC. Decided to wait and see what directions the Working Group and/or the Eclipse Foundations have on the matter.
+
+== GlassFish
+
+Discussed contributions required for new committers. 
+E.g. Jenkins work can not be done without being a committer. 
+How to nominate someone dedicated to do this work elected without any “formal” contributions in the form of commits or pull requests.
+
+*PMC suggests:* Send an explanatory text with the nomination or simply ask the nominator to provide such when the election starts.
+
+== EclipseLink
+
+Build does not work on new cloud infrastructure. 
+The project needs this! 
+There are also other projects that are affected and complaining about poor performance on the current cloud infrastructure.
+
+Action: Ask Wayne when the move to the new solution is happening. 
+
+== PMC Meeting Attendance
+
+It has been a long time since we were all in attendance at the same meeting. 
+This is most likely due to the high pressure during the Jakarta EE 8 release. 
+We hope this will get better when we start with the monthly PMC meeting cadence.
+
+== Next Meeting
+
+Tuesday, November 5 at 17:00 CEST (11:00AM EDT, 08:00AM PDT)
