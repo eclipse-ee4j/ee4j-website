@@ -26,7 +26,7 @@ Deferred to next meeting.
 
 Discussed meeting frequence and decided to suggest monthly meetings with the 1st Tuesday every month as meeting slot? 
 
-Action: Send suggestion for discussion on the PMC mailing list (Ivar)
+Action: Send suggestion for discussion on the PMC mailing list (Ivar).
 
 == Ivar joins Eclipse Foundation
 
