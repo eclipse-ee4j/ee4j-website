@@ -1,0 +1,58 @@
+= EE4J PMC Meeting #2019-25
+
+== General
+
+Date: 2019-11-05
+
+Present:
+
+* Mark
+* Steve
+* Kenji
+* Tanja
+* Ivar
+
+== Action Items
+
+Reviewed, discussed and updated the GitHub Issues, https://github.com/eclipse-ee4j/ee4j/issues.
+
+== PMC Composition
+
+=== PMC Lead
+
+.The original resolution regarding PMC lead:
+RESOLVED, the Board unanimously approves the Eclipse EE4J PMC to rotate the non-Foundation staff members of the Eclipse EE4J PMC to serve as the PMC lead. 
+
+Assuming the PMC decides to have Ivar remain as PMC Lead, then it would need to request the Board to remove the “non-Foundation staff” phrase.
+
+The PMC decided to keep Ivar as PMC Lead and request the Board to remove the “non-Foundation staff” phrase from the resolution.
+
+=== PMC Representative on the Specification Committee
+Should Ivar continue as the PMC representative on the Specification Committee?
+It is understood by the Eclipse Foundation that if this should be the case, Ivar will represent the PMC and not the Eclipse Foundation in this matter.
+
+The PMC approved to continue with Ivar as the representative in the Specification Committee.
+
+== Specification Projects
+
+=== Remaining specs (JAF/JAXB/SAAJ/JAXWS)
+
+OK by the PMC. 
+These need to be approved by the spec committee for release according to the operations document.
+
+=== Jakartafication Status
+
+https://github.com/eclipse-ee4j/jakartaee-platform/projects/2 
+
+Action (Ivar): Ping the project teams (and leads) to get started on the “jakartafication” of the documents that have passed IP clarification and made available to the project teams.
+
+== Other
+
+Discussed using GitHub issue tracker as a way for projects to raise issues with the PMC. Check the tracker for new issues when creating the agenda. Remove the standing agenda item for going through the issues and purge old stuff.
+
+Action (Steve): Go through and comment on the issues.
+
+== Next Meeting
+
+Tuesday, December 3 at 17:00 CEST (11:00AM EDT, 08:00AM PDT)
+
