@@ -1,0 +1,49 @@
+= EE4J PMC Meeting #2020-01
+
+== General
+
+Date: 2020-01-07
+
+Present:
+
+* Ivar
+* Kevin
+* Dmitry
+* Steve
+
+== Jakarta EE 9 Plan
+
+Proposal: The PMC votes +1 to the plan. +
+*No objections.* 
+
+== Follow migration to Jakarta installation of Nexus in the parent pom
+
+https://github.com/eclipse-ee4j/ee4j/issues/55
+
+Changes need to be done in the pom by PR or otherwise. 
+Tom has submitted a PR - https://github.com/eclipse-ee4j/ee4j/pull/56 
+
+.Actions:
+* Merge (PMC member)
+* Release to Maven Central. Dmitry will do this as soon as the PR is merged.
+* Release to Eclipse Nexus will automatically also release to Maven Central?
+
+Projects will then need to update to the newer version of the parent. We will test it first, then send instructions to the projects on how to proceed.
+
+== Other
+
+=== Practical
+
+Move draft agendas and minutes from Ivar’s personal drive to EF shared drive. 
+Make readable for everyone with the link. 
+Editable by the PMC.
+
+.Actions:
+* Move the docs and set up sharing - Ivar
+* Fix the calendar invite and split out the platform call somehow - Ivar
+* PMC members: follow instructions and update your bookmarks when comunicated
+
+== Next Meeting
+
+Tuesday, February 4 at 17:00 CET (11:00AM ET, 08:00AM PT)
+
