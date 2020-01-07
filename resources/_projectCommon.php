@@ -12,6 +12,5 @@ $theme = "quicksilver";
 $Nav->addNavSeparator("EE4J", "/ee4j");
 $Nav->addCustomNav("PMC Minutes", "/ee4j/minutes", "_self", NULL);
 $Nav->addCustomNav("PMC News", "/ee4j/news", "_self", NULL);
-$Nav->addCustomNav("Project Status", "/ee4j/status.php", "_self", NULL);
 $Nav->addCustomNav("Project Relationships", "/ee4j/relationships.php", "_self", NULL);
 $Nav->addCustomNav("EE4J Charter", "https://projects.eclipse.org/projects/ee4j/charter", "_self", NULL);
