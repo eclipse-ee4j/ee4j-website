@@ -1,0 +1,52 @@
+= EE4J PMC Meeting #2020-02
+
+== General
+
+Date: 2020-02-04
+
+Present:
+
+* Mark
+* Tanja
+* Dmitry
+* Ivar
+* Kevin
+* Tanja
+
+== Project ID Changes
+
+Discussed project ID changes. 
+The PMC would like the projects to propose a new name in an issue for PMC approval before sending it to webmaster. 
+Or is this covered by existing processes? 
+Does a rename require a PMC approval automatically? 
+Or do we need an extra step? 
+
+**Action:** Ivar will check if the Eclipse bug tracker can have a "PMC Approval" button like the Project creation and Voting mechanisms.
+
+== Jakarta Tools Project
+
+Follow up the discussion in the Jakarta EE Platform call about moving tools and plugins out of the GlassFish project to a Jakarta Tools Project.
+
+The PMC is fine with splitting out these tools from the GlassFish project. 
+We will email the GF project lead and say go ahead.
+
+== TCK
+
+Follow up on the TCK discussion on the Jakarta EE Platform mailing list. Do we need to do anything?
+
+The PMC encourages initiatives to split the TCK as long as it does not affect the upcoming Jakarta EE 9 release. 
+There is a concern that the component TCK and the CTS will diverge.
+The Platform TCK is the source of truth for certification. 
+For Jakarta EE 10 and forward, we should try to align the frameworks used. 
+A plan for this work is required.
+
+== Number of project leads
+
+Discussed the discussion following proposal for three project leads on the Servlet project. 
+
+**DECISION:** The PMC will be reluctant to approving more than two project leads for any EE4J project going forward.
+With the exception of the Jakarta EE Platform project.
+
+== Next Meeting
+
+Tuesday, March 4 at 17:00 CET (11:00AM ET, 08:00AM PT)
