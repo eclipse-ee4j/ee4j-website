@@ -21,7 +21,7 @@ Or is this covered by existing processes?
 Does a rename require a PMC approval automatically? 
 Or do we need an extra step? 
 
-**Action:** Ivar will check if the Eclipse bug tracker can have a "PMC Approval" button like the Project creation and Voting mechanisms.
+**Action:** Ivar will check if the Eclipse bug tracker can have a "PMC Approval" button like the Project creation and Voting mechanisms. (**DONE**, confirmed by Wayne.)
 
 == Jakarta Tools Project
 
