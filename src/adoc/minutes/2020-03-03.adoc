@@ -1,0 +1,34 @@
+= EE4J PMC Meeting #2020-03
+
+== General
+
+Date: 2020-03-03
+
+Present:
+
+* Kevin Sutter (IBM)
+* Mark Little (Red Hat)
+* Ivar Grimstad (Eclipse Foundation)
+* Dmitry Kornilov (Oracle)
+
+== Committer Appointees
+
+[KWS] How do we get Strategic Member committer appointees properly assigned as committers?  There was a note last week from Steve for Payara appointees.  And, I just sent out a request for Jon Gallimore (Tomitribe).  Is this something that the PMC should be acting on?  Or, the Spec Committee?  Basically, do we know what the “fast path” is for assigning committers to Spec Projects?
+
+* Found out the proper process is for the Strategic Member rep (or the alternate for either the Steering Committee or Spec Committee) can send the request to emo@eclipse.org.
+* Documented here:  https://github.com/jakartaee/jakarta.ee/blob/src/content/committees/specification/operations/index.md#participant-representative-appointments--participant_representative_appointments (source)
+And
+https://jakarta.ee/committees/specification/operations/ (rendered)
+
+== Additional Minutes…
+
+Short meeting.  Few participants and minor agenda items.
+
+Discussed the Committer Appointees.  Kevin questioned whether Strategic Members can appoint reps beyond the set of committers that may already exist for the Strategic Member organization.  He’ll ping Wayne to find out (the ops guide doesn’t clarify).
+
+Discussed the Milestone release for the JAX-RS API.  It’s in Staging and Andy McCright (IBM) is in the process of getting it released to Maven Central.
+Discussed the Slack channel for Jakarta EE communications:  eclipsefoundationhq.slack.com  (please join if you haven’t already)
+
+== Next Meeting
+
+Tuesday, April 7 at 17:00 CET (11:00AM ET, 08:00AM PT)
