@@ -1,0 +1,34 @@
+= EE4J PMC Meeting #2020-04
+
+== General
+
+Date: 2020-04-07
+
+Present:
+
+* Kevin Sutter (IBM)
+* Ivar Grimstad (Eclipse Foundation)
+* Mark Little (Red Hat)
+* Steve Millidge (Payara)       
+* Tanja Obradovic (Eclipse Foundation)
+* Dmitry Kornilov (Oracle)
+* Kenji Kazumura (Fujitsu)
+
+== Review Non Assertion Covenant
+
+Add a link to the following to all EE4J repositories’ `CONTRIBUTING.MD`.
+The PMC will report back to the Steering Committee that we are fine with this.
+Wayne will execute by providing the link and text to the PMC. 
+Will try to get it done by EMO by running a script to avoid manual work.
+
+
+.Specification Non Assertion Covenant
+To the extent you submit or otherwise make available to an Eclipse Foundation Specification Project (as that term is defined by the Eclipse Intellectual Property Policy) any ideas, concepts, methods or other information, you agree that you will not assert, based on such submissions, any intellectual property rights that are essential to any implementation of the submission, against the Eclipse Foundation, its contributors, or its licensees, with respect to any implementation of such Specification (as that term is defined by the Eclipse Foundation Specification Process). To further clarify, such submissions include, but are not limited to, submissions made to any public communications channel such as an email list, forum, bug report, or Github issue submissions.  
+
+== Jakarta EE 9
+
+Anything the PMC can contribute with?
+GlassFish blocked on several upstream EE4J implementation projects. 
+Jersey will maybe have something next week. Tyrus is on the way.
+
+The PMC could help by encouraging milestone releases as soon as possible in the Jakarta staging repository. Send an email to project leads mailing list. Steve will send the email.
