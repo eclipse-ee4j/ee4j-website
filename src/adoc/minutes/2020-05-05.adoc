@@ -1,0 +1,65 @@
+= EE4J PMC Meeting #2020-05
+
+== General
+
+Date: 2020-05-05
+
+Present:
+
+* Steve
+* Dmitry
+* Ed
+* Tanja
+* Ivar
+* Kevin
+
+== Non Assertion Covenant
+
+We need to ensure that all CONTRIBUTING.md files contain the following:
+
+|===
+|**Eclipse Development Process** +
+This Eclipse Foundation open project is governed by the Eclipse Foundation
+Development Process and operates under the terms of the Eclipse IP Policy.
+
+The Jakarta EE Specification Committee has adopted the Jakarta EE Specification
+Process (JESP) in accordance with the Eclipse Foundation Specification Process
+v1.2 (EFSP) to ensure that the specification process is complied with by all
+Jakarta EE specification projects.
+
+ * https://eclipse.org/projects/dev_process +
+ * https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf +
+ * https://jakarta.ee/about/jesp/ +
+ * https://www.eclipse.org/legal/efsp_non_assert.php
+
+Automatic creation of PRs won’t work since the contributing files differ between the projects
+Automatic creation of issues is a way. Will require follow-up. 
+Uncertain whether it is the same text for specifications as for implementations and other projects.
+|===
+
+.Actions:
+- Script issues for the spec projects: Kevin +
+FYI, the script can be found here:  https://github.com/eclipse-ee4j/jakartaee-release (needs to be tweaked each time, but the general concept works)
+
+- Check if it is really needed for implementation projects: Ivar +
+Yes, it is since concepts and code from implementations may end up in specifications. 
+
+== Jakarta EE 9
+
+Reviewed the status.
+
+.Progress
+Specifications: https://github.com/orgs/eclipse-ee4j/projects/17 +
+GlassFish: https://github.com/eclipse-ee4j/glassfish/projects/1 +
+TCK: https://github.com/eclipse-ee4j/jakartaee-tck/projects/1 +
+
+== Build infrastructure
+
+Eclipse build infrastructure is slow.
+Causes problems for projects. 
+Only possible to release during weekends. 
+When GlassFish is buildable, this will really be a problem. 
+Is memberships tied to allocations to build resources? 
+Quota per strategic member or something?
+
+**Action:** Figure out how it is allocated. What are available, and how can it be expanded? Ivar and Tanja will check internally at Eclipse Foundation. What are the allocations and how are they allocated?
