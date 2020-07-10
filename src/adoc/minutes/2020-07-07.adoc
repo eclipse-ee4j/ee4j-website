@@ -1,0 +1,32 @@
+= EE4J PMC Meeting #2020-07
+
+== General
+
+Date: 2020-07-07
+
+Present:
+
+* Kevin Sutter (IBM)
+* Ivar Grimstad (Eclipse Foundation)
+* Ed Bratt (Oracle)
+* Dmitry Kornilov (Oracle)
+* Steve Millidge (Payara)
+
+== Quorum and Membership Discussion
+
+* Should Wayne be replaced by Ivar to represent Eclipse? Moving Wayne to a mentorship role?
+* Is the PMI page accurate for PMC Leadership, Members, and Committers?
+* Are we missing some stakeholders?  It seems a little ligh. We should offer more membership and participation across all of the EE4J projects. Should be more development focused (vs vendor focused).
+* EE4J PMC Role Definition:  https://jakarta.ee/documents/committees/primer-on-committee-responsibilities.pdf 
+
+.Actions:
+* Clear out Wayne’s status - Ivar
+* Shouldn’t Kenji be listed a committer as well? - Ivar
+
+== Jakarta NoSQL
+
+The project is due for a progress review according to the EFSP. Here is a progress report the project has provided: https://docs.google.com/document/d/1gg43hojQ5pgWU0sfeGSm3noFszAo7NNX0u6hRorx8HA/edit
+
+The PMC encourages the project to broaden the community and participation. Creating a specification with only a few committers may limit the number of interested to implement it. Suggest that project lead reach out to potential committers. Check with the Ambassadors or the Adopt-a-Spec program. Get traction on the Eclipse JNoSQL and drive adoption and interest in the specification from it. 
+
+Ivar will provide a response to Jakarta NoSQL project lead.
