@@ -1,0 +1,40 @@
+= EE4J PMC Meeting #2020-08
+
+== General
+
+Date: 2020-08-04
+
+Present:
+
+* Kevin Sutter (IBM)
+* Ivar Grimstad (Eclipse Foundation)
+* Kenji Kazumura (Fujitsu)
+
+== Open Liberty Certification Requests
+
+* Ivar has reviewed them and posted a +1 on both Issues. He also posted the “Acceptance” label.  So, these are ready to go.  Thanks!
+
+== Dependent Specifications
+
+* Kenji asked about how to process Specification PRs that depend on the Platform TCK, specifically the Interceptors Spec
+** The Spec PR should be labeled with the “Platform” label to indicate a dependency on the Platform.
+** Kenji should still go ahead with this Review Approval for the Interceptors PR, and remove the “draft” label.
+** The ballot will need to wait until the Platform is ready for ballot.
+
+== Quickly reviewed PRs that might be ready for ballot.
+
+* Dependency Injection was Approved by Ed.
+* But, technically, it’s not ready for a ballot yet since there are some changes required in the _index.md file related to the TCK artifacts.
+* Kevin will post these updates as Review Comments so that the PR doesn’t accidentally go to ballot before these changes are done.  I will also leave the “draft” label on the PR until these changes are done.
+
+== Initiating ballots…
+
+* Collective draft of Ballot Process:  https://docs.google.com/document/d/1o_pETMEx887yP1L8KgO3UPnOBVSKG5z1qS8dM7TgScE/edit 
+* Will discuss prospective Spec PRs ready for ballot at tomorrow’s Spec Committee call.  If we have some ready to go, then we can initiate the first ballots for Jakarta EE 9!
+
+== Clean up PMC Page
+
+* Ivar’s actions from last week -- he’ll follow up on these when he gets back in the office on Monday…
+* Actions:
+** Clear out Wayne’s status - Ivar
+** Shouldn’t Kenji be listed a committer as well? - Ivar
