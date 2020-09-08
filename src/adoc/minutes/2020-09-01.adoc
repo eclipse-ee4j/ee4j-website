@@ -1,0 +1,33 @@
+= EE4J PMC Meeting #2020-09
+
+== General
+
+Date: 2020-09-01
+
+Present:
+
+* Ivar Grimstad
+* Dmitry Kornilov
+* Kevin Sutter
+* Mark Little
+* Steve Millidge
+* Ed Bratt
+
+== Release Reviews
+
+Discussed whether release reviews required for the Jakarta EE 9 projects.
+
+.Steps required
+* Release record created - ok +
+- may need to be updated
+* IP log generated
+* Email to pmc to ask for approval
+* Email to emo
+
+.Actions:
+* Remind the spec project teams that a release review is required +
+https://www.eclipse.org/projects/handbook/#release-review 
+* Update PR template checklist with a reminder for this release review process (done by Ivar real time during meeting)
+* Completed balloted PRs (Batch, DI, and BV) will need to be reminded about these required release reviews
+* Update Final Checklist to remove the statement that Jakarta EE projects don’t need release reviews…  (Ivar did this update real time as well.)
+* Ivar will ask Wayne about graduation reviews to get all EE4J projects out of incubation
