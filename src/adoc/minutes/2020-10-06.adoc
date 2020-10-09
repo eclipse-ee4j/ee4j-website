@@ -1,0 +1,36 @@
+= EE4J PMC Meeting #2020-10
+
+== General
+
+Date: 2020-10-06
+
+Present:
+
+- Kevin Sutter (IBM)
+- Ivar Grimstad (Eclipse Foundation)
+- Dmitry Kornilov (Oracle)
+- Ed Bratt (Oracle) 
+- Kenji Kazumura (Fujitsu)
+- Steve Millidge (Payara)
+- Tanja Obradović (Eclipse Foundation)
+
+== Release Reviews
+
+* [KWS] Follow up on project promotion from incubation - Ivar and/or Wayne
+** All the projects involved in Jakarta EE 9 release will be graduated as the release reviews are done by the EMO 
+** Other projects that wants to graduate must email the EMO and ask for a graduation review (can be combined with a release review)
+** We, the PMC, will follow up with the EMO to ensure that it happens
+
+* [KWS] Active discussion on Spec Committee mailing list about the potential overlap between the Spec Committee, PMC, and EMO activities relating to releasing a Spec
+** Some possible updates to the Spec Review Checklist, or the PR Template, or the post-ballot Checklist
+
+* [KWS] For our current process (until something changes), I’m assuming that we only need one PMC member to sign off on a release review request
+** Discussed this item, and it is the PMC’s understanding that this is correct.  We just need to record our vote on the public PMC mailing list (not the Bugzilla issue).
+
+== Ad Hoc Agenda Items
+
+* [Ivar] Discussed the release process for specifications
+** Operations guide should be updated with guides and step-by-step instructions for the various stages 
+** Some standardization of Jenkins jobs would be nice.
+** Needs to get some input from the Spec Committee.
+** Ivar will be taking MVC 2.0 through this process and will propose updates to the processes and guides as he progresses through this release.
