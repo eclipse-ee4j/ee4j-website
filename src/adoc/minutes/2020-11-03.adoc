@@ -1,0 +1,60 @@
+= EE4J PMC Meeting #2020-11
+
+== General
+
+Date: 2020-11-03
+
+Present:
+Kevin Sutter (IBM)
+Ivar Grimstad (Eclipse Foundation)
+Dmitry Kornilov (Oracle)
+Ed Bratt (Oracle)
+Steve Millidge (Payara)
+Tanja Obradovic (EF)
+
+== Identify Project Leads for projects currently missing
+
+The EMO has pointed out that there are three EE4J projects that are missing project leads. This is an invalid state that needs to be addressed in order to graduate these projects.
+
+=== Jakarta Annotations
+
+* PMI: https://projects.eclipse.org/projects/ee4j.ca
+* Candidates (committers):
+
+We are planning to add Jakarta Annotations under the platform projects, so we won’t pursue this any further.
+This project does not need to be graduated. Will add it after Jakarta EE 9.
+
+=== Eclipse OpenMQ
+
+* PMI: https://projects.eclipse.org/projects/ee4j.openmq
+* Candidates (committers):
+
+Ed will send an email and ask Piotr if he is up for it. Then nominate.
+
+== Mockito for unit-tests to Open MQ
+
+Eclipse Open MQ  would like to add Mockito for unit tests to Eclipse Open MQ. Where are project wide “workswith” approvals tracked?
+
+Advise what further actions are needed to log this use by Eclipse Open MQ.
+
+* Ask Wayne for a clarification. And maybe ask for documentation of the process to be cleaned up to describe the “new” process for this kind of dependency.
+
+== PMC activities related to Jakarta EE 9?
+
+* Some component Compatible Impls have not went final yet.  So, the Glassfish that we’re using for the Jakarta EE 9 Compatibility Request doesn’t contain final versions of all compatible impls.  We will need to track the remainder of these impls before Glassfish goes “final” for version 6.
+* Missing “the big picture”, and overview of all the specifications and implementations with the status of their release reviews
+  * Ivar will create a spreadsheet with columns
+    * Implementation Project component
+    * Release Review
+    * Staging
+    * Maven Central
+* GlassFish RC for Jakarta EE 9 (Nov 20) and Final for Livestream (Dec 8)
+  * Glassfish RC2 with TCK RC1 are the current “matching set” deliverables for Jakarta EE 9
+
+== Jakarta EE 9.1 Discussion
+
+* Compile and Test with Java SE 11 (or later?)
+* Define module names (automatic module names vs module-info names)?
+* Support JPMS and module path execution?
+* Need to propose a Plan, initiate discussions, and finalize a doable Plan soon
+  * Stated goal was to have Jakarta EE 9.1 shortly after Jakarta EE 9
