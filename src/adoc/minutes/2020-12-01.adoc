@@ -1,0 +1,45 @@
+= EE4J PMC Meeting #2020-12
+
+== General
+
+Date: 2020-12-01
+
+Present:
+
+- Kevin Sutter (IBM)
+- Dmitry Kornilov (Oracle)
+- Ivar Grimstad (Eclipse Foundation)
+- Steve Millidge (Payara)
+- Tanja Obradovic (Eclipse Foundation)
+- Scott Stark (Red Hat)
+- Kenji Kazumura (Fujitsu)
+
+
+== EE4J Parent POM
+
+.Release 1.0.7 before Jakarta EE 9.1 with updates to:
+* Plugin dependencies
+* Java SE versions
+
+== Releases of implementation components to Maven Central
+
+GlassFish needs final releases before it can be released final.
+EJB API jar still needs to be released to Maven central.
+
+== Splitting TCKs
+
+JAX-RS Strategy: Add new tests in own repository 
+
+Should be one set of tests. 
+
+.Bring this request to the spec committee:
+The EE4J PMC proposes that the spec committee appoints a sub-committee to author a “TCK Splitting Guide”. The guide should at the least include guidelines regarding:
+
+* Documentation
+* Templates
+* Rules/restrictions
+
+
+== Next Meeting
+
+January 5th, 2021
