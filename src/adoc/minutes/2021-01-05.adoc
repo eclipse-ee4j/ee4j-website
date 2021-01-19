@@ -1,0 +1,26 @@
+= EE4J PMC Meeting #2021-01
+
+== General
+
+Date: 2021-01-05
+
+PMC Members Present:
+
+- Ivar Grimstad (Eclipse Foundation) - *present*
+- David Blevins (Tomitribe) - 
+- Dmitry Kornilov (Oracle - *present*
+- Kenji Kazumura (Fujitsu) - 
+- Kevin Sutter (IBM) - *present*
+- Scott Stark (Red Hat) - 
+- Steve Millidge (Payara) - *present*
+
+Guests:
+
+- Tanja Obradovic - *present*
+
+== Release Reviews
+
+Discussed potential release reviews targeting Jakarta EE 9.1. Rumours that Jakarta REST plans to make updates for Jakarta EE 9.1.
+
+No further items on the agenda.
+
