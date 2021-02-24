@@ -1,0 +1,28 @@
+= EE4J PMC Meeting #2021-02
+
+== General
+
+Date: 2021-02-02
+
+Present:
+
+- Ivar Grimstad (Eclipse Foundation) - **present**
+- David Blevins (Tomitribe) - 
+- Dmitry Kornilov (Oracle - **present**
+- Kenji Kazumura (Fujitsu) - **present**
+- Kevin Sutter (IBM) - **present**
+- Scott Stark (Red Hat) - 
+- Steve Millidge (Payara) - **present**
+
+Guests:
+
+- Ed Bratt - **present**
+- Tanja Obradovic - **present**
+
+== Project Graduation of EE4J projects from incubation
+
+Ivar pinged the EMO to get the status of this. Not heard back yet.
+
+== Publicizing Compatible Implementations for independent Specifications (ie. JSONP)
+
+Kevin sent a note to Spec Committee on this topic.  But, it sounds and looks like Ivar and Tanja were already attempting to document this process.
