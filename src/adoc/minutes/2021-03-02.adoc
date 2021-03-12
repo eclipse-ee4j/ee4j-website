@@ -1,0 +1,48 @@
+= EE4J PMC Meeting #2021-03
+
+== General
+
+Date: 2021-03-02, 11:30 (EST)
+
+Present:
+
+- Ivar Grimstad (Eclipse Foundation) - **present**
+- David Blevins (Tomitribe) - **present**
+- Dmitry Kornilov (Oracle - **present**
+- Kenji Kazumura (Fujitsu) - **present**
+- Kevin Sutter (IBM) - **present**
+- Scott Stark (Red Hat) - **present**
+- Steve Millidge (Payara) - **present**
+
+Guests: 
+
+- Ed Bratt (Oracle)
+- Tanja Obradović (Eclipse Foundation)
+
+== EE4J Parent POM
+
+* Parent pom version 1.0.7 released. Jenkins job issue with the GitHub bot fixed.
+* Related releases:  
+  * https://search.maven.org/artifact/jakarta.platform/jakarta.jakartaee-api/9.1.0-RC1/jar 
+  * https://search.maven.org/artifact/jakarta.platform/jakarta.jakartaee-web-api/9.1.0-RC1/jar 
+
+== Project Graduation of EE4J projects from incubation
+
+* Status update: **DONE**
+* Ivar will send an email to the PMC mailing list to announce it.
+
+== Public Meeting Calendar
+
+* Tanja checked out how to manage this practically. Created the following calendar:
+
+.Jakarta EE Specifications Calendar
+* Public URL to the Calendar: https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto
+* Public address in iCal format: https://calendar.google.com/calendar/ical/eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com/public/basic.ics
+* All specification project leads will be given access to manage events in the calendar.
+
+== Activity in the projects
+
+Discussed how we, as the PMC, can encourage projects to be more active. 
+Can we use the Jakarta EE Ambassadors more actively? 
+A possible action is to create a GitHub issue in the specification projects’ issue tracker asking for a plan. 
+The deadline communicated from the platform project is that plan reviews for the next Jakarta EE release are due **April 15, 2021**.
