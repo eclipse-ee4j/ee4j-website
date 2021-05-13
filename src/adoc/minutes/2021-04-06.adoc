@@ -1,0 +1,38 @@
+= EE4J PMC Meeting #2021-04
+
+
+== General
+
+Date: 2021-04-06, 11:30 (EST)
+
+Present:
+
+- Ivar Grimstad (Eclipse Foundation) - **present**
+- David Blevins (Tomitribe) - 
+- Dmitry Kornilov (Oracle - **present**
+- Kenji Kazumura (Fujitsu) - **present**
+- Kevin Sutter (IBM) - **present**
+- Scott Stark (Red Hat) - **present**
+- Steve Millidge (Payara) - 
+
+Guests:
+
+- Tanja Obradovic - **present**
+
+== OpenMQ 6.1.0
+
+Release Review
+
+https://projects.eclipse.org/projects/ee4j.openmq/releases/6.1.0 
+
+Ivar will reply to the email
+
+== Community Call on Jakarta Release Process?
+
+Dmitry indicated that his team is planning 4-5 Plan Reviews.  He would like to have an open discussion for the teams that are planning releases.  Question and answer type of format.
+
+Still need a general direction for Jakarta EE 10.  Items like which Java runtime will be the minimum -- Java SE 8, Java SE 11, Java SE 17?  Need some basic direction to help with defining the content of the release.  This is something for the Platform call agenda.
+
+== PMC Call slot
+
+Move PMC meeting away from Platform call time slot? Dmitry will create a doodle poll for a new time.  Once a month, 30 mins.
