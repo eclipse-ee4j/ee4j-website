@@ -1,0 +1,49 @@
+= EE4J PMC Meeting #2021-06
+
+== General
+
+Date: 2021-06-03, 11:00 (EDT)
+
+Present:
+
+- Ivar Grimstad (Eclipse Foundation) - **present**
+- David Blevins (Tomitribe) - 
+- Dmitry Kornilov (Oracle - 
+- Kenji Kazumura (Fujitsu) - 
+- Kevin Sutter (IBM) - **present**
+- Scott Stark (Red Hat) - 
+- Steve Millidge (Payara) - 
+
+Invited Guests
+
+- Tanja Obradovic - **present**
+- Wayne Beaton - **present**
+- Ed Bratt - **present**
+
+Quorum was not reached for this meeting. 
+No decisions were made.
+
+== [Wayne] Vulnerability Policy
+
+General discussion around vulnerability issues. +
+GitHub vulnerability reports are sent to the repository owner (webmaster). 
+
+.Questions that came up:
+How do we get them sent to the project? +
+Send to the EE4J PMC list? +
+Are all projects represented on the PMC mailing list?
+
+== EE4J Website
+
+Discussion around the website. Ivar suggested moving to a solution based on GitHub pages to make updates easier.
+
+.Current setup:
+
+* Double repositories
+    * Sources in https://github.com/eclipse-ee4j/ee4j-website 
+    * Generated site in Eclipse Git
+* Too many steps to maintain
+    1. PR to the source repo
+    2. Merge
+    3. Build
+    4. Push to generated repo
